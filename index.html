@@ -1409,7 +1409,8 @@
             }
 
             .nav-links a:not(.cta-btn) {
-                display: none; /* Hide non-essential links to save space on mobile */
+                display: none;
+                /* Hide non-essential links to save space on mobile */
             }
 
             .nav-links a.cta-btn {
@@ -1531,6 +1532,19 @@
                 max-height: 90vh;
                 margin: 0.5rem;
                 padding: 1.25rem;
+            }
+
+            /* Form responsiveness fix */
+            .booking-form {
+                width: 100%;
+            }
+
+            .form-group input,
+            .form-group select,
+            .form-group textarea {
+                width: 100% !important;
+                max-width: 100% !important;
+                box-sizing: border-box !important;
             }
         }
 
