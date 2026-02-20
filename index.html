@@ -1,370 +1,56 @@
 <!DOCTYPE html>
-<html lang="es">
+<html class="dark" lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- SEO Meta Tags -->
-    <meta name="description"
-        content="Agencia de Marketing Digital e Inteligencia Artificial en España. Maximizamos el ROI de tus anuncios en Google y Facebook. SEO Local, Automatización IA, y Landing Pages de Alta Conversión. ¡Agenda tu consultoría gratuita hoy!">
-    <meta name="keywords"
-        content="agencia marketing digital IA, consultoría IA España, optimización conversiones ads, SEO local para empresas, automatización procesos IA, landing pages efectivas, marketing digital para pymes, agencia SEO resultados, Kristian Krasimirov N, SPM Agency, escalar negocios digitalmente, experto marketing digital España">
-    <meta name="author" content="Kristian Krasimirov N. - SPM Agency">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <link rel="canonical" href="https://spm-agency.com">
-
-    <!-- Geo Tags -->
-    <meta name="geo.region" content="ES">
-    <meta name="geo.placename" content="España">
-    <meta name="language" content="Spanish">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://spm-agency.com">
-    <meta property="og:title"
-        content="SPM Agency - Marketing Digital e IA que Genera Resultados Reales | Sin Permanencia">
-    <meta property="og:description"
-        content="Aumenta tus ventas con marketing digital que realmente funciona. SEO local, automatización IA, desarrollo web. Sin permanencia, transparencia total.">
-    <!-- og:image removed for Odoo compatibility - will use default -->
-    <meta property="og:locale" content="es_ES">
-
-    <!-- Twitter Card -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://spm-agency.com">
-    <meta property="twitter:title" content="SPM Agency - Marketing Digital e IA que Genera Resultados Reales">
-    <meta property="twitter:description"
-        content="Transforma tu negocio con tecnología que genera resultados medibles. Consultoría gratuita.">
-    <!-- twitter:image removed for Odoo compatibility - will use default -->
-
-    <title>SPM Design Agency</title>
-    <link rel="icon" type="image/png" href="./IMG/logo-spm.png">
-    <link rel="shortcut icon" type="image/png" href="./IMG/logo-spm.png">
-    <link rel="apple-touch-icon" href="./IMG/logo-spm.png">
-
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8Z75S5TWD"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-N8Z75S5TWD', {
-            'anonymize_ip': true,
-            'allow_ad_personalization_signals': false
-        });
-    </script>
-
-    <!-- Facebook Pixel Code (Placeholders for Ads Optimization) -->
-    <!--
-    <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-    document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'YOUR_PIXEL_ID');
-    fbq('track', 'PageView');
-    </script>
-    -->
-
-    <!-- Google Ads Conversion Tracking (Placeholders) -->
-    <!--
-    <script>
-    function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof(url) != 'undefined') {
-          window.location = url;
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>SPM Design Agency | Marketing Digital & AI Automation</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7B3FE4",
+                        "primary-end": "#00B4D8",
+                        "background-light": "#f5f7f8",
+                        "background-dark": "#0d0d1a",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
         }
-      };
-      gtag('event', 'conversion', {
-          'send_to': 'AW-CONVERSION_ID',
-          'event_callback': callback
-      });
-      return false;
-    }
     </script>
-    -->
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://api.web3forms.com">
-    <link rel="preconnect" href="https://www.googletagmanager.com">
-
-    <!-- Security Config (Protected for GitHub) -->
-    <script src="js/config.js"></script>
-
-    <!-- Structured Data (Schema.org) for SEO -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "SPM Agency",
-        "description": "Agencia de Marketing Digital e Inteligencia Artificial. Ofrecemos servicios de SEO local, automatización con IA, desarrollo web, landing pages y consultoría estratégica para empresas en España.",
-        "url": "https://spm-agency.com",
-        "telephone": "+34-XXX-XXX-XXX",
-        "email": "solucionesworld2016@gmail.com",
-        "address": {
-            "@type": "PostalAddress",
-            "addressCountry": "ES",
-            "addressRegion": "España"
-        },
-        "areaServed": "ES",
-        "founder": {
-            "@type": "Person",
-            "name": "Kristian Krasimirov N.",
-            "jobTitle": "Fundador y CEO"
-        },
-        "priceRange": "Consulta gratuita disponible",
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Servicios de Marketing Digital e IA",
-            "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "SEO Local",
-                        "description": "Posicionamiento en Google para aparecer primero en búsquedas locales"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Automatización con IA Agéntica",
-                        "description": "Empleados digitales que automatizan procesos de tu negocio"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Desarrollo Web y Landing Pages",
-                        "description": "Diseños profesionales que convierten visitas en clientes"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Marketing Digital 360º",
-                        "description": "Estrategia completa de marketing digital con resultados medibles"
-                    }
-                }
-            ]
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "94",
-            "bestRating": "5"
-        }
-    }
-    </script>
-
     <style>
-        /* ===== VARIABLES Y RESET ===== */
-        :root {
-            --primary-purple: #7B2CBF;
-            --primary-cyan: #00D4FF;
-            --dark-bg: #1a1a1a;
-            --darker-bg: #0f0f0f;
-            --light-text: #ffffff;
-            --gray-text: #a0a0a0;
-            --card-bg: #242424;
-            --gradient-primary: linear-gradient(135deg, #7B2CBF 0%, #00D4FF 100%);
-            --gradient-text: linear-gradient(135deg, #7B2CBF, #00D4FF);
-            --shadow-glow: 0 0 40px rgba(123, 44, 191, 0.3);
-            --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.4);
+        /* Brand gradient utility */
+        .brand-gradient {
+            background: linear-gradient(135deg, #7B3FE4, #00B4D8);
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        .brand-gradient-text {
+            background: linear-gradient(135deg, #7B3FE4, #00B4D8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background-color: var(--dark-bg);
-            color: var(--light-text);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        /* ===== BACKGROUND ANIMATIONS ===== */
-        .bg-gradient {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            opacity: 0.05;
-            background:
-                radial-gradient(circle at 20% 30%, var(--primary-purple) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, var(--primary-cyan) 0%, transparent 50%);
-            animation: gradientShift 15s ease infinite;
-        }
-
-        @keyframes gradientShift {
-
-            0%,
-            100% {
-                transform: scale(1) rotate(0deg);
-            }
-
-            50% {
-                transform: scale(1.1) rotate(5deg);
-            }
-        }
-
-        /* ===== HEADER / NAVIGATION ===== */
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: rgba(15, 15, 15, 0.95);
-            backdrop-filter: blur(10px);
-            z-index: 1000;
-            padding: 0.75rem 0;
-            border-bottom: 1px solid rgba(123, 44, 191, 0.2);
-            transition: background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-        }
-
-        header.scrolled {
-            background: rgba(15, 15, 15, 0.98);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-        }
-
-        nav {
-            max-width: 1600px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: grid;
-            grid-template-columns: minmax(150px, 1fr) auto 1fr;
-            align-items: center;
-        }
-
-        .logo {
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-
-        .logo img {
-            width: 50px;
-            height: 50px;
-            aspect-ratio: 1/1;
-            border-radius: 50%;
-            object-fit: cover;
-            background: var(--card-bg);
-            padding: 8px;
-            border: 2px solid var(--primary-purple);
-            box-shadow: 0 0 20px rgba(123, 44, 191, 0.4);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .logo:hover {
-            transform: scale(1.05);
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 1.5rem;
-            align-items: center;
-        }
-
-        .nav-links a {
-            color: var(--light-text);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.9rem;
-            transition: color 0.3s ease;
-            position: relative;
-        }
-
-        .nav-links a:not(.cta-btn):hover {
-            color: var(--primary-cyan);
-        }
-
-        /* Scroll to top button */
-        .scroll-top {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            width: 50px;
-            height: 50px;
-            background: var(--gradient-primary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-            z-index: 999;
-            box-shadow: 0 4px 15px rgba(123, 44, 191, 0.4);
-        }
-
-        .scroll-top.show {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .scroll-top:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 25px rgba(123, 44, 191, 0.6);
-        }
-
-        .cta-btn {
-            background: var(--gradient-primary);
-            color: var(--light-text);
-            padding: 0.875rem 2rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.95rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(123, 44, 191, 0.4);
-            border: none;
-            cursor: pointer;
-            display: inline-block;
-        }
-
-        .cta-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 25px rgba(123, 44, 191, 0.6);
-        }
-
-        /* ===== HERO SECTION ===== */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 8rem 2rem 4rem;
-            text-align: center;
-            position: relative;
-        }
-
-        .hero-content {
-            max-width: 900px;
-            animation: fadeInUp 1s ease;
-        }
-
+        /* Keyframe animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
-                transform: translateY(30px);
+                transform: translateY(32px);
             }
 
             to {
@@ -373,322 +59,59 @@
             }
         }
 
-        .badge {
-            display: inline-block;
-            background: rgba(123, 44, 191, 0.2);
-            border: 1px solid var(--primary-purple);
-            padding: 0.5rem 1.5rem;
-            border-radius: 50px;
-            font-size: 0.85rem;
-            font-weight: 500;
-            margin-bottom: 2rem;
-            animation: pulse 2s ease infinite;
-        }
-
-        @keyframes pulse {
-
-            0%,
-            100% {
-                box-shadow: 0 0 0 0 rgba(123, 44, 191, 0.4);
-            }
-
-            50% {
-                box-shadow: 0 0 0 10px rgba(123, 44, 191, 0);
-            }
-        }
-
-        h1 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            font-weight: 900;
-            line-height: 1.2;
-            margin-bottom: 1.5rem;
-            background: var(--gradient-text);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero p {
-            font-size: clamp(1.1rem, 2vw, 1.3rem);
-            color: var(--gray-text);
-            margin-bottom: 3rem;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .hero-cta-group {
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 4rem;
-        }
-
-        .cta-btn-secondary {
-            background: transparent;
-            color: var(--light-text);
-            padding: 0.875rem 2rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.95rem;
-            border: 2px solid var(--primary-purple);
-            transition: all 0.3s ease;
-        }
-
-        .cta-btn-secondary:hover {
-            background: rgba(123, 44, 191, 0.1);
-            transform: translateY(-2px);
-        }
-
-        /* ===== TRUST INDICATORS ===== */
-        .trust-indicators {
-            display: flex;
-            gap: 3rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 3rem;
-            padding-top: 3rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .trust-item {
-            text-align: center;
-        }
-
-        .trust-number {
-            font-size: 2.5rem;
-            font-weight: 800;
-            background: var(--gradient-text);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .trust-label {
-            color: var(--gray-text);
-            font-size: 0.9rem;
-            margin-top: 0.5rem;
-        }
-
-        /* ===== PROBLEMS SECTION ===== */
-        .problems {
-            padding: 6rem 2rem;
-            background: var(--darker-bg);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-
-        .section-tag {
-            color: var(--primary-cyan);
-            font-weight: 600;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 1rem;
-        }
-
-        h2 {
-            font-size: clamp(2rem, 4vw, 3rem);
-            font-weight: 800;
-            margin-bottom: 1rem;
-        }
-
-        .section-description {
-            color: var(--gray-text);
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* Slider Container */
-        .problems-slider-container {
-            position: relative;
-            overflow: hidden;
-            padding-bottom: 3rem;
-        }
-
-        .problems-slider {
-            display: flex;
-            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .problem-slide {
-            min-width: 100%;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .problem-card {
-            background: var(--card-bg);
-            padding: 2rem;
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .problem-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: var(--gradient-primary);
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
-        }
-
-        .problem-card:hover::before {
-            transform: scaleX(1);
-        }
-
-        .problem-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-card);
-            border-color: rgba(123, 44, 191, 0.3);
-        }
-
-        .problem-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .problem-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-            color: var(--light-text);
-        }
-
-        .problem-card p {
-            color: var(--gray-text);
-            line-height: 1.7;
-        }
-
-        /* Slider Dots */
-        .slider-dots {
-            display: flex;
-            justify-content: center;
-            gap: 0.75rem;
-            margin-top: 2rem;
-        }
-
-        .slider-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.2);
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .slider-dot.active {
-            background: var(--primary-purple);
-            box-shadow: 0 0 10px rgba(123, 44, 191, 0.5);
-            transform: scale(1.2);
-        }
-
-        /* ===== SOLUTION SECTION ===== */
-        .solution {
-            padding: 6rem 2rem;
-            background: var(--dark-bg);
-        }
-
-        .solution-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
-
-        .solution-text h2 {
-            text-align: left;
-            margin-bottom: 1.5rem;
-        }
-
-        .solution-text p {
-            color: var(--gray-text);
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-            line-height: 1.8;
-        }
-
-        .features-list {
-            list-style: none;
-            margin-bottom: 2.5rem;
-        }
-
-        .features-list li {
-            padding: 1rem 0;
-            padding-left: 2.5rem;
-            position: relative;
-            color: var(--light-text);
-            font-size: 1.05rem;
-        }
-
-        .features-list li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            background: var(--gradient-primary);
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-        }
-
-        .solution-visual {
-            background: var(--gradient-primary);
-            border-radius: 20px;
-            padding: 3rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 400px;
-            position: relative;
-            overflow: hidden;
-            animation: floatVisual 4s ease-in-out infinite;
-        }
-
-        .solution-visual::before {
-            content: '';
-            position: absolute;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-            animation: rotate 20s linear infinite;
-        }
-
-        @keyframes rotate {
+        @keyframes fadeInLeft {
             from {
-                transform: rotate(0deg);
+                opacity: 0;
+                transform: translateX(-32px);
             }
 
             to {
-                transform: rotate(360deg);
+                opacity: 1;
+                transform: translateX(0);
             }
         }
 
-        @keyframes floatVisual {
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(32px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes countUp {
+            from {
+                opacity: 0;
+                transform: scale(0.7);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes pulseGlow {
 
             0%,
             100% {
-                transform: translateY(0px);
+                box-shadow: 0 0 0 0 rgba(123, 63, 228, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 0 0 16px rgba(123, 63, 228, 0);
+            }
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
             }
 
             50% {
@@ -696,1103 +119,214 @@
             }
         }
 
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-            position: relative;
-            z-index: 1;
+        /* Animation classes */
+        .animate-fade-up {
+            animation: fadeInUp 0.7s ease forwards;
         }
 
-        .stat-box {
-            text-align: center;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 2rem;
-            border-radius: 15px;
+        .animate-fade-left {
+            animation: fadeInLeft 0.7s ease forwards;
         }
 
-        .stat-box h3 {
-            font-size: 3rem;
-            font-weight: 900;
-            margin-bottom: 0.5rem;
+        .animate-fade-right {
+            animation: fadeInRight 0.7s ease forwards;
         }
 
-        .stat-box p {
-            color: rgba(255, 255, 255, 0.9);
-            font-size: 0.95rem;
+        .animate-count {
+            animation: countUp 0.6s ease forwards;
         }
 
-        /* ===== CTA SECTION ===== */
-        .cta-section {
-            padding: 6rem 2rem;
-            background: var(--darker-bg);
-            position: relative;
-            overflow: hidden;
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
         }
 
-        .cta-section::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(123, 44, 191, 0.1) 0%, transparent 70%);
-            animation: gradientShift 20s ease infinite;
+        .animate-pulse-glow {
+            animation: pulseGlow 2s ease infinite;
         }
 
-        .cta-container {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-            background: var(--card-bg);
-            padding: 4rem 3rem;
-            border-radius: 30px;
-            border: 2px solid rgba(123, 44, 191, 0.3);
-            box-shadow: var(--shadow-glow);
-            position: relative;
-            z-index: 1;
-        }
-
-        .cta-container h2 {
-            margin-bottom: 1.5rem;
-        }
-
-        .cta-container p {
-            color: var(--gray-text);
-            font-size: 1.2rem;
-            margin-bottom: 3rem;
-        }
-
-        .calendar-container {
-            margin-top: 3rem;
-            padding: 2rem;
-            background: var(--dark-bg);
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        /* ===== FORM STYLES ===== */
-        .booking-form {
-            display: grid;
-            gap: 1.5rem;
-            text-align: left;
-        }
-
-        .form-group {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .form-group label {
-            margin-bottom: 0.5rem;
-            color: var(--light-text);
-            font-weight: 500;
-            font-size: 0.95rem;
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            padding: 1rem;
-            border-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            background: var(--card-bg);
-            color: var(--light-text);
-            font-family: inherit;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-        }
-
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--primary-purple);
-            box-shadow: 0 0 0 3px rgba(123, 44, 191, 0.1);
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
-
-        .form-submit {
-            width: 100%;
-            padding: 1.2rem;
-            font-size: 1.1rem;
-            animation: fadeInUp 0.5s ease;
-        }
-
-        /* ===== HOW WE WORK SECTION ===== */
-        .how-we-work {
-            padding: 5rem 0;
-            background: var(--darker-bg);
-            position: relative;
-        }
-
-        .process-steps {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2.5rem;
-            margin-top: 3rem;
-        }
-
-        .process-step {
-            background: var(--card-bg);
-            padding: 2.5rem 2rem;
-            border-radius: 20px;
-            border: 1px solid rgba(123, 44, 191, 0.2);
-            position: relative;
-            transition: all 0.3s ease;
-            text-align: center;
-        }
-
-        .process-step:hover {
-            transform: translateY(-5px);
-            border-color: var(--primary-purple);
-            box-shadow: 0 8px 30px rgba(123, 44, 191, 0.3);
-        }
-
-        .step-number {
-            position: absolute;
-            top: -15px;
-            left: 2rem;
-            background: var(--gradient-primary);
-            color: white;
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 1.1rem;
-            box-shadow: 0 4px 15px rgba(123, 44, 191, 0.4);
-        }
-
-        .step-icon {
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
-            margin-top: 1rem;
-        }
-
-        .process-step h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            background: var(--gradient-text);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .process-step p {
-            color: var(--gray-text);
-            line-height: 1.7;
-            font-size: 0.95rem;
-        }
-
-        .process-cta {
-            margin-top: 3rem;
-        }
-
-        .success-message {
-            display: none;
-            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(123, 44, 191, 0.1));
-            border: 1px solid var(--primary-cyan);
-            padding: 1.5rem;
-            border-radius: 15px;
-            margin-top: 1.5rem;
-            color: var(--primary-cyan);
-        }
-
-        .success-message.show {
-            display: block;
-            animation: fadeInUp 0.5s ease;
-        }
-
-        /* ===== FOOTER ===== */
-        footer {
-            background: var(--darker-bg);
-            padding: 3rem 2rem 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .footer-content {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 3rem;
-            margin-bottom: 2rem;
-        }
-
-        .footer-section h3 {
-            margin-bottom: 1.5rem;
-            font-size: 1.2rem;
-        }
-
-        .footer-section p,
-        .footer-section a {
-            color: var(--gray-text);
-            text-decoration: none;
-            display: block;
-            margin-bottom: 0.75rem;
-            transition: color 0.3s ease;
-        }
-
-        .footer-section a:hover {
-            color: var(--primary-cyan);
-        }
-
-        .footer-bottom {
-            text-align: center;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-            color: var(--gray-text);
-            font-size: 0.9rem;
-        }
-
-        /* ===== WHO AM I SECTION ===== */
-        .who-am-i {
-            padding: 6rem 2rem;
-            background: var(--dark-bg);
-        }
-
-        .who-am-i-content {
-            display: grid;
-            grid-template-columns: 1fr 1.2fr;
-            gap: 4rem;
-            align-items: center;
-        }
-
-        .who-am-i-image {
-            position: relative;
-            border-radius: 20px;
-            overflow: hidden;
-        }
-
-        .who-am-i-image img {
-            width: 400px;
-            height: 400px;
-            display: block;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid var(--primary-purple);
-            box-shadow: 0 0 30px rgba(123, 44, 191, 0.5);
-            margin: 0 auto;
-        }
-
-        .who-am-i-text h2 {
-            text-align: left;
-            margin-bottom: 1.5rem;
-        }
-
-        .who-am-i-text p {
-            color: var(--gray-text);
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
-        }
-
-        .who-am-i-text strong {
-            color: var(--light-text);
-        }
-
-        /* ===== MODALS ===== */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.85);
-            backdrop-filter: blur(5px);
-            z-index: 10000;
-            justify-content: center;
-            align-items: center;
-            animation: fadeIn 0.3s ease;
-        }
-
-        .modal.show {
-            display: flex;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-        .modal-content {
-            background: var(--card-bg);
-            border-radius: 20px;
-            padding: 3rem;
-            max-width: 600px;
-            width: 90%;
-            max-height: 80vh;
-            overflow-y: auto;
-            position: relative;
-            border: 2px solid var(--primary-purple);
-            box-shadow: var(--shadow-glow);
-            animation: slideUp 0.3s ease;
-        }
-
-        @keyframes slideUp {
-            from {
-                transform: translateY(50px);
-                opacity: 0;
-            }
-
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        .modal-close {
-            position: absolute;
-            top: 1.5rem;
-            right: 1.5rem;
-            background: transparent;
-            border: none;
-            color: var(--light-text);
-            font-size: 2rem;
-            cursor: pointer;
-            line-height: 1;
-            transition: color 0.3s ease;
-        }
-
-        .modal-close:hover {
-            color: var(--primary-cyan);
-        }
-
-        .modal-content h2 {
-            margin-bottom: 1.5rem;
-            font-size: 1.8rem;
-            color: var(--light-text);
-        }
-
-        .modal-content h3 {
-            margin-top: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--light-text);
-        }
-
-        .modal-content p,
-        .modal-content ul,
-        .modal-content li,
-        .modal-content td,
-        .modal-content th {
-            margin-bottom: 1rem;
-            line-height: 1.7;
-            color: var(--light-text);
-        }
-
-        .modal-content a {
-            color: var(--primary-cyan);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .modal-content a:hover {
-            color: var(--primary-purple);
-        }
-
-        /* Success Popup */
-        .success-popup {
-            max-width: 500px;
-            text-align: center;
-        }
-
-        .success-popup h2 {
-            background: var(--gradient-text);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        /* ===== THANK YOU SECTION ===== */
-        .thank-you-section {
-            display: none;
-            min-height: 100vh;
-            padding: 8rem 2rem 4rem;
-            background: var(--darker-bg);
-            text-align: center;
-        }
-
-        .thank-you-section.show {
-            display: block;
-        }
-
-        .thank-you-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .thank-you-content h1 {
-            margin-bottom: 2rem;
-        }
-
-        .thank-you-content p {
-            font-size: 1.2rem;
-            color: var(--gray-text);
-            margin-bottom: 3rem;
-        }
-
-        .thank-you-buttons {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .thank-you-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.75rem;
-            padding: 1.2rem 2.5rem;
-            background: var(--gradient-primary);
-            color: var(--light-text);
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(123, 44, 191, 0.4);
-        }
-
-        .thank-you-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 25px rgba(123, 44, 191, 0.6);
-        }
-
-        .thank-you-btn.secondary {
-            background: transparent;
-            border: 2px solid var(--primary-purple);
-        }
-
-        .legal-links {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .legal-links a {
-            color: var(--gray-text);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .legal-links a:hover {
-            color: var(--primary-cyan);
-        }
-
-        /* ===== TESTIMONIAL POPUPS ===== */
-        .testimonial-popup {
-            position: fixed;
-            bottom: 2rem;
-            left: 2rem;
-            max-width: 280px;
-            background: rgba(36, 36, 36, 0.95);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(123, 44, 191, 0.3);
-            border-radius: 12px;
-            padding: 0.875rem;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
-            z-index: 999;
+        /* Scroll-triggered: hidden by default, JS reveals */
+        .reveal {
             opacity: 0;
-            transform: translateX(-350px);
-            transition: all 0.4s ease;
         }
 
-        .testimonial-popup.show {
+        .reveal.visible {
             opacity: 1;
-            transform: translateX(0);
         }
 
-        .testimonial-header {
-            display: flex;
-            align-items: center;
-            gap: 0.625rem;
-            margin-bottom: 0.625rem;
+        /* Stagger delays */
+        .delay-100 {
+            animation-delay: 0.1s;
         }
 
-        .testimonial-avatar {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background: var(--gradient-primary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.875rem;
-            font-weight: 600;
-            color: white;
-            flex-shrink: 0;
+        .delay-200 {
+            animation-delay: 0.2s;
         }
 
-        .testimonial-info h4 {
-            margin: 0;
-            font-size: 1rem !important;
-            color: #ffffff !important;
-            font-weight: 800;
-            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
-            line-height: 1.2;
+        .delay-300 {
+            animation-delay: 0.3s;
         }
 
-        .testimonial-info p {
-            margin: 0.125rem 0 0 0;
-            font-size: 0.6875rem;
-            color: #e0e0e0 !important;
+        .delay-400 {
+            animation-delay: 0.4s;
         }
 
-        .testimonial-stars {
-            color: #FFD700;
-            font-size: 0.75rem;
-            margin-bottom: 0.5rem;
+        .delay-500 {
+            animation-delay: 0.5s;
         }
 
-        .testimonial-message {
-            color: #ffffff !important;
-            font-size: 0.95rem !important;
-            line-height: 1.5;
-            margin-bottom: 0.5rem;
-            font-weight: 500;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        /* Card hover */
+        .agent-card {
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .testimonial-service {
-            display: inline-block;
-            background: rgba(123, 44, 191, 0.15);
-            border: 1px solid rgba(123, 44, 191, 0.4);
-            padding: 0.1875rem 0.5rem;
-            border-radius: 12px;
-            font-size: 0.6875rem;
-            color: var(--primary-cyan);
+        .agent-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 40px rgba(123, 63, 228, 0.18);
         }
 
-        /* ===== COOKIE BANNER ===== */
-        .cookie-banner {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(15, 15, 15, 0.98);
-            backdrop-filter: blur(10px);
-            border-top: 2px solid var(--primary-purple);
-            padding: 1.5rem 2rem;
-            z-index: 10001;
-            display: none;
-            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.5);
+        /* Stat card pulse */
+        .stat-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .cookie-banner.show {
-            display: block;
-            animation: slideUp 0.5s ease;
+        .stat-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(0, 180, 216, 0.2);
         }
 
-        .cookie-content {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 2rem;
-            flex-wrap: wrap;
+        /* Brand border for logo */
+        .logo-border {
+            border: 2.5px solid;
+            border-image: linear-gradient(135deg, #7B3FE4, #00B4D8) 1;
+            border-radius: 9999px !important;
         }
 
-        .cookie-text {
-            flex: 1;
-            min-width: 300px;
-        }
-
-        .cookie-text p {
-            color: var(--gray-text);
-            margin: 0;
-            font-size: 0.95rem;
-        }
-
-        .cookie-text a {
-            color: var(--primary-cyan);
-            text-decoration: underline;
-        }
-
-        .cookie-accept {
-            background: var(--gradient-primary);
-            color: var(--light-text);
-            padding: 0.75rem 2rem;
-            border-radius: 50px;
-            border: none;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(123, 44, 191, 0.4);
-            white-space: nowrap;
-        }
-
-        .cookie-accept:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 25px rgba(123, 44, 191, 0.6);
-        }
-
-
-        /* ===== RESPONSIVE ===== */
-        @media (max-width: 768px) {
-            .container {
-                padding: 1.5rem 1rem;
-            }
-
-            h1 {
-                font-size: 1.8rem;
-                margin-bottom: 1rem;
-            }
-
-            h2 {
-                font-size: 1.6rem;
-            }
-
-            h3 {
-                font-size: 1.2rem;
-            }
-
-            .hero-content h1 {
-                font-size: 1.8rem;
-                line-height: 1.3;
-            }
-
-            .hero-content p {
-                font-size: 0.95rem;
-                margin-bottom: 2rem;
-            }
-
-            header {
-                padding: 0.5rem 0;
-            }
-
-            nav {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-                gap: 0.5rem;
-                padding: 0 1rem;
-            }
-
-            .logo img {
-                width: 35px;
-                height: 35px;
-                padding: 5px;
-            }
-
-            .nav-spacer {
-                display: none;
-            }
-
-            .nav-links {
-                flex-direction: row;
-                gap: 0.75rem;
-                padding: 0;
-                background: transparent;
-                border-radius: 0;
-            }
-
-            .nav-links a {
-                font-size: 0.75rem;
-            }
-
-            .nav-links a:not(.cta-btn) {
-                display: none;
-                /* Hide non-essential links to save space on mobile */
-            }
-
-            .nav-links a.cta-btn {
-                padding: 0.5rem 1rem;
-                font-size: 0.8rem;
-            }
-
-            .hero {
-                padding: 5rem 1rem 2rem;
-            }
-
-            .hero-cta-group {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            .trust-indicators {
-                gap: 1.5rem;
-                margin-top: 2rem;
-                padding-top: 2rem;
-            }
-
-            .trust-number {
-                font-size: 1.8rem;
-            }
-
-            .stats-grid {
-                grid-template-columns: 1fr;
-                gap: 1rem;
-            }
-
-            .trust-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .solution-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .who-am-i-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-                text-align: center;
-            }
-
-            .who-am-i-image img {
-                width: 220px;
-                height: 220px;
-            }
-
-            .problem-slide {
-                flex-direction: column;
-                padding: 1.5rem 1rem;
-            }
-
-            .problem-card {
-                width: 100%;
-                padding: 1.5rem;
-            }
-
-            .cta-container {
-                padding: 2.5rem 1.5rem;
-            }
-
-            .thank-you-buttons {
-                flex-direction: column;
-            }
-
-            .testimonial-popup {
-                max-width: 220px;
-                left: 0.75rem;
-                bottom: 0.75rem;
-                padding: 0.6rem;
-            }
-
-            .testimonial-avatar {
-                width: 28px;
-                height: 28px;
-                font-size: 0.75rem;
-            }
-
-            .testimonial-info h4 {
-                font-size: 0.85rem !important;
-            }
-
-            .testimonial-info p {
-                font-size: 0.6rem;
-            }
-
-            .testimonial-message {
-                font-size: 0.8rem !important;
-                margin-bottom: 0.4rem;
-            }
-
-            .testimonial-stars {
-                font-size: 0.65rem;
-                margin-bottom: 0.35rem;
-            }
-
-            .cookie-content {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            .cookie-text {
-                min-width: auto;
-            }
-
-            .scroll-top {
-                width: 40px;
-                height: 40px;
-                bottom: 4rem;
-                right: 1rem;
-            }
-
-            .modal-content {
-                width: 95%;
-                max-height: 90vh;
-                margin: 0.5rem;
-                padding: 1.25rem;
-            }
-
-            /* Form responsiveness fix */
-            .booking-form {
-                width: 100%;
-            }
-
-            .form-group input,
-            .form-group select,
-            .form-group textarea {
-                width: 100% !important;
-                max-width: 100% !important;
-                box-sizing: border-box !important;
-            }
-        }
-
-        @media (min-width: 769px) and (max-width: 1024px) {
-            .container {
-                padding: 3rem 2rem;
-            }
-
-            .solution-content {
-                grid-template-columns: 1fr;
-            }
-
-            .who-am-i-content {
-                grid-template-columns: 1fr;
-            }
-
-            .who-am-i-image img {
-                width: 350px;
-                height: 350px;
-            }
-        }
-
-        /* ===== SCROLL ANIMATIONS ===== */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.8s ease, transform 0.8s ease;
-        }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
+        .logo-circle {
+            border: 3px solid transparent;
+            background: linear-gradient(#0d0d1a, #0d0d1a) padding-box, linear-gradient(135deg, #7B3FE4, #00B4D8) border-box;
+            border-radius: 9999px;
         }
     </style>
 </head>
 
-<body>
-    <div class="bg-gradient"></div>
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 transition-colors duration-300 scroll-smooth">
 
-    <!-- HEADER -->
-    <header id="header">
-        <nav>
-            <div class="logo" onclick="scrollToTop()">
-                <img src="IMG/logo-spm.png" alt="SPM Agency - Expertos en Marketing Digital e IA">
-            </div>
-            <div class="nav-links">
-                <a href="#como-trabajamos">Cómo Trabajamos</a>
-                <a href="#problemas">Problemas</a>
-                <a href="#solution">Solución</a>
-                <a href="#quien-soy">Quién Soy</a>
-                <a href="#agendar" class="cta-btn">📅 Agendar Consultoría</a>
-            </div>
-            <div class="nav-spacer"></div>
-        </nav>
-    </header>
-
-    <!-- Scroll to top button -->
-    <div class="scroll-top" id="scrollTop" onclick="scrollToTop()">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-            <path d="M12 19V5M5 12l7-7 7 7" />
-        </svg>
-    </div>
-
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="hero-content">
-            <div class="badge">🚀 Sin Permanencia • Resultados Medibles</div>
-            <h1>Transforma tu Negocio con Marketing Digital e IA que Genera Resultados Reales</h1>
-            <p>Dejamos las promesas vacías para otros. Aquí solo hablamos con datos, transparencia y ROI tangible. Sin
-                trucos, sin vendehúmos.</p>
-
-            <div class="hero-cta-group">
-                <a href="#agendar" class="cta-btn">📞 Agenda tu Consultoría Gratuita</a>
-                <a href="#como-trabajamos" class="cta-btn-secondary">Ver Cómo Funciona</a>
-            </div>
-
-            <div class="trust-indicators">
-                <div class="trust-item fade-in">
-                    <div class="trust-number">3.5x</div>
-                    <div class="trust-label">ROI Promedio</div>
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 w-full border-b border-slate-800 bg-background-dark/90 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <!-- Logo -->
+                <div class="flex items-center gap-3">
+                    <a href="/" class="flex items-center gap-3">
+                        <div
+                            class="logo-circle w-10 h-10 overflow-hidden flex items-center justify-center flex-shrink-0">
+                            <img src="IMG/logo-spm.png" alt="SPM Logo" class="w-9 h-9 object-cover rounded-full" />
+                        </div>
+                        <span class="text-lg font-black tracking-tight uppercase brand-gradient-text">SPM Design
+                            Agency</span>
+                    </a>
                 </div>
-                <div class="trust-item fade-in">
-                    <div class="trust-number">14</div>
-                    <div class="trust-label">Meses Recuperación</div>
+                <!-- Desktop nav -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a class="text-sm font-medium hover:text-purple-400 transition-colors" href="#problem">Problema</a>
+                    <a class="text-sm font-medium hover:text-purple-400 transition-colors" href="#solution">Agentes</a>
+                    <a class="text-sm font-medium hover:text-purple-400 transition-colors"
+                        href="trabajos.html">Trabajos</a>
+                    <a class="text-sm font-medium hover:text-purple-400 transition-colors" href="#sobre-mi">Sobre Mí</a>
+                    <a class="px-5 py-2 rounded-lg text-sm font-bold text-white brand-gradient hover:opacity-90 transition-opacity shadow-lg"
+                        href="#diagnosis">
+                        Solicitar Diagnóstico
+                    </a>
                 </div>
-                <div class="trust-item fade-in">
-                    <div class="trust-number">100%</div>
-                    <div class="trust-label">Transparencia</div>
+                <!-- Mobile menu button -->
+                <button class="md:hidden p-2 rounded-lg text-slate-400 hover:text-white"
+                    onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col gap-3">
+                    <a class="text-sm font-medium hover:text-purple-400 transition-colors py-2"
+                        href="#problem">Problema</a>
+                    <a class="text-sm font-medium hover:text-purple-400 transition-colors py-2"
+                        href="#solution">Agentes</a>
+                    <a class="text-sm font-medium hover:text-purple-400 transition-colors py-2"
+                        href="trabajos.html">Trabajos</a>
+                    <a class="text-sm font-medium hover:text-purple-400 transition-colors py-2" href="#sobre-mi">Sobre
+                        Mí</a>
+                    <a class="px-5 py-2 rounded-lg text-sm font-bold text-white brand-gradient text-center"
+                        href="#diagnosis">Solicitar Diagnóstico</a>
                 </div>
             </div>
         </div>
-    </section>
+    </nav>
 
-    <!-- HOW WE WORK SECTION -->
-    <section id="como-trabajamos" class="how-we-work">
-        <div class="container">
-            <div class="section-header fade-in">
-                <div class="section-tag">💡 Metodología Probada</div>
-                <h2>Cómo Trabajamos</h2>
-                <p class="section-description">Un proceso simple, directo y enfocado en resultados. Sin complicaciones,
-                    sin promesas vacías.</p>
-            </div>
-
-            <div class="process-steps">
-                <div class="process-step fade-in">
-                    <div class="step-number">01</div>
-                    <div class="step-icon">🔍</div>
-                    <h3>Analizamos</h3>
-                    <p>Auditamos tu presencia digital actual, identificamos oportunidades perdidas y diseñamos una
-                        estrategia basada en datos reales de tu mercado.</p>
-                </div>
-
-                <div class="process-step fade-in">
-                    <div class="step-number">02</div>
-                    <div class="step-icon">⚡</div>
-                    <h3>Estrategia</h3>
-                    <p>Creamos un plan de acción personalizado con objetivos claros, métricas específicas y un timeline
-                        realista. Sin promesas exageradas.</p>
-                </div>
-
-                <div class="process-step fade-in">
-                    <div class="step-number">03</div>
-                    <div class="step-icon">🚀</div>
-                    <h3>Actuamos</h3>
-                    <p>Implementamos, optimizamos y escalamos. Tracking constante, informes transparentes y ajustes
-                        basados en resultados medibles.</p>
-                </div>
-            </div>
-
-            <div class="process-cta fade-in" style="text-align: center; margin-top: 3rem;">
-                <a href="#agendar" class="cta-btn">Quiero Aplicar Esta Metodología</a>
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-32 overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
+            <div class="absolute top-[-5%] left-[-5%] w-[50%] h-[50%] bg-purple-600/20 blur-[140px] rounded-full"></div>
+            <div class="absolute bottom-[-5%] right-[-5%] w-[40%] h-[40%] bg-cyan-400/10 blur-[120px] rounded-full">
             </div>
         </div>
-    </section>
-
-    <!-- PROBLEMS SECTION -->
-    <section id="problemas" class="problems">
-        <div class="container">
-            <div class="section-header fade-in">
-                <div class="section-tag">⚠️ Problemas Reales</div>
-                <h2>¿Te Suena Familiar?</h2>
-                <p class="section-description">Si has sentido alguno de estos dolores, no estás solo. Son las señales de
-                    que necesitas un partner de confianza.</p>
-            </div>
-
-            <div class="problems-slider-container" id="problemsSlider">
-                <div class="problems-slider">
-                    <!-- Slide 1 -->
-                    <div class="problem-slide">
-                        <div class="problem-card">
-                            <div class="problem-icon">😤</div>
-                            <h3>Ya Invertiste y No Funcionó</h3>
-                            <p>Gastaste miles en una web que no trae clientes. El "experto" desapareció. Te prometieron
-                                la luna
-                                y te dieron migajas.</p>
-                        </div>
-                        <div class="problem-card">
-                            <div class="problem-icon">🤔</div>
-                            <h3>No Sabes Qué Hacen con tu Dinero</h3>
-                            <p>Informes incomprensibles llenos de tecnicismos. Números que no entiendes. Cero
-                                transparencia
-                                sobre el retorno real.</p>
-                        </div>
-                    </div>
-
-                    <!-- Slide 2 -->
-                    <div class="problem-slide">
-                        <div class="problem-card">
-                            <div class="problem-icon">📉</div>
-                            <h3>Tu Competencia Te Está Ganando</h3>
-                            <p>Aparecen primero en Google. Tienen reseñas impecables. Venden online mientras tú sigues
-                                offline.
-                            </p>
-                        </div>
-                        <div class="problem-card">
-                            <div class="problem-icon">⏰</div>
-                            <h3>No Tienes Tiempo Para Esto</h3>
-                            <p>Tu negocio te consume. Las redes las lleva el "sobrino". Necesitas alguien que se ocupe
-                                de todo,
-                                de verdad.</p>
-                        </div>
-                    </div>
-
-                    <!-- Slide 3 -->
-                    <div class="problem-slide">
-                        <div class="problem-card">
-                            <div class="problem-icon">🔒</div>
-                            <h3>Miedo a Contratos Largos</h3>
-                            <p>Permanencia de 12 meses. Cláusulas abusivas. Atado a una agencia que no entrega
-                                resultados.</p>
-                        </div>
-                        <div class="problem-card">
-                            <div class="problem-icon">💸</div>
-                            <h3>Web Obsoleta que No Convierte</h3>
-                            <p>No se ve en móviles. Carga lenta. Diseño de hace 5 años. Tus visitas se van sin comprar.
-                            </p>
-                        </div>
-                    </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-bold uppercase tracking-widest mb-8 animate-pulse-glow">
+                    <span class="relative flex h-2 w-2">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-purple-400"></span>
+                    </span>
+                    Marketing Digital &amp; AI Automations · Impulsamos tu negocio
                 </div>
-
-                <div class="slider-dots">
-                    <span class="slider-dot active" onclick="goToSlide(0)"></span>
-                    <span class="slider-dot" onclick="goToSlide(1)"></span>
-                    <span class="slider-dot" onclick="goToSlide(2)"></span>
+                <h1 class="text-5xl md:text-7xl font-black leading-tight tracking-tight mb-8 reveal animate-fade-up">
+                    No solo negocios locales.<br />
+                    <span class="brand-gradient-text">Impulsamos empresas digitalmente.</span>
+                </h1>
+                <p
+                    class="text-lg md:text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed reveal animate-fade-up delay-200">
+                    Transformamos cualquier negocio — local o digital — en un sistema autónomo que vende, atiende y
+                    crece 24/7 mediante agentes de IA y estrategia de marketing.
+                </p>
+                <div
+                    class="flex flex-col sm:flex-row items-center justify-center gap-4 reveal animate-fade-up delay-300">
+                    <a class="w-full sm:w-auto px-8 py-4 text-white font-bold rounded-xl text-lg hover:scale-105 transition-transform shadow-xl brand-gradient"
+                        href="#diagnosis">
+                        Solicitar Diagnóstico Estratégico Gratuito
+                    </a>
+                    <a class="w-full sm:w-auto px-8 py-4 bg-slate-800 text-white font-bold rounded-xl text-lg border border-slate-700 hover:bg-slate-700 transition-colors"
+                        href="https://wa.link/7k0oxm" target="_blank">
+                        Hablar con un Experto
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- SOLUTION SECTION -->
-    <section id="solution" class="solution">
-        <div class="container">
-            <div class="solution-content">
-                <div class="solution-text fade-in">
-                    <div class="section-tag">✨ Nuestra Solución</div>
-                    <h2>Marketing Digital e IA que Realmente Funciona</h2>
-                    <p>No vendemos humo. Vendemos resultados medibles, transparencia radical y tecnología que trabaja
-                        para ti 24/7.</p>
-
-                    <ul class="features-list">
-                        <li><strong>Sin Permanencia:</strong> Puedes irte cuando quieras (pero no querrás)</li>
-                        <li><strong>Informes Claros:</strong> En español, sin tecnicismos, solo datos que importan</li>
-                        <li><strong>IA Agéntica:</strong> Empleados digitales que automatizan tu negocio</li>
-                        <li><strong>SEO Local:</strong> Aparece primero en Google en tu zona</li>
-                        <li><strong>Landing Pages y Sitios Web:</strong> Diseños que convierten visitas en clientes</li>
-                        <li><strong>Kit Digital:</strong> Te ayudamos con las subvenciones públicas disponibles</li>
-                    </ul>
-
-                    <a href="#agendar" class="cta-btn">Quiero una Consultoría Gratuita</a>
-                </div>
-
-                <div class="solution-visual fade-in">
-                    <div class="stats-grid">
-                        <div class="stat-box">
-                            <h3>85%</h3>
-                            <p>Automatización Atención al Cliente</p>
+            <!-- Hero visual -->
+            <div
+                class="mt-20 rounded-2xl overflow-hidden border border-slate-800 shadow-2xl bg-slate-900/50 p-2 reveal animate-fade-up delay-400">
+                <div
+                    class="aspect-video w-full bg-slate-800 rounded-xl flex items-center justify-center relative group">
+                    <div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent rounded-xl">
+                    </div>
+                    <div class="absolute inset-0 flex items-center justify-center flex-col gap-4 z-10">
+                        <div
+                            class="brand-gradient text-white px-6 py-3 rounded-full text-sm font-bold uppercase tracking-widest">
+                            Marketing Digital · IA · Automatización
                         </div>
-                        <div class="stat-box">
-                            <h3>50%</h3>
-                            <p>Reducción CAC Promedio</p>
-                        </div>
-                        <div class="stat-box">
-                            <h3>120h</h3>
-                            <p>Ahorro Mensual en Procesos</p>
-                        </div>
-                        <div class="stat-box">
-                            <h3>TOP 3</h3>
-                            <p>Posición Google Maps</p>
+                        <div class="grid grid-cols-3 gap-8 text-center">
+                            <div class="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
+                                <div class="text-3xl font-black brand-gradient-text">+3X</div>
+                                <div class="text-xs text-slate-400 font-bold uppercase mt-1">Ventas</div>
+                            </div>
+                            <div class="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
+                                <div class="text-3xl font-black brand-gradient-text">24/7</div>
+                                <div class="text-xs text-slate-400 font-bold uppercase mt-1">Activo</div>
+                            </div>
+                            <div class="bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10">
+                                <div class="text-3xl font-black brand-gradient-text">-60%</div>
+                                <div class="text-xs text-slate-400 font-bold uppercase mt-1">Costos</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1800,883 +334,540 @@
         </div>
     </section>
 
-    <!-- WHO AM I SECTION -->
-    <section id="quien-soy" class="who-am-i">
-        <div class="container">
-            <div class="who-am-i-content fade-in">
-                <div class="who-am-i-image">
-                    <img src="IMG/sobre-mi-2.png"
-                        alt="Kristian Krasimirov N. - Fundador y Especialista en IA SPM Agency">
+    <!-- Digital Reach Banner -->
+    <section
+        class="py-10 bg-gradient-to-r from-purple-900/30 via-background-dark to-cyan-900/20 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+                <div>
+                    <h2 class="text-2xl font-black brand-gradient-text">No solo negocios locales. Impulsamos CUALQUIER
+                        empresa digitalmente.</h2>
+                    <p class="text-slate-400 mt-1">Ecommerce, PYMES, startups, profesionales independientes, clínicas,
+                        inmobiliarias y más.</p>
                 </div>
-                <div class="who-am-i-text">
-                    <div class="section-tag">👨‍💼 Quién Soy</div>
-                    <h2>De Repartidor a Ayudar a Empresarios como Tú</h2>
+                <a href="#solution"
+                    class="flex-shrink-0 px-6 py-3 brand-gradient text-white rounded-xl font-bold hover:opacity-90 transition-opacity">
+                    Ver Agentes IA →
+                </a>
+            </div>
+        </div>
+    </section>
 
-                    <p>Soy <strong>Kristian Krasimirov N.</strong>, Fundador y CEO de SPM – Agency.</p>
-
-                    <p>Hace unos años, estaba en la calle repartiendo paquetes bajo el sol, la lluvia y el frío. Veía a
-                        dueños de negocios trabajando 12 horas al día, completamente desbordados, sin tiempo para crecer
-                        ni estrategia digital clara.</p>
-
-                    <p>Eso me tocó la fibra. <strong>¿Por qué tantas empresas buenas fracasan solo porque nadie les
-                            cuenta en Internet?</strong></p>
-
-                    <p>Decidí cambiar eso. Me formé en marketing digital, automatización con IA y SEO. Dejé de repartir
-                        paquetes y comencé a ayudar a empresarios a conseguir más clientes, aumentar su facturación y
-                        recuperar su tiempo.</p>
-
-                    <p>Mi misión con SPM – Agency es simple: <strong>convertir tu negocio en una máquina de generar
-                            clientes con marketing digital que realmente funciona.</strong></p>
-
-                    <p>Sin venderte humo. Sin atarte con permanencias. Solo resultados medibles y transparencia total.
+    <!-- The Problem -->
+    <section class="py-24 bg-slate-900/40" id="problem">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="reveal animate-fade-left">
+                    <h2 class="text-sm font-bold brand-gradient-text uppercase tracking-[0.2em] mb-4">El Problema</h2>
+                    <h3 class="text-4xl md:text-5xl font-black mb-6">Tu negocio es <span
+                            class="italic underline decoration-purple-400/40">frágil</span> si depende solo de humanos.
+                    </h3>
+                    <p class="text-slate-400 text-lg leading-relaxed mb-8">
+                        El escalamiento tradicional es lento, costoso y propenso a errores. Desde negocios locales hasta
+                        empresas digitales internacionales — la solución es la misma: automatización inteligente.
                     </p>
-
-                    <a href="#agendar" class="cta-btn">📞 Hablemos de tu Proyecto</a>
+                    <ul class="space-y-6">
+                        <li class="flex gap-4 items-start reveal animate-fade-left delay-100">
+                            <div
+                                class="mt-1 p-2 rounded-lg bg-red-500/10 border border-red-500/20 text-red-400 flex-shrink-0">
+                                <span class="material-symbols-outlined">trending_down</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl">Ventas Perdidas</h4>
+                                <p class="text-slate-400">Tu negocio duerme cuando los clientes están listos para
+                                    comprar. Ogni minuto de espera va al competidor.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4 items-start reveal animate-fade-left delay-200">
+                            <div
+                                class="mt-1 p-2 rounded-lg bg-orange-500/10 border border-orange-500/20 text-orange-400 flex-shrink-0">
+                                <span class="material-symbols-outlined">timer_off</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl">Tareas Manuales Infinitas</h4>
+                                <p class="text-slate-400">Tu equipo gasta el 70% del tiempo en procesos repetitivos que
+                                    la IA puede hacer en segundos.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4 items-start reveal animate-fade-left delay-300">
+                            <div
+                                class="mt-1 p-2 rounded-lg bg-yellow-500/10 border border-yellow-500/20 text-yellow-400 flex-shrink-0">
+                                <span class="material-symbols-outlined">public_off</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl">Sin Presencia Digital Real</h4>
+                                <p class="text-slate-400">Una web bonita sin estrategia no vende. Sin marketing digital
+                                    activo, tu empresa es invisible online.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Stats cards -->
+                <div class="relative reveal animate-fade-right">
+                    <div class="absolute -inset-4 bg-purple-500/10 blur-3xl rounded-full"></div>
+                    <div class="relative grid grid-cols-2 gap-4">
+                        <div class="space-y-4 pt-12">
+                            <div
+                                class="stat-card bg-slate-800 p-6 rounded-xl border border-slate-700 shadow-xl text-center">
+                                <div class="text-3xl font-black text-red-400 mb-2">45%</div>
+                                <div class="text-xs uppercase font-bold tracking-tighter opacity-60">Leads ignorados
+                                </div>
+                            </div>
+                            <div
+                                class="stat-card bg-slate-800 p-6 rounded-xl border border-slate-700 shadow-xl text-center">
+                                <div class="text-3xl font-black brand-gradient-text mb-2">24h</div>
+                                <div class="text-xs uppercase font-bold tracking-tighter opacity-60">Tiempo de respuesta
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div
+                                class="stat-card bg-slate-800 p-6 rounded-xl border border-slate-700 shadow-xl text-center">
+                                <div class="text-3xl font-black brand-gradient-text mb-2">60%</div>
+                                <div class="text-xs uppercase font-bold tracking-tighter opacity-60">Costo operativo
+                                    fijo</div>
+                            </div>
+                            <div
+                                class="stat-card bg-slate-800 p-6 rounded-xl border border-slate-700 shadow-xl text-center">
+                                <div class="text-3xl font-black text-red-400 mb-2">3.2x</div>
+                                <div class="text-xs uppercase font-bold tracking-tighter opacity-60">Más errores humanos
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA SECTION -->
-    <section id="agendar" class="cta-section">
-        <div class="container">
-            <div class="cta-container fade-in">
-                <h2>Agenda tu Consultoría Estratégica Gratuita</h2>
-                <p>30 minutos donde analizamos tu negocio y te mostramos cómo podemos ayudarte. <strong>Sin compromiso,
-                        sin vendehúmos.</strong></p>
-
-                <div class="calendar-container">
-                    <form id="bookingForm" class="booking-form" onsubmit="return false;">
-                        <!-- Web3Forms (Key loaded from js/config.js) -->
-                        <input type="hidden" name="access_key" id="web3forms_key">
-                        <input type="hidden" name="subject" value="Nueva Consultoría desde SPM Agency">
-                        <input type="hidden" name="from_name" value="SPM Agency Landing Page">
-
-                        <div class="form-group">
-                            <label for="nombre">Nombre Completo *</label>
-                            <input type="text" id="nombre" name="name" required placeholder="Ej: Laura García">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="empresa">Nombre de tu Empresa (Opcional)</label>
-                            <input type="text" id="empresa" name="empresa" placeholder="Tu Empresa S.L.">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Tu mejor E-mail *</label>
-                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="telefono">Teléfono (WhatsApp) *</label>
-                            <input type="tel" id="telefono" name="telefono" required placeholder="+34 600 000 000">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="fecha">Fecha Preferida *</label>
-                            <input type="date" id="fecha" name="fecha" required min="2026-02-04">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="hora">Hora Preferida *</label>
-                            <select id="hora" name="hora" required>
-                                <option value="">Selecciona una hora</option>
-                                <option value="09:00">09:00 AM</option>
-                                <option value="09:30">09:30 AM</option>
-                                <option value="10:00">10:00 AM</option>
-                                <option value="10:30">10:30 AM</option>
-                                <option value="11:00">11:00 AM</option>
-                                <option value="11:30">11:30 AM</option>
-                                <option value="12:00">12:00 PM</option>
-                                <option value="12:30">12:30 PM</option>
-                                <option value="13:00">13:00 PM</option>
-                                <option value="14:00">14:00 PM</option>
-                                <option value="15:00">15:00 PM</option>
-                                <option value="15:30">15:30 PM</option>
-                                <option value="16:00">16:00 PM</option>
-                                <option value="16:30">16:30 PM</option>
-                                <option value="17:00">17:00 PM</option>
-                                <option value="17:30">17:30 PM</option>
-                                <option value="18:00">18:00 PM</option>
-                                <option value="18:30">18:30 PM</option>
-                                <option value="19:00">19:00 PM</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="sector">Sector de tu Negocio *</label>
-                            <select id="sector" name="sector" required>
-                                <option value="">Selecciona tu sector</option>
-                                <option value="salud">Salud (Clínicas, Dentistas, Psicólogos)</option>
-                                <option value="educacion">Educación (Escuelas, Formación)</option>
-                                <option value="legal">Legal (Abogados, Administradores)</option>
-                                <option value="retail">Retail / Tiendas</option>
-                                <option value="turismo">Turismo y Hostelería</option>
-                                <option value="b2b">Servicios B2B</option>
-                                <option value="reformas">Reformas y Construcción</option>
-                                <option value="inmobiliaria">Inmobiliaria</option>
-                                <option value="ecommerce">E-commerce</option>
-                                <option value="manufactura">Manufactura / Industria</option>
-                                <option value="otro">Otro</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="desafio">¿Cuál es tu mayor desafío ahora? *</label>
-                            <textarea id="desafio" name="message" required
-                                placeholder="Ej: Mi web no trae clientes, mis competidores aparecen antes en Google..."></textarea>
-                        </div>
-
-                        <button type="submit" class="cta-btn form-submit">📅 Reservar mi Consultoría GRATUITA</button>
-                    </form>
-
-                    <script>
-                        // FINAL ODOO STABILITY FIX: IMMEDIATE SCRIPT EXECUTION
-                        (function () {
-                            const handleForm = async function (e) {
-                                if (e.target && (e.target.id === 'bookingForm' || e.target.closest('#bookingForm'))) {
-                                    e.preventDefault();
-                                    e.stopPropagation();
-
-                                    const form = e.target.id === 'bookingForm' ? e.target : e.target.closest('#bookingForm');
-                                    const submitBtn = form.querySelector('.form-submit');
-                                    if (!submitBtn) return;
-
-                                    const originalBtnText = submitBtn.textContent;
-
-                                    // Load key from config
-                                    const accessKey = typeof CONFIG !== 'undefined' ? CONFIG.WEB3FORMS_ACCESS_KEY : '';
-                                    const keyInput = form.querySelector('#web3forms_key');
-                                    if (keyInput) keyInput.value = accessKey;
-
-                                    console.log('SPM DEBUG: Intercepting submission via URLSearchParams strategy');
-
-                                    submitBtn.textContent = '⏳ Enviando...';
-                                    submitBtn.disabled = true;
-
-                                    try {
-                                        const formData = new FormData(form);
-                                        // Web3Forms high-stability method: x-www-form-urlencoded
-                                        const searchParams = new URLSearchParams();
-                                        for (const pair of formData) {
-                                            searchParams.append(pair[0], pair[1]);
-                                        }
-
-                                        const response = await fetch('https://api.web3forms.com/submit', {
-                                            method: 'POST',
-                                            headers: {
-                                                'Content-Type': 'application/x-www-form-urlencoded',
-                                                'Accept': 'application/json'
-                                            },
-                                            body: searchParams.toString()
-                                        });
-
-                                        const result = await response.json();
-                                        console.log('SPM DEBUG: Result received', result);
-
-                                        if (result.success) {
-                                            // 1. Success Popup
-                                            const popup = document.getElementById('successPopup');
-                                            if (popup) popup.classList.add('show');
-
-                                            // 2. Cleanup & Navigation
-                                            const objectData = Object.fromEntries(formData.entries());
-                                            sessionStorage.setItem('consultaData', JSON.stringify(objectData));
-
-                                            document.querySelectorAll('section').forEach(s => {
-                                                if (s.id !== 'thankYouSection') s.style.display = 'none';
-                                            });
-                                            if (document.querySelector('header')) document.querySelector('header').style.display = 'none';
-                                            if (document.querySelector('footer')) document.querySelector('footer').style.display = 'none';
-
-                                            setTimeout(() => {
-                                                if (popup) popup.classList.remove('show');
-                                                const ty = document.getElementById('thankYouSection');
-                                                if (ty) ty.classList.add('show');
-                                                window.scrollTo(0, 0);
-                                            }, 3000);
-
-                                            form.reset();
-                                        } else {
-                                            throw new Error(result.message || 'Error en el envío');
-                                        }
-                                    } catch (err) {
-                                        console.error('SPM DEBUG ERROR:', err);
-                                        alert('Error al enviar. Por favor, revisa tu conexión e inténtalo de nuevo.');
-                                        submitBtn.textContent = originalBtnText;
-                                        submitBtn.disabled = false;
-                                    }
-                                }
-                            };
-
-                            // Multi-layer listener: Direct and document
-                            const formEl = document.getElementById('bookingForm');
-                            if (formEl) formEl.addEventListener('submit', handleForm, true);
-                            document.addEventListener('submit', handleForm, true);
-                        })();
-                    </script>
+    <!-- The Solution: AI Agents -->
+    <section class="py-24" id="solution">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20 reveal animate-fade-up">
+                <h2 class="font-bold tracking-widest uppercase mb-4 brand-gradient-text">La Solución</h2>
+                <h3 class="text-4xl md:text-5xl font-black mb-6">Tu Ecosistema de Agentes IA</h3>
+                <p class="text-slate-400 max-w-2xl mx-auto text-lg">
+                    No son solo bots. Son empleados digitales entrenados con tu conocimiento, listos para ejecutar con
+                    perfección quirúrgica — en negocios locales o empresas digitales globales.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Prospector -->
+                <div
+                    class="agent-card group bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-purple-500/50 reveal animate-fade-up delay-100">
+                    <div class="mb-6 p-4 rounded-xl bg-purple-500/10 border border-purple-500/20 inline-block">
+                        <span class="material-symbols-outlined brand-gradient-text text-4xl">radar</span>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-3">Agente Prospector</h4>
+                    <p class="text-slate-400 mb-6">Identifica, califica y contacta clientes potenciales en LinkedIn,
+                        Email y Web de forma masiva — local o internacionalmente.</p>
+                    <div class="text-sm font-bold brand-gradient-text flex items-center gap-2">
+                        Impacto: Pipeline lleno 24/7 <span class="material-symbols-outlined text-sm">trending_up</span>
+                    </div>
                 </div>
-
-                <p style="margin-top: 2rem; font-size: 0.9rem; color: var(--gray-text);">
-                    🔒 Tus datos están protegidos. 100% confidencial. Sin spam.
-                </p>
+                <!-- Cierre -->
+                <div
+                    class="agent-card group bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-purple-500/50 reveal animate-fade-up delay-200">
+                    <div class="mb-6 p-4 rounded-xl bg-cyan-500/10 border border-cyan-500/20 inline-block">
+                        <span class="material-symbols-outlined text-cyan-400 text-4xl">handshake</span>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-3">Closer Omnicanal</h4>
+                    <p class="text-slate-400 mb-6">Responde dudas, maneja objeciones y agenda citas en WhatsApp,
+                        Instagram y Messenger en segundos, sin importar el sector.</p>
+                    <div class="text-sm font-bold brand-gradient-text flex items-center gap-2">
+                        Impacto: +300% Tasa Conversión <span class="material-symbols-outlined text-sm">bolt</span>
+                    </div>
+                </div>
+                <!-- Teleoperador -->
+                <div
+                    class="agent-card group bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-purple-500/50 reveal animate-fade-up delay-300">
+                    <div class="mb-6 p-4 rounded-xl bg-purple-500/10 border border-purple-500/20 inline-block">
+                        <span class="material-symbols-outlined brand-gradient-text text-4xl">support_agent</span>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-3">Teleoperador IA</h4>
+                    <p class="text-slate-400 mb-6">Voz humana para llamadas salientes de confirmación o atención al
+                        cliente entrante — cero esperas, disponible 24/7.</p>
+                    <div class="text-sm font-bold brand-gradient-text flex items-center gap-2">
+                        Impacto: Zero Esperas Telefónicas <span
+                            class="material-symbols-outlined text-sm">phone_in_talk</span>
+                    </div>
+                </div>
+                <!-- Facturación -->
+                <div
+                    class="agent-card group bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-purple-500/50 reveal animate-fade-up delay-400">
+                    <div class="mb-6 p-4 rounded-xl bg-cyan-500/10 border border-cyan-500/20 inline-block">
+                        <span class="material-symbols-outlined text-cyan-400 text-4xl">receipt_long</span>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-3">Gestor Administrativo</h4>
+                    <p class="text-slate-400 mb-6">Automatiza facturas, cobros, conciliaciones bancarias y reportes
+                        fiscales sin un solo clic manual.</p>
+                    <div class="text-sm font-bold brand-gradient-text flex items-center gap-2">
+                        Impacto: Error Humano 0% <span class="material-symbols-outlined text-sm">check_circle</span>
+                    </div>
+                </div>
+                <!-- Marketing Digital -->
+                <div
+                    class="agent-card group bg-slate-900 p-8 rounded-2xl border border-slate-800 hover:border-purple-500/50 reveal animate-fade-up delay-100">
+                    <div class="mb-6 p-4 rounded-xl bg-purple-500/10 border border-purple-500/20 inline-block">
+                        <span class="material-symbols-outlined brand-gradient-text text-4xl">rocket_launch</span>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-3">Impulso Digital</h4>
+                    <p class="text-slate-400 mb-6">Estrategia de contenido, SEO, Ads y redes sociales para posicionar tu
+                        empresa online y atraer clientes de todo el mundo.</p>
+                    <div class="text-sm font-bold brand-gradient-text flex items-center gap-2">
+                        Impacto: Visibilidad Global <span class="material-symbols-outlined text-sm">public</span>
+                    </div>
+                </div>
+                <!-- Analista -->
+                <div
+                    class="agent-card group bg-gradient-to-br from-slate-900 to-slate-800 p-8 rounded-2xl border border-slate-800 hover:border-purple-500/50 reveal animate-fade-up delay-200">
+                    <div class="mb-6 p-4 rounded-xl bg-cyan-500/10 border border-cyan-500/20 inline-block">
+                        <span class="material-symbols-outlined text-cyan-400 text-4xl">insights</span>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-3">Analista Estratégico</h4>
+                    <p class="text-slate-400 mb-6">Analiza miles de datos en tiempo real para predecir tendencias y
+                        optimizar rentabilidad en cualquier modelo de negocio.</p>
+                    <div class="text-sm font-bold brand-gradient-text flex items-center gap-2">
+                        Impacto: Decisiones Basadas en Datos <span
+                            class="material-symbols-outlined text-sm">query_stats</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- THANK YOU SECTION (Hidden by default) -->
-    <section id="thankYouSection" class="thank-you-section">
-        <div class="thank-you-content fade-in">
-            <div style="text-align: center; margin-bottom: 2rem;">
-                <img src="IMG/logo-spm.png" alt="SPM Agency Logo"
-                    style="width: 100px; height: 100px; border-radius: 50%; border: 2px solid var(--primary-purple); padding: 5px; background: rgba(123, 44, 191, 0.1);">
+    <!-- Metrics -->
+    <section class="py-20 brand-gradient text-white" id="results">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                <div class="reveal animate-count">
+                    <div class="text-6xl font-black mb-2">+3X</div>
+                    <p class="font-bold uppercase tracking-widest text-sm opacity-80">Conversión de Ventas</p>
+                </div>
+                <div class="reveal animate-count delay-200">
+                    <div class="text-6xl font-black mb-2">-60%</div>
+                    <p class="font-bold uppercase tracking-widest text-sm opacity-80">Costos Operativos</p>
+                </div>
+                <div class="reveal animate-count delay-400">
+                    <div class="text-6xl font-black mb-2">24/7</div>
+                    <p class="font-bold uppercase tracking-widest text-sm opacity-80">Disponibilidad Total</p>
+                </div>
             </div>
-            <h1>🎉 ¡Solicitud Recibida con Éxito!</h1>
-            <p>Gracias por confiar en SPM – Agency. Hemos recibido tu solicitud y nos pondremos en contacto contigo en
-                menos de 24 horas para confirmar tu consultoría estratégica gratuita.</p>
-
-            <div class="thank-you-buttons">
-                <a href="#" id="googleCalendarBtn" class="thank-you-btn">
-                    📅 Guardar Consultoría en Google Calendar
-                </a>
-                <a href="https://wa.link/74ie5q" target="_blank" class="thank-you-btn secondary">
-                    💬 Hablar con un asesor en WhatsApp
-                </a>
-            </div>
-
-            <p style="margin-top: 3rem; font-size: 1rem;">Revisa tu email (y la carpeta de spam) para más detalles.</p>
         </div>
     </section>
 
-    <!-- Success Popup Modal -->
-    <div id="successPopup" class="modal">
-        <div class="modal-content success-popup">
-            <h2>✅ ¡Datos Enviados Correctamente!</h2>
-            <p style="font-size: 1.1rem; margin-top: 1rem;">Tu consultoría ha sido agendada. Te redirigimos en breve...
-            </p>
-        </div>
-    </div>
-
-    <!-- Legal Modals -->
-    <!-- Privacy Policy Modal -->
-    <div id="privacyModal" class="modal" onclick="if(event.target === this) closeModal('privacy')">
-        <div class="modal-content">
-            <button class="modal-close" onclick="closeModal('privacy')">&times;</button>
-            <h2>Política de Privacidad</h2>
-
-            <p>En cumplimiento de lo dispuesto por el <strong>Reglamento (UE) 2016/679 (RGPD)</strong> y la <strong>Ley
-                    Orgánica 3/2018 (LOPDGDD)</strong>, te informamos sobre el tratamiento de tus datos personales:</p>
-
-            <h3>1. Responsable del Tratamiento</h3>
-            <p><strong>Titular:</strong> Kristian Krasimirov N.</p>
-            <p><strong>Nombre Comercial:</strong> SPM – Agency</p>
-            <p><strong>Email:</strong> <a href="mailto:solucionesworld2016@gmail.com">solucionesworld2016@gmail.com</a>
-            </p>
-            <p><strong>Actividad:</strong> Marketing Digital, Automatización con IA y Consultoría Estratégica.</p>
-
-            <h3>2. Finalidad del Tratamiento</h3>
-            <p>Tratamos tus datos con las siguientes finalidades:</p>
-            <ul>
-                <li><strong>Gestión de Consultas:</strong> Atender las dudas y solicitudes enviadas a través de nuestros
-                    formularios.</li>
-                <li><strong>Prestación de Servicios:</strong> Gestionar la relación comercial y la ejecución de los
-                    servicios contratados de SEO, IA o desarrollo web.</li>
-                <li><strong>Comunicaciones Comerciales:</strong> Envío de promociones o información sobre novedades,
-                    siempre que contemos con tu consentimiento explícito.</li>
-                <li><strong>Mejora del Sitio:</strong> Análisis estadístico de navegación para optimizar la experiencia
-                    del usuario.</li>
-            </ul>
-
-            <h3>3. Base Legal para el Tratamiento</h3>
-            <p>La base legal que legitima el tratamiento es:</p>
-            <ul>
-                <li>El <strong>consentimiento</strong> expreso del usuario al completar los formularios.</li>
-                <li>La <strong>ejecución de un contrato</strong> o precontrato para la prestación de servicios
-                    profesionales.</li>
-                <li>El <strong>interés legítimo</strong> del responsable para mejorar la calidad de los servicios.</li>
-            </ul>
-
-            <h3>4. Conservación de los Datos</h3>
-            <p>Tus datos se conservarán durante el tiempo estrictamente necesario para cumplir con la finalidad para la
-                que fueron recabados, mientras se mantenga la relación comercial o durante los años necesarios para
-                cumplir con las obligaciones legales.</p>
-
-            <h3>5. Destinatarios de los Datos</h3>
-            <p>Tus datos no se cederán a terceros, salvo obligación legal. No obstante, para el funcionamiento de este
-                sitio hacemos uso de proveedores tecnológicos que actúan como encargados del tratamiento (como Google
-                Analytics, Web3Forms o servicios de hosting), los cuales cumplen con los estándares de seguridad
-                europeos.</p>
-
-            <h3>6. Tus Derechos</h3>
-            <p>Como titular de los datos, tienes derecho a:</p>
-            <ul>
-                <li><strong>Acceso:</strong> Saber qué datos estamos tratando sobre ti.</li>
-                <li><strong>Rectificación:</strong> Corregir información inexacta o incompleta.</li>
-                <li><strong>Supresión:</strong> Solicitar la eliminación de tus datos cuando ya no sean necesarios.</li>
-                <li><strong>Limitación:</strong> Solicitar que suspendamos temporalmente el tratamiento de tus datos.
-                </li>
-                <li><strong>Portabilidad:</strong> Recibir tus datos en un formato estructurado y de uso común.</li>
-                <li><strong>Oposición:</strong> Oponerte al tratamiento de tus datos por motivos basados en tu situación
-                    particular.</li>
-            </ul>
-            <p>Para ejercer estos derechos, solo tienes que enviar un correo a <a
-                    href="mailto:solucionesworld2016@gmail.com">solucionesworld2016@gmail.com</a> adjuntando copia de tu
-                DNI o documento identificativo equivalente.</p>
-
-            <h3>7. Seguridad de los Datos</h3>
-            <p>Hemos implementado todas las medidas de seguridad técnicas y organizativas necesarias para garantizar la
-                integridad, confidencialidad y disponibilidad de tus datos personales, evitando su pérdida, alteración o
-                acceso no autorizado.</p>
-
-            <p style="margin-top: 2rem; border-top: 1px solid rgba(123, 44, 191, 0.2); padding-top: 1rem;"><em>Última
-                    actualización: Febrero 2026. SPM – Agency se reserva el derecho a modificar esta política para
-                    adaptarla a novedades legislativas.</em></p>
-        </div>
-    </div>
-
-    <!-- Cookies Policy Modal -->
-    <div id="cookiesModal" class="modal" onclick="if(event.target === this) closeModal('cookies')">
-        <div class="modal-content">
-            <button class="modal-close" onclick="closeModal('cookies')">&times;</button>
-            <h2>Política de Cookies</h2>
-
-            <p>SPM – Agency utiliza cookies y tecnologías similares para mejorar tu experiencia de navegación, analizar
-                el tráfico del sitio y personalizar el contenido.</p>
-
-            <h3>1. ¿Qué son las Cookies?</h3>
-            <p>Las cookies son pequeños archivos de texto que los sitios web almacenan en tu navegador o dispositivo.
-                Permiten recordar información sobre tu visita, como tu idioma preferido y otras opciones, lo que
-                facilita tu próxima visita y hace que el sitio te resulte más útil.</p>
-
-            <h3>2. Tipos de Cookies que Utilizamos</h3>
-            <table
-                style="width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.9rem; color: var(--light-text);">
-                <thead>
-                    <tr style="border-bottom: 2px solid var(--primary-purple); text-align: left;">
-                        <th style="padding: 10px;">Tipo</th>
-                        <th style="padding: 10px;">Finalidad</th>
-                        <th style="padding: 10px;">Duración</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr style="border-bottom: 1px solid rgba(123, 44, 191, 0.2);">
-                        <td style="padding: 10px;"><strong>Técnicas</strong></td>
-                        <td style="padding: 10px;">Esenciales para el funcionamiento del sitio (ej. seguridad, carga de
-                            recursos).</td>
-                        <td style="padding: 10px;">Sesión</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid rgba(123, 44, 191, 0.2);">
-                        <td style="padding: 10px;"><strong>Analíticas</strong></td>
-                        <td style="padding: 10px;">Google Analytics: Recopilan información anónima sobre cómo los
-                            usuarios navegan por la web.</td>
-                        <td style="padding: 10px;">Hasta 2 años</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid rgba(123, 44, 191, 0.2);">
-                        <td style="padding: 10px;"><strong>Funcionales</strong></td>
-                        <td style="padding: 10px;">Permiten recordar preferencias del usuario (ej. aceptación de
-                            cookies).</td>
-                        <td style="padding: 10px;">Persistentes</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h3>3. Cookies de Terceros</h3>
-            <p>Este sitio utiliza servicios de terceros que pueden instalar cookies en tu dispositivo:</p>
-            <ul>
-                <li><strong>Google Analytics:</strong> Para medir el tráfico y uso del sitio. <a
-                        href="https://policies.google.com/technologies/cookies" target="_blank"
-                        style="color: var(--primary-cyan);">Más info aquí</a>.</li>
-                <li><strong>Web3Forms:</strong> Para la gestión técnica de los formularios de contacto.</li>
-            </ul>
-
-            <h3>4. Cómo Gestionar las Cookies</h3>
-            <p>Puedes configurar tu navegador para ser avisado de la recepción de cookies y para impedir su instalación
-                en tu equipo. A continuación, te facilitamos los enlaces de los principales navegadores para gestionar
-                cookies:</p>
-            <ul style="list-style: none; padding-left: 0;">
-                <li>🔹 <a href="https://support.google.com/chrome/answer/95647?hl=es" target="_blank"
-                        style="color: var(--primary-cyan);">Google Chrome</a></li>
-                <li>🔹 <a
-                        href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias"
-                        target="_blank" style="color: var(--primary-cyan);">Mozilla Firefox</a></li>
-                <li>🔹 <a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" target="_blank"
-                        style="color: var(--primary-cyan);">Safari</a></li>
-                <li>🔹 <a
-                        href="https://support.microsoft.com/es-es/microsoft-edge/eliminar-las-cookies-en-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
-                        target="_blank" style="color: var(--primary-cyan);">Microsoft Edge</a></li>
-            </ul>
-
-            <p style="margin-top: 1.5rem;">Ten en cuenta que, si desactivas las cookies, es posible que algunas
-                funciones de este sitio web no estén disponibles o no funcionen correctamente.</p>
-
-            <p style="margin-top: 2rem; border-top: 1px solid rgba(123, 44, 191, 0.2); padding-top: 1rem;"><em>Última
-                    actualización: Febrero 2026.</em></p>
-        </div>
-    </div>
-
-    <!-- Legal Notice Modal -->
-    <div id="legalModal" class="modal" onclick="if(event.target === this) closeModal('legal')">
-        <div class="modal-content">
-            <button class="modal-close" onclick="closeModal('legal')">&times;</button>
-            <h2>Aviso Legal</h2>
-
-            <h3>1. Datos Identificativos</h3>
-            <p>En cumplimiento con el deber de información recogido en el artículo 10 de la Ley 34/2002, de 11 de julio,
-                de Servicios de la Sociedad de la Información y del Comercio Electrónico (LSSICE), se detallan los
-                siguientes datos:</p>
-            <ul>
-                <li><strong>Titular:</strong> Kristian Krasimirov N.</li>
-                <li><strong>Nombre Comercial:</strong> SPM – Agency</li>
-                <li><strong>Email:</strong> <a
-                        href="mailto:solucionesworld2016@gmail.com">solucionesworld2016@gmail.com</a></li>
-            </ul>
-
-            <h3>2. Usuarios</h3>
-            <p>El acceso y/o uso de este portal atribuye la condición de USUARIO, que acepta, desde dicho acceso y/o
-                uso, las Condiciones Generales de Uso aquí reflejadas.</p>
-
-            <h3>3. Uso del Portal</h3>
-            <p>El sitio web proporciona acceso a multitud de informaciones, servicios o datos pertenecientes a SPM –
-                Agency. El USUARIO asume la responsabilidad del uso del portal. Dicha responsabilidad se extiende al
-                registro que fuese necesario para acceder a determinados servicios o contenidos.</p>
-
-            <h3>4. Propiedad Intelectual e Industrial</h3>
-            <p>SPM – Agency por sí o como cesionaria, es titular de todos los derechos de propiedad intelectual e
-                industrial de su página web, así como de los elementos contenidos en la misma (a título enunciativo,
-                imágenes, sonido, audio, vídeo, software o textos; marcas o logotipos, combinaciones de colores,
-                estructura y diseño, selección de materiales usados, etc.).</p>
-            <p>Todos los derechos reservados. Quedan expresamente prohibidas la reproducción, la distribución y la
-                comunicación pública, incluida su modalidad de puesta a disposición, de la totalidad o parte de los
-                contenidos de esta página web, con fines comerciales, en cualquier soporte y por cualquier medio
-                técnico, sin la autorización de SPM – Agency.</p>
-
-            <h3>5. Exclusión de Garantías y Responsabilidad</h3>
-            <p>SPM – Agency no se hace responsable, en ningún caso, de los daños y perjuicios de cualquier naturaleza
-                que pudieran ocasionar, a título enunciativo: errores u omisiones en los contenidos, falta de
-                disponibilidad del portal o la transmisión de virus o programas maliciosos o lesivos en los contenidos,
-                a pesar de haber adoptado todas las medidas tecnológicas necesarias para evitarlo.</p>
-
-            <h3>6. Modificaciones</h3>
-            <p>SPM – Agency se reserva el derecho de efectuar sin previo aviso las modificaciones que considere
-                oportunas en su portal, pudiendo cambiar, suprimir o añadir tanto los contenidos y servicios que se
-                presten a través de la misma como la forma en la que éstos aparezcan presentados o localizados en su
-                portal.</p>
-
-            <h3>7. Enlaces</h3>
-            <p>En el caso de que en nombre del dominio se dispusiesen enlaces o hipervínculos hacía otros sitios de
-                Internet, SPM – Agency no ejercerá ningún tipo de control sobre dichos sitios y contenidos. En ningún
-                caso asumirá responsabilidad alguna por los contenidos de algún enlace perteneciente a un sitio web
-                ajeno.</p>
-
-            <h3>8. Derecho de Exclusión</h3>
-            <p>SPM – Agency se reserva el derecho a denegar o retirar el acceso a portal y/o los servicios ofrecidos sin
-                necesidad de preaviso, a instancia propia o de un tercero, a aquellos usuarios que incumplan las
-                presentes Condiciones Generales de Uso.</p>
-
-            <h3>9. Legislación Aplicable y Jurisdicción</h3>
-            <p>La relación entre SPM – Agency y el USUARIO se regirá por la normativa española vigente y cualquier
-                controversia se someterá a los Juzgados y tribunales de la ciudad de residencia del titular.</p>
-
-            <p style="margin-top: 2rem; border-top: 1px solid rgba(123, 44, 191, 0.2); padding-top: 1rem;"><em>Última
-                    actualización: Febrero 2026.</em></p>
-        </div>
-    </div>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-content" style="text-align: center;">
-            <div class="footer-section" style="max-width: 800px; margin: 0 auto;">
-                <h3 style="margin-bottom: 1rem;">SPM Agency</h3>
-                <p style="font-size: 1.1rem; margin-bottom: 0.5rem;">Tecnología que transforma negocios en máquinas de
-                    generar clientes.</p>
-                <p style="font-size: 0.85rem; color: var(--gray-text); margin-top: 1rem;">
-                    <strong style="color: var(--light-text);">Kristian Krasimirov N.</strong> • Fundador y CEO
-                </p>
+    <!-- Industries -->
+    <section class="py-24 bg-slate-900/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div class="max-w-xl reveal animate-fade-left">
+                    <h2 class="font-bold tracking-widest uppercase mb-4 brand-gradient-text">Verticales</h2>
+                    <h3 class="text-4xl font-black">Especialistas en tu industria. <span class="brand-gradient-text">Sea
+                            donde sea.</span></h3>
+                </div>
+                <p class="text-slate-400 max-w-sm reveal animate-fade-right">No reinventamos la rueda — la hacemos
+                    autónoma para tu sector, ya seas un local o una empresa digital global.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                <div
+                    class="p-6 rounded-xl bg-slate-800/50 border border-slate-800 text-center hover:border-purple-500 hover:bg-purple-500/10 transition-all cursor-default group reveal animate-fade-up delay-100">
+                    <span
+                        class="material-symbols-outlined text-4xl mb-4 text-purple-400 group-hover:scale-110 transition-transform block">medical_services</span>
+                    <p class="font-bold text-sm">Clínicas</p>
+                </div>
+                <div
+                    class="p-6 rounded-xl bg-slate-800/50 border border-slate-800 text-center hover:border-purple-500 hover:bg-purple-500/10 transition-all cursor-default group reveal animate-fade-up delay-200">
+                    <span
+                        class="material-symbols-outlined text-4xl mb-4 text-cyan-400 group-hover:scale-110 transition-transform block">real_estate_agent</span>
+                    <p class="font-bold text-sm">Inmobiliarias</p>
+                </div>
+                <div
+                    class="p-6 rounded-xl bg-slate-800/50 border border-slate-800 text-center hover:border-purple-500 hover:bg-purple-500/10 transition-all cursor-default group reveal animate-fade-up delay-300">
+                    <span
+                        class="material-symbols-outlined text-4xl mb-4 text-purple-400 group-hover:scale-110 transition-transform block">gavel</span>
+                    <p class="font-bold text-sm">Abogados</p>
+                </div>
+                <div
+                    class="p-6 rounded-xl bg-slate-800/50 border border-slate-800 text-center hover:border-purple-500 hover:bg-purple-500/10 transition-all cursor-default group reveal animate-fade-up delay-100">
+                    <span
+                        class="material-symbols-outlined text-4xl mb-4 text-cyan-400 group-hover:scale-110 transition-transform block">shopping_cart</span>
+                    <p class="font-bold text-sm">Ecommerce</p>
+                </div>
+                <div
+                    class="p-6 rounded-xl bg-slate-800/50 border border-slate-800 text-center hover:border-purple-500 hover:bg-purple-500/10 transition-all cursor-default group reveal animate-fade-up delay-200">
+                    <span
+                        class="material-symbols-outlined text-4xl mb-4 text-purple-400 group-hover:scale-110 transition-transform block">school</span>
+                    <p class="font-bold text-sm">Academias</p>
+                </div>
+                <div
+                    class="p-6 rounded-xl bg-slate-800/50 border border-slate-800 text-center hover:border-purple-500 hover:bg-purple-500/10 transition-all cursor-default group reveal animate-fade-up delay-300">
+                    <span
+                        class="material-symbols-outlined text-4xl mb-4 text-cyan-400 group-hover:scale-110 transition-transform block">public</span>
+                    <p class="font-bold text-sm">Negocios Digitales</p>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="footer-bottom">
-            <div class="legal-links" style="margin-bottom: 1rem;">
-                <a href="#" onclick="openModal('privacy'); return false;">Política de Privacidad</a>
-                <a href="#" onclick="openModal('cookies'); return false;">Política de Cookies</a>
-                <a href="#" onclick="openModal('legal'); return false;">Aviso Legal</a>
+    <!-- Methodology -->
+    <section class="py-24" id="methodology">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal animate-fade-up">
+                <h2 class="text-4xl font-black mb-4">Metodología de Implementación</h2>
+                <p class="text-slate-400">De 0 a sistema autónomo en 4 etapas claras.</p>
             </div>
-            <p>&copy; 2026 SPM Agency. Todos los derechos reservados. | Diseñado con ❤️ para generar resultados</p>
+            <div class="relative flex flex-col md:flex-row justify-between gap-8 md:gap-4">
+                <div class="hidden md:block absolute top-12 left-0 w-full h-0.5 bg-slate-800 z-0"></div>
+                <div
+                    class="relative z-10 flex flex-col items-center text-center md:w-1/4 reveal animate-fade-up delay-100">
+                    <div
+                        class="w-12 h-12 rounded-full brand-gradient text-white flex items-center justify-center font-bold mb-6 shadow-lg">
+                        1</div>
+                    <h4 class="text-xl font-bold mb-2">Diagnóstico</h4>
+                    <p class="text-slate-400 text-sm px-4">Auditamos tus procesos y detectamos cuellos de botella.</p>
+                </div>
+                <div
+                    class="relative z-10 flex flex-col items-center text-center md:w-1/4 reveal animate-fade-up delay-200">
+                    <div
+                        class="w-12 h-12 rounded-full bg-slate-800 text-white flex items-center justify-center font-bold mb-6">
+                        2</div>
+                    <h4 class="text-xl font-bold mb-2">Arquitectura</h4>
+                    <p class="text-slate-400 text-sm px-4">Diseñamos el flujo de agentes para tu modelo de negocio.</p>
+                </div>
+                <div
+                    class="relative z-10 flex flex-col items-center text-center md:w-1/4 reveal animate-fade-up delay-300">
+                    <div
+                        class="w-12 h-12 rounded-full bg-slate-800 text-white flex items-center justify-center font-bold mb-6">
+                        3</div>
+                    <h4 class="text-xl font-bold mb-2">Implementación</h4>
+                    <p class="text-slate-400 text-sm px-4">Desplegamos y entrenamos a tus agentes con datos reales.</p>
+                </div>
+                <div
+                    class="relative z-10 flex flex-col items-center text-center md:w-1/4 reveal animate-fade-up delay-400">
+                    <div
+                        class="w-12 h-12 rounded-full bg-slate-800 text-white flex items-center justify-center font-bold mb-6">
+                        4</div>
+                    <h4 class="text-xl font-bold mb-2">Escalado</h4>
+                    <p class="text-slate-400 text-sm px-4">Monitorizamos resultados y expandimos el sistema.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section class="py-24 bg-slate-900/40" id="sobre-mi">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Photo -->
+                <div class="relative flex justify-center reveal animate-fade-left animate-float">
+                    <div class="absolute inset-0 bg-purple-500/20 blur-3xl rounded-full scale-75"></div>
+                    <div class="relative">
+                        <div class="w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-transparent"
+                            style="background: linear-gradient(#0d0d1a,#0d0d1a) padding-box, linear-gradient(135deg,#7B3FE4,#00B4D8) border-box; border-width: 4px; border-style: solid; border-radius: 9999px;">
+                            <img src="IMG/sobre-mi-2.png" alt="SPM - Fundador" class="w-full h-full object-cover" />
+                        </div>
+                        <!-- Badge -->
+                        <div
+                            class="absolute -bottom-4 left-1/2 -translate-x-1/2 brand-gradient text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg whitespace-nowrap">
+                            Marketing Digital &amp; IA 🚀
+                        </div>
+                    </div>
+                </div>
+                <!-- Text -->
+                <div class="reveal animate-fade-right">
+                    <h2 class="text-sm font-bold brand-gradient-text uppercase tracking-[0.2em] mb-4">Sobre Mí</h2>
+                    <h3 class="text-4xl md:text-5xl font-black mb-6 leading-tight">
+                        Del <span class="brand-gradient-text">esfuerzo</span> diario a la <span
+                            class="brand-gradient-text">automatización</span> de negocios.
+                    </h3>
+                    <div class="space-y-4 text-slate-300 text-lg leading-relaxed">
+                        <p>
+                            Conocé lo real: durante años he trabajado como repartidor, cargando rutas, madrugadas y
+                            esfuerzo físico para llevar sustento a mi familia. Ese mismo esfuerzo me enseñó algo que
+                            ningún MBA te puede dar — el valor del tiempo y la urgencia de trabajar de forma
+                            inteligente.
+                        </p>
+                        <p>
+                            Fue así como descubrí el marketing digital y la inteligencia artificial. Vi cómo negocios
+                            pequeños, con la estrategia correcta, podían competir con grandes empresas y ganar. Y decidí
+                            convertirme en el puente entre ambos mundos.
+                        </p>
+                        <p>
+                            Hoy, con <strong class="text-white">SPM Design Agency</strong>, ayudo a negocios locales y
+                            empresas digitales a dar el salto que yo daría si pudiera empezar de cero con lo que sé
+                            ahora: <strong class="brand-gradient-text">automatizar, escalar y crecer sin
+                                límites.</strong>
+                        </p>
+                    </div>
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <div
+                            class="flex items-center gap-2 bg-slate-800 px-4 py-2 rounded-full border border-slate-700">
+                            <span class="material-symbols-outlined text-purple-400 text-sm">verified</span>
+                            <span class="text-sm font-bold">Marketing Digital</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-2 bg-slate-800 px-4 py-2 rounded-full border border-slate-700">
+                            <span class="material-symbols-outlined text-cyan-400 text-sm">verified</span>
+                            <span class="text-sm font-bold">AI Automations</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-2 bg-slate-800 px-4 py-2 rounded-full border border-slate-700">
+                            <span class="material-symbols-outlined text-purple-400 text-sm">verified</span>
+                            <span class="text-sm font-bold">Estrategia Digital</span>
+                        </div>
+                    </div>
+                    <a href="#diagnosis"
+                        class="inline-flex items-center gap-2 mt-8 px-8 py-4 brand-gradient text-white font-bold rounded-xl text-lg hover:opacity-90 transition-opacity shadow-xl">
+                        Trabajemos Juntos <span class="material-symbols-outlined">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA / Diagnosis Form -->
+    <section class="py-24 relative overflow-hidden" id="diagnosis">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute top-0 left-0 w-[40%] h-[40%] bg-purple-500/10 blur-[120px] rounded-full"></div>
+            <div class="absolute bottom-0 right-0 w-[30%] h-[30%] bg-cyan-500/10 blur-[100px] rounded-full"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div
+                class="bg-slate-900 rounded-3xl p-8 md:p-16 border border-slate-800 text-center relative overflow-hidden">
+                <div class="relative z-10 max-w-3xl mx-auto">
+                    <h3 class="text-3xl md:text-5xl font-black mb-4 leading-tight text-white reveal animate-fade-up">
+                        Si tu negocio depende de personas, es <span class="text-red-400">frágil</span>. Si depende de
+                        sistemas inteligentes, es <span class="brand-gradient-text">imparable</span>.
+                    </h3>
+                    <p class="text-slate-400 mb-10 reveal animate-fade-up delay-100">Solicita tu diagnóstico gratuito.
+                        Sin compromiso. Solo resultados.</p>
+
+                    <!-- Web3Forms Contact Form -->
+                    <div
+                        class="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 mb-8 reveal animate-fade-up delay-200">
+                        <form action="https://api.web3forms.com/submit" method="POST"
+                            class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+                            <!-- Web3Forms Access Key -->
+                            <input type="hidden" name="access_key" value="3150dde6-0f53-4a46-b48a-81e039c59b6e" />
+                            <input type="hidden" name="subject"
+                                value="Nuevo Diagnóstico Estratégico - SPM Design Agency" />
+                            <input type="hidden" name="from_name" value="SPM Design Agency Web" />
+                            <!-- Honeypot -->
+                            <input type="checkbox" name="botcheck" class="hidden" style="display:none" />
+
+                            <div>
+                                <label class="block text-sm font-bold mb-2 opacity-60 uppercase tracking-widest"
+                                    for="name">Nombre</label>
+                                <input
+                                    class="w-full bg-slate-800 border border-slate-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-purple-500 transition-colors"
+                                    id="name" name="name" placeholder="Tu nombre" required type="text" />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold mb-2 opacity-60 uppercase tracking-widest"
+                                    for="email">Email</label>
+                                <input
+                                    class="w-full bg-slate-800 border border-slate-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-purple-500 transition-colors"
+                                    id="email" name="email" placeholder="tu@email.com" required type="email" />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold mb-2 opacity-60 uppercase tracking-widest"
+                                    for="phone">WhatsApp</label>
+                                <input
+                                    class="w-full bg-slate-800 border border-slate-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-purple-500 transition-colors"
+                                    id="phone" name="phone" placeholder="+34 600 000 000" type="tel" />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold mb-2 opacity-60 uppercase tracking-widest"
+                                    for="business">Tipo de Negocio</label>
+                                <input
+                                    class="w-full bg-slate-800 border border-slate-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-purple-500 transition-colors"
+                                    id="business" name="business" placeholder="Ej: Clínica, Ecommerce, Inmobiliaria..."
+                                    type="text" />
+                            </div>
+                            <div class="md:col-span-2">
+                                <label class="block text-sm font-bold mb-2 opacity-60 uppercase tracking-widest"
+                                    for="message">¿Qué quieres automatizar?</label>
+                                <textarea
+                                    class="w-full bg-slate-800 border border-slate-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-purple-500 transition-colors"
+                                    id="message" name="message"
+                                    placeholder="Cuéntanos sobre tu negocio y qué procesos quieres automatizar..."
+                                    required rows="4"></textarea>
+                            </div>
+                            <div class="md:col-span-2">
+                                <button
+                                    class="w-full brand-gradient hover:opacity-90 text-white px-10 py-5 rounded-xl text-xl font-bold transition-opacity shadow-2xl"
+                                    type="submit">
+                                    Solicitar Mi Diagnóstico Gratuito 🚀
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <p class="text-slate-500 font-medium">Plazas limitadas por mes para asegurar la calidad de
+                        implementación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex items-center gap-3">
+                    <div class="logo-circle w-9 h-9 overflow-hidden flex items-center justify-center">
+                        <img src="IMG/logo-spm.png" alt="SPM Logo" class="w-8 h-8 object-cover rounded-full" />
+                    </div>
+                    <span class="text-lg font-black tracking-tight uppercase brand-gradient-text">SPM Design
+                        Agency</span>
+                </div>
+                <div class="flex gap-8 text-sm text-slate-400">
+                    <a class="hover:text-purple-400 transition-colors" href="#">Aviso Legal</a>
+                    <a class="hover:text-purple-400 transition-colors" href="#">Privacidad</a>
+                    <a class="hover:text-purple-400 transition-colors" href="#">Cookies</a>
+                </div>
+                <div class="text-sm text-slate-500">
+                    © 2025 SPM Design Agency. Marketing Digital &amp; AI Automations.
+                </div>
+            </div>
         </div>
     </footer>
 
-    <!-- Cookie Consent Banner -->
-    <div id="cookieBanner" class="cookie-banner">
-        <div class="cookie-content">
-            <div class="cookie-text">
-                <p>Utilizamos cookies propias y de terceros para mejorar tu experiencia de navegación y analizar el uso
-                    del sitio. Al continuar navegando, aceptas nuestra <a href="#"
-                        onclick="openModal('cookies'); return false;">Política de Cookies</a> y <a href="#"
-                        onclick="openModal('privacy'); return false;">Política de Privacidad</a>.</p>
-            </div>
-            <button class="cookie-accept" onclick="acceptCookies()">Entendido</button>
-        </div>
-    </div>
-
-    <!-- Testimonial Popup Container -->
-    <div id="testimonialPopup" class="testimonial-popup"></div>
-
-    <!-- JAVASCRIPT -->
+    <!-- Scroll-reveal JS -->
     <script>
-        // ===== PROBLEMS SLIDER =====
-        let currentSlide = 0;
-        let sliderInterval;
-        let isHovering = false;
-
-        function showSlide(index) {
-            const slider = document.querySelector('.problems-slider');
-            const dots = document.querySelectorAll('.slider-dot');
-            const slides = document.querySelectorAll('.problem-slide');
-
-            if (index >= slides.length) currentSlide = 0;
-            if (index < 0) currentSlide = slides.length - 1;
-
-            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
-
-            dots.forEach((dot, i) => {
-                dot.classList.toggle('active', i === currentSlide);
-            });
-        }
-
-        function nextSlide() {
-            if (!isHovering) {
-                currentSlide++;
-                if (currentSlide >= document.querySelectorAll('.problem-slide').length) {
-                    currentSlide = 0;
-                }
-                showSlide(currentSlide);
-            }
-        }
-
-        function goToSlide(index) {
-            currentSlide = index;
-            showSlide(currentSlide);
-            resetSliderInterval();
-        }
-
-        function resetSliderInterval() {
-            clearInterval(sliderInterval);
-            sliderInterval = setInterval(nextSlide, 10000); // 10 seconds
-        }
-
-        // Start auto-advance
-        sliderInterval = setInterval(nextSlide, 10000);
-
-        // Pause on hover
-        const sliderContainer = document.getElementById('problemsSlider');
-        sliderContainer.addEventListener('mouseenter', () => {
-            isHovering = true;
-        });
-
-        sliderContainer.addEventListener('mouseleave', () => {
-            isHovering = false;
-        });
-
-        // ===== SCROLL EFFECTS =====
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-
-        window.addEventListener('scroll', () => {
-            const header = document.getElementById('header');
-            const scrollTopBtn = document.getElementById('scrollTop');
-
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-
-            // Show/hide scroll to top button
-            if (window.scrollY > 300) {
-                scrollTopBtn.classList.add('show');
-            } else {
-                scrollTopBtn.classList.remove('show');
-            }
-
-            // Fade-in animations
-            const fadeElements = document.querySelectorAll('.fade-in');
-            fadeElements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const elementVisible = 150;
-
-                if (elementTop < window.innerHeight - elementVisible) {
-                    element.classList.add('visible');
+        // Intersection Observer for reveal animations
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
                 }
             });
-        });
+        }, { threshold: 0.12 });
+        reveals.forEach(el => observer.observe(el));
 
-        // ===== GOOGLE CALENDAR INTEGRATION =====
-        document.getElementById('googleCalendarBtn').addEventListener('click', (e) => {
-            e.preventDefault();
-
-            const data = JSON.parse(sessionStorage.getItem('consultaData') || '{}');
-
-            const startDate = data.fecha || new Date().toISOString().split('T')[0];
-            const startTime = data.hora || '10:00';
-
-            // Create datetime for event (format: 20260204T100000)
-            const dateTime = startDate.replace(/-/g, '') + 'T' + startTime.replace(':', '') + '00';
-            const endDateTime = startDate.replace(/-/g, '') + 'T' + (parseInt(startTime.split(':')[0]) + 1).toString().padStart(2, '0') + startTime.split(':')[1] + '00';
-
-            const title = encodeURIComponent('Consultoría Estratégica - SPM Agency');
-            const details = encodeURIComponent(`Consultoría estratégica gratuita con SPM Agency\n\nContacto: ${data.name || ''}\nEmail: ${data.email || ''}\nTeléfono: ${data.telefono || ''}`);
-            const location = encodeURIComponent('Online (Te enviaremos el enlace)');
-
-            const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${dateTime}/${endDateTime}&details=${details}&location=${location}`;
-
-            window.open(googleCalendarUrl, '_blank');
-        });
-
-        // ===== MODAL FUNCTIONS =====
-        function openModal(type) {
-            const modals = {
-                'privacy': 'privacyModal',
-                'cookies': 'cookiesModal',
-                'legal': 'legalModal'
-            };
-
-            const modalId = modals[type];
-            if (modalId) {
-                document.getElementById(modalId).classList.add('show');
-                document.body.style.overflow = 'hidden';
-            }
-        }
-
-        function closeModal(type) {
-            const modals = {
-                'privacy': 'privacyModal',
-                'cookies': 'cookiesModal',
-                'legal': 'legalModal'
-            };
-
-            const modalId = modals[type];
-            if (modalId) {
-                document.getElementById(modalId).classList.remove('show');
-                document.body.style.overflow = 'auto';
-            }
-        }
-
-        // Close modals with Escape key
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                document.querySelectorAll('.modal.show').forEach(modal => {
-                    modal.classList.remove('show');
+        // Web3Forms success redirect
+        const form = document.querySelector('form[action*="web3forms"]');
+        if (form) {
+            form.addEventListener('submit', async function (e) {
+                e.preventDefault();
+                const formData = new FormData(form);
+                const res = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    body: formData
                 });
-                document.body.style.overflow = 'auto';
-            }
-        });
-
-        // ===== SMOOTH SCROLL =====
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href !== '#') {
-                    e.preventDefault();
-                    const target = document.querySelector(href);
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
+                const data = await res.json();
+                if (data.success) {
+                    form.reset();
+                    // Show success message
+                    const btn = form.querySelector('button[type="submit"]');
+                    btn.textContent = '✅ ¡Enviado! Te contactamos pronto.';
+                    btn.disabled = true;
+                    btn.style.opacity = '0.7';
+                } else {
+                    alert('Hubo un error. Por favor intenta de nuevo.');
                 }
             });
-        });
-
-        // ===== INITIAL ANIMATIONS =====
-        window.addEventListener('load', () => {
-            setTimeout(() => {
-                document.querySelectorAll('.fade-in').forEach((el, i) => {
-                    setTimeout(() => {
-                        const elementTop = el.getBoundingClientRect().top;
-                        if (elementTop < window.innerHeight) {
-                            el.classList.add('visible');
-                        }
-                    }, i * 100);
-                });
-            }, 100);
-
-            // Show cookie banner if not accepted
-            if (!localStorage.getItem('cookiesAccepted')) {
-                setTimeout(() => {
-                    document.getElementById('cookieBanner').classList.add('show');
-                }, 2000);
-            }
-
-            // Start testimonial rotation
-            setTimeout(() => {
-                showRandomTestimonial();
-            }, 5000);
-        });
-
-        // ===== COOKIE BANNER =====
-        function acceptCookies() {
-            localStorage.setItem('cookiesAccepted', 'true');
-            document.getElementById('cookieBanner').classList.remove('show');
-
-            // Track cookie acceptance
-            if (typeof gtag !== 'undefined') {
-                gtag('event', 'cookie_consent', {
-                    'event_category': 'engagement',
-                    'event_label': 'accepted'
-                });
-            }
-        }
-
-        // ===== TESTIMONIALS DATABASE (100+ reviews) =====
-        const testimonials = [
-            { name: "María G.", company: "Clínica Dental", service: "Desarrollo Web", message: "Nuestra web nueva convierte el doble que la anterior. Inversión recuperada en 2 meses.", stars: 5 },
-            { name: "Carlos R.", company: "Despacho Abogados", service: "SEO Local", message: "Ahora aparecemos primeros en Google. Los clientes nos encuentran sin esfuerzo.", stars: 5 },
-            { name: "Laura M.", company: "Restaurante", service: "Marketing Digital", message: "Las reservas han aumentado un 40%. El equipo de SPM es increíble.", stars: 5 },
-            { name: "Antonio P.", company: "Fontanería", service: "Automatización IA", message: "El chatbot responde a las 3 AM. Ya no perdemos clientes por no contestar.", stars: 5 },
-            { name: "Isabel F.", company: "Asesoría Fiscal", service: "Landing Page", message: "La landing convierte al 8%. Antes era solo el 1.5%. Impresionante.", stars: 5 },
-            { name: "Jorge L.", company: "Gimnasio", service: "Automatización IA", message: "Automatizamos las inscripciones. Ahorramos 15 horas semanales.", stars: 5 },
-            { name: "Ana B.", company: "Tienda Ropa", service: "Desarrollo Web", message: "La tienda online factura €8k/mes. Antes solo vendíamos en físico.", stars: 5 },
-            { name: "Pedro S.", company: "Reformas", service: "SEO Local", message: "Google Maps nos trae 20 leads mensuales. Antes solo 3-4.", stars: 5 },
-            { name: "Carmen V.", company: "Psicología", service: "Marketing Digital", message: "Mi agenda está llena gracias a la estrategia de SPM.", stars: 5 },
-            { name: "Miguel T.", company: "Inmobiliaria", service: "Automatización IA", message: "El CRM automatizado nos ahorra horas de gestión diaria.", stars: 5 },
-            { name: "Rosa D.", company: "Peluquería", service: "Landing Page", message: "La página de reservas es perfecta. Los clientes reservan solos.", stars: 5 },
-            { name: "Francisco J.", company: "Taller Mecánico", service: "SEO Local", message: "Salimos primeros en 'taller cerca de mí'. Una pasada.", stars: 5 },
-            { name: "Elena N.", company: "Escuela Idiomas", service: "Desarrollo Web", message: "La web es profesional y rápida. Las inscripciones subieron.", stars: 5 },
-            { name: "Roberto C.", company: "Consultoría", service: "Marketing Digital", message: "ROI de 4.2x en solo 6 meses. Muy contentos.", stars: 5 },
-            { name: "Patricia H.", company: "Veterinaria", service: "Automatización IA", message: "El sistema de citas automatizado funciona de maravilla.", stars: 5 },
-            { name: "Diego A.", company: "Carpintería", service: "Landing Page", message: "Recibimos 3-4 consultas al día desde la landing page.", stars: 4 },
-            { name: "Lucía O.", company: "Fotografía", service: "SEO Local", message: "Ahora salgo en los primeros resultados de mi ciudad.", stars: 5 },
-            { name: "Javier M.", company: "Arquitectura", service: "Desarrollo Web", message: "El portfolio web nos ha triplicado los contactos.", stars: 5 },
-            { name: "Marta S.", company: "Pastelería", service: "Marketing Digital", message: "Los pedidos online crecen cada semana. Gracias SPM.", stars: 5 },
-            { name: "Raúl F.", company: "Electricista", service: "SEO Local", message: "Google me trae trabajo constante. Ya no necesito publicidad.", stars: 5 },
-            { name: "Cristina L.", company: "Nutricionista", service: "Automatización IA", message: "El funnel automatizado convierte muy bien.", stars: 4 },
-            { name: "Alberto G.", company: "Cerrajería", service: "Landing Page", message: "La landing trae llamadas todos los días.", stars: 5 },
-            { name: "Sandra P.", company: "Centro Estético", service: "Marketing Digital", message: "Instagram y Facebook ahora nos traen clientes reales.", stars: 5 },
-            { name: "Óscar R.", company: "Mudanzas", service: "SEO Local", message: "Posicionados en Google Maps. Los clientes no paran.", stars: 5 },
-            { name: "Nuria V.", company: "Escuela Danza", service: "Desarrollo Web", message: "La web de inscripciones es súper fácil de usar.", stars: 5 },
-            { name: "Sergio T.", company: "Jardinería", service: "Automatización IA", message: "El bot responde consultas básicas. Nos ahorra tiempo.", stars: 4 },
-            { name: "Beatriz M.", company: "Floristería", service: "Landing Page", message: "Los pedidos lleganuevo Impresionante el aumento.", stars: 5 },
-            { name: "Andrés C.", company: "Abogado Familia", service: "SEO Local", message: "Primera página de Google. Los casos llegan solos.", stars: 5 },
-            { name: "Silvia H.", company: "Clínica Fisio", service: " Marketing Digital", message: "Agenda completa cada semana. SPM cumple lo prometido.", stars: 5 },
-            { name: "Fernando D.", company: "Pintura", service: "Landing Page", message: "Contactos de calidad. La landing funciona perfectamente.", stars: 5 },
-            { name: "Verónica A.", company: "Academia Música", service: "Desarrollo Web", message: "La plataforma de matrículas es profesional y rápida.", stars: 5 },
-            { name: "Guillermo S.", company: "Óptica", service: "SEO Local", message: "Nos encuentran por búsquedas locales. Gran trabajo.", stars: 5 },
-            { name: "Teresa B.", company: "Herboristería", service: "Marketing Digital", message: "Las redes sociales ahora convierten en ventas reales.", stars: 4 },
-            { name: "Pablo L.", company: "Ferretería", service: "Automatización IA", message: "El catálogo automatizado facilita todo.", stars: 5 },
-            { name: "Rocío M.", company: "Gestoría", service: "Landing Page", message: "Los clientes corporativos llegan por la landing.", stars: 5 },
-            { name: "Adrián F.", company: "Piscinas", service: "SEO Local", message: "Temporada completa gracias al posicionamiento.", stars: 5 },
-            { name: "Mónica G.", company: "Consulta Psico", service: "Automatización IA", message: "El sistema de citas online es perfecto.", stars: 5 },
-            { name: "Iván R.", company: "Tintorería", service: "Desarrollo Web", message: "La web con sistema de pedidos nos cambió el negocio.", stars: 5 },
-            { name: "Alicia P.", company: "Librería", service: "Marketing Digital", message: "Las campañas traen clientes nuevos cada semana.", stars: 4 },
-            { name: "Rubén V.", company: "Bar Copas", service: "SEO Local", message: "Aparecemos en todas las búsquedas de la zona.", stars: 5 },
-            { name: "Eva T.", company: "Escuela Conducción", service: "Landing Page", message: "Inscripciones automáticas. Todo funciona solo.", stars: 5 },
-            { name: "Daniel C.", company: "Podología", service: "Automatización IA", message: "Recordatorios automáticos reducen las ausencias.", stars: 5 },
-            { name: "Gloria H.", company: "Agencia Seguros", service: "Marketing Digital", message: "Leads cualificados cada día. Inversión muy rentable.", stars: 5 },
-            { name: "Marcos D.", company: "Informática", service: "SEO Local", message: "Primer resultado en Google. Los clientes llaman solos.", stars: 5 },
-            { name: "Yolanda A.", company: "Catering", service: "Desarrollo Web", message: "El formulario de presupuestos automatiza todo.", stars: 5 },
-            { name: "Enrique S.", company: "Academia Oposiciones", service: "Marketing Digital", message: "Las matrículas se multiplicaron por 3.", stars: 5 },
-            { name: "Pilar B.", company: "Joyería", service: "Landing Page", message: "La landing de colecciones convierte muy bien.", stars: 4 },
-            { name: "Luis M.", company: "Dentista Infantil", service: "SEO Local", message: "Familias nos encuentran fácilmente en Google.", stars: 5 },
-            { name: "Amparo F.", company: "Centro Pilates", service: "Automatización IA", message: "Las reservas de clases son automáticas ahora.", stars: 5 },
-            { name: "Ramón G.", company: "Agencia Viajes", service: "Desarrollo Web", message: "La web de paquetes turísticos es espectacular.", stars: 5 },
-            { name: "Lorena R.", company: "Estanco", service: "Marketing Digital", message: "Las promociones en redes funcionan de maravilla.", stars: 4 },
-            { name: "Tomás P.", company: "Notaría", service: "Landing Page", message: "Contactos corporativos de calidad.", stars: 5 },
-            { name: "Irene V.", company: "Escuela Refuerzo", service: "SEO Local", message: "Padres nos encuentran buscando 'clases particulares'.", stars: 5 },
-            { name: "Víctor T.", company: "Cerrajero 24h", service: "Automatización IA", message: "El bot deriva urgencias perfectamente.", stars: 5 },
-            { name: "Dolores C.", company: "Boutique Novias", service: "Desarrollo Web", message: "El catálogo online trae clientas de otras ciudades.", stars: 5 },
-            { name: "Ángel H.", company: "Tasador", service: "Marketing Digital", message: "Casos nuevos cada semanamuy contentos.", stars: 5 },
-            { name: "Consuelo D.", company: "Logopeda", service: "SEO Local", message: "Primera en mi zona en Google. Agenda llena.", stars: 5 },
-            { name: "Jesús A.", company: "Reformas Integrales", service: "Landing Page", message: "Presupuestos automatizados. Gran herramienta.", stars: 5 },
-            { name: "Inmaculada S.", company: "Peluquería Canina", service: "Automatización IA", message: "Citas online sin complicaciones.", stars: 4 },
-            { name: "Emilio B.", company: "Gestor Energético", service: "Marketing Digital", message: "Leads B2B de calidad constante.", stars: 5 },
-            { name: "Remedios M.", company: "Taller Costura", service: "SEO Local", message: "Clientas locales llegan por Google Maps.", stars: 5 },
-            { name: "Agustín F.", company: "Asesor Financiero", service: "Desarrollo Web", message: "La calculadora de hipotecas atrae clientes.", stars: 5 },
-            { name: "Montserrat G.", company: "Clínica Láser", service: "Automatización IA", message: "Sistema de consultas previas funciona perfecto.", stars: 5 },
-            { name: "Joaquín R.", company: "Alarmas", service: "Landing Page", message: "Solicitudes de presupuesto cada día.", stars: 5 },
-            { name: "Victoria P.", company: "Decoración", service: "Marketing Digital", message: "Pinterest e Instagram nos traen proyectos.", stars: 5 },
-            { name: "Felipe V.", company: "Carpintería Aluminio", service: "SEO Local", message: "Obras grandes y pequeñas llegan por Google.", stars: 5 },
-            { name: "Encarna T.", company: "Herbolario", service: "Desarrollo Web", message: "Tienda online complementa perfecto la física.", stars: 4 },
-            { name: "Sebastián C.", company: "Autoescuela", service: "Automatización IA", message: "Matrículas automatizadas. Todo más fácil.", stars: 5 },
-            { name: "Asunción H.", company: "Centro Yoga", service: "SEO Local", message: "Nuevos alumnos cada mes gracias al SEO.", stars: 5 },
-            { name: "Gonzalo D.", company: "Mudanzas Internacional", service: "Marketing Digital", message: "Clientes corporativos e internacionales.", stars: 5 },
-            { name: "Visitación A.", company: "Mercería", service: "Landing Page", message: "Pedidos online creciendo constantemente.", stars: 5 },
-            { name: "Isidro S.", company: "Instalador Gas", service: "Automatización IA", message: "Emergencias gestionadas automáticamente.", stars: 5 },
-            { name: "Purificación B.", company: "Escuela Música", service: "Desarrollo Web", message: "Portal de alumnos muy profesional.", stars: 5 },
-            { name: "Celestino M.", company: "Tasaciones", service: "SEO Local", message: "Contratos nuevos llegan semanalmente.", stars: 5 },
-            { name: "Milagros F.", company: "Psicóloga Infantil", service: "Marketing Digital", message: "Familias llegan por publicidad dirigida.", stars: 5 },
-            { name: "Salvador G.", company: "Taller Motos", service: "Landing Page", message: "Citas de revisión automatizadas.", stars: 4 },
-            { name: "Josefa R.", company: "Limpieza Hogar", service: "SEO Local", message: "Clientes fijos gracias a Google.", stars: 5 },
-            { name: "Leandro P.", company: "Abogado Penal", service: "Automatización IA", message: "Consultas previas filtradas automáticamente.", stars: 5 },
-            { name: "Esperanza V.", company: "Residencia Ancianos", service: "Desarrollo Web", message: "Familias valoran mucho la web informativa.", stars: 5 },
-            { name: "Casimiro T.", company: "Fontanero", service: "Marketing Digital", message: "Llamadas de urgencia todo el día.", stars: 5 },
-            { name: "Angustias C.", company: "Bordados", service: "SEO Local", message: "Pedidos personalizados de toda la provincia.", stars: 5 },
-            { name: "Braulio H.", company: "Asesoría Laboral", service: "Landing Page", message: "Empresas nos contactan por la landing.", stars: 5 },
-            { name: "Sagrario D.", company: "Dietista", service: "Automatización IA", message: "Planes personalizados automatizados.", stars: 4 },
-            { name: "Plácido A.", company: "Cerrajería Auto", service: "Marketing Digital", message: "Emergencias y duplicados todo el mes.", stars: 5 },
-            { name: "Virtudes S.", company: "Papelería", service: "SEO Local", message: "Colegios nos encuentran fácilmente.", stars: 5 },
-            { name: "Cándido B.", company: "Óptica...", service: "Desarrollo Web", message: "Citas online funcionan de maravilla.", stars: 5 },
-            { name: "Socorro M.", company: "Podología Deportiva", service: "Automatización IA", message: "Atletas reservan online sin problemas.", stars: 5 },
-            { name: "Primitivo F.", company: "Herrería Artística", service: "Landing Page", message: "Proyectos personalizados llegan online.", stars: 5 },
-            { name: "Presentación G.", company: "Escuela Baile", service: "Marketing Digital", message: "Matrículas llenas cada trimestre.", stars: 5 },
-            { name: "Fulgencio R.", company: "Tasaciones Judiciales", service: "SEO Local", message: "Juzgados nos derivan casos constantemente.", stars: 5 },
-            { name: "Gumersindo P.", company: "Climatización", service: "Desarrollo Web", message: "Presupuestos automáticos ahorran tiempo.", stars: 5 }
-        ];
-
-        // ===== TESTIMONIAL ROTATION SYSTEM =====
-        let currentTestimonialIndex = -1;
-        let testimonialInterval;
-        let usedTestimonials = [];
-
-        function getRandomTestimonial() {
-            if (usedTestimonials.length >= testimonials.length) {
-                usedTestimonials = [];
-            }
-
-            let randomIndex;
-            do {
-                randomIndex = Math.floor(Math.random() * testimonials.length);
-            } while (usedTestimonials.includes(randomIndex));
-
-            usedTestimonials.push(randomIndex);
-            return testimonials[randomIndex];
-        }
-
-        function showRandomTestimonial() {
-            const testimonial = getRandomTestimonial();
-            const container = document.getElementById('testimonialPopup');
-
-            // Create initials from name
-            const initials = testimonial.name.split(' ').map(n => n[0]).join('');
-            const stars = '⭐'.repeat(testimonial.stars);
-
-            container.innerHTML = `
-                <div class="testimonial-header">
-                    <div class="testimonial-avatar">${initials}</div>
-                    <div class="testimonial-info">
-                        <h4>${testimonial.name}</h4>
-                        <p>${testimonial.company}</p>
-                    </div>
-                </div>
-                <div class="testimonial-stars">${stars}</div>
-                <p class="testimonial-message">"${testimonial.message}"</p>
-                <span class="testimonial-service">${testimonial.service}</span>
-            `;
-
-            // Show with animation
-            setTimeout(() => container.classList.add('show'), 100);
-
-            // Hide after 10 seconds
-            setTimeout(() => {
-                container.classList.remove('show');
-
-                // Show next after 15 seconds (total 25s cycle: 10s show + 15s wait)
-                setTimeout(() => showRandomTestimonial(), 15000);
-            }, 10000);
         }
     </script>
 </body>

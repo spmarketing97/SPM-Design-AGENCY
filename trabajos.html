@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Trabajos Realizados | SPM Design Agency</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7B3FE4",
+                        "primary-end": "#00B4D8",
+                        "background-dark": "#0d0d1a",
+                    },
+                    fontFamily: { "display": ["Inter"] },
+                },
+            },
+        }
+    </script>
+    <style>
+        .brand-gradient {
+            background: linear-gradient(135deg, #7B3FE4, #00B4D8);
+        }
+
+        .brand-gradient-text {
+            background: linear-gradient(135deg, #7B3FE4, #00B4D8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .logo-circle {
+            border: 3px solid transparent;
+            background: linear-gradient(#0d0d1a, #0d0d1a) padding-box, linear-gradient(135deg, #7B3FE4, #00B4D8) border-box;
+            border-radius: 9999px;
+        }
+
+        .project-card {
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 40px rgba(123, 63, 228, 0.2);
+            border-color: rgba(123, 63, 228, 0.5);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .reveal {
+            opacity: 0;
+        }
+
+        .reveal.visible {
+            animation: fadeInUp 0.7s ease forwards;
+        }
+
+        .delay-100 {
+            animation-delay: 0.1s;
+        }
+
+        .delay-200 {
+            animation-delay: 0.2s;
+        }
+
+        .delay-300 {
+            animation-delay: 0.3s;
+        }
+    </style>
+</head>
+
+<body class="bg-background-dark font-display text-slate-100 transition-colors duration-300 scroll-smooth">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 w-full border-b border-slate-800 bg-background-dark/90 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="/" class="flex items-center gap-3">
+                    <div class="logo-circle w-10 h-10 overflow-hidden flex items-center justify-center flex-shrink-0">
+                        <img src="IMG/logo-spm.png" alt="SPM Logo" class="w-9 h-9 object-cover rounded-full" />
+                    </div>
+                    <span class="text-lg font-black tracking-tight uppercase brand-gradient-text">SPM Design
+                        Agency</span>
+                </a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a class="text-sm font-medium hover:text-purple-400 transition-colors" href="/">Inicio</a>
+                    <a class="text-sm font-medium hover:text-purple-400 transition-colors" href="/#problem">Problema</a>
+                    <a class="text-sm font-medium hover:text-purple-400 transition-colors" href="/#solution">Agentes</a>
+                    <a class="text-sm font-medium hover:text-purple-400 transition-colors" href="/#sobre-mi">Sobre
+                        Mí</a>
+                    <a class="px-5 py-2 rounded-lg text-sm font-bold text-white brand-gradient hover:opacity-90 transition-opacity"
+                        href="/#diagnosis">
+                        Solicitar Diagnóstico
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-24 pb-16 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
+            <div class="absolute top-[-5%] left-[-5%] w-[40%] h-[40%] bg-purple-600/20 blur-[140px] rounded-full"></div>
+            <div class="absolute bottom-0 right-0 w-[30%] h-[30%] bg-cyan-400/10 blur-[100px] rounded-full"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h1 class="text-5xl md:text-6xl font-black mb-6">Nuestros <span class="brand-gradient-text">Trabajos</span>
+            </h1>
+            <p class="text-slate-400 text-lg max-w-2xl mx-auto">Explora cómo hemos transformado negocios locales y
+                empresas digitales mediante IA y estrategia de marketing.</p>
+        </div>
+    </header>
+
+    <!-- Filter Tags -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap gap-3 justify-center mb-12">
+        <span class="px-4 py-2 brand-gradient text-white text-sm font-bold rounded-full cursor-pointer">Todos</span>
+        <span
+            class="px-4 py-2 bg-slate-800 text-slate-400 text-sm font-bold rounded-full cursor-pointer hover:border-purple-500 border border-slate-700 transition-colors">Automatización
+            IA</span>
+        <span
+            class="px-4 py-2 bg-slate-800 text-slate-400 text-sm font-bold rounded-full cursor-pointer hover:border-purple-500 border border-slate-700 transition-colors">Marketing
+            Digital</span>
+        <span
+            class="px-4 py-2 bg-slate-800 text-slate-400 text-sm font-bold rounded-full cursor-pointer hover:border-purple-500 border border-slate-700 transition-colors">Landing
+            Pages</span>
+        <span
+            class="px-4 py-2 bg-slate-800 text-slate-400 text-sm font-bold rounded-full cursor-pointer hover:border-purple-500 border border-slate-700 transition-colors">Ecommerce</span>
+    </div>
+
+    <!-- Portfolio Grid -->
+    <main class="py-8 pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div
+                    class="project-card bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden reveal delay-100">
+                    <div class="aspect-video bg-slate-800 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span
+                                class="material-symbols-outlined text-purple-400 text-7xl opacity-30">medical_services</span>
+                        </div>
+                        <div class="absolute bottom-4 left-4">
+                            <span
+                                class="px-3 py-1 brand-gradient text-white text-xs font-bold rounded-full uppercase">Clínica
+                                Médica</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Automatización de Citas</h3>
+                        <p class="text-slate-400 text-sm mb-4">Reducción del 40% en ausencias y +60% en confirmaciones
+                            mediante agentes de voz e IA para clínica dental.</p>
+                        <div class="flex items-center gap-2 brand-gradient-text font-bold text-sm">
+                            <span>Ver detalles</span>
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div
+                    class="project-card bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden reveal delay-200">
+                    <div class="aspect-video bg-slate-800 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span
+                                class="material-symbols-outlined text-cyan-400 text-7xl opacity-30">real_estate_agent</span>
+                        </div>
+                        <div class="absolute bottom-4 left-4">
+                            <span
+                                class="px-3 py-1 brand-gradient text-white text-xs font-bold rounded-full uppercase">Inmobiliaria</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Closer de Leads 24/7</h3>
+                        <p class="text-slate-400 text-sm mb-4">Agente omnicanal que califica leads de portales
+                            inmobiliarios instantáneamente. +300% en tasa de conversión.</p>
+                        <div class="flex items-center gap-2 brand-gradient-text font-bold text-sm">
+                            <span>Ver detalles</span>
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div
+                    class="project-card bg-slate-900 rounded-2xl border border-slate-800 overflow-hidden reveal delay-300">
+                    <div class="aspect-video bg-slate-800 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span
+                                class="material-symbols-outlined text-purple-400 text-7xl opacity-30">shopping_cart</span>
+                        </div>
+                        <div class="absolute bottom-4 left-4">
+                            <span
+                                class="px-3 py-1 brand-gradient text-white text-xs font-bold rounded-full uppercase">Ecommerce
+                                B2B</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Facturación Autónoma</h3>
+                        <p class="text-slate-400 text-sm mb-4">Conciliación bancaria y emisión de facturas integrada con
+                            ERP sin intervención humana. Error humano = 0%.</p>
+                        <div class="flex items-center gap-2 brand-gradient-text font-bold text-sm">
+                            <span>Ver detalles</span>
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Card -->
+                <div class="lg:col-span-3 md:col-span-2 brand-gradient rounded-2xl p-12 text-center text-white">
+                    <h3 class="text-3xl font-black mb-4">¿Quieres que tu negocio sea el siguiente?</h3>
+                    <p class="text-white/80 mb-8 max-w-xl mx-auto">Te ayudamos a construir el sistema que trabaje por ti
+                        mientras tú escalas.</p>
+                    <a href="/#diagnosis"
+                        class="inline-flex items-center gap-2 bg-white text-purple-700 font-bold px-8 py-4 rounded-xl text-lg hover:bg-white/90 transition-colors">
+                        Solicitar Diagnóstico Gratuito <span class="material-symbols-outlined">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex items-center gap-3">
+                    <div class="logo-circle w-9 h-9 overflow-hidden flex items-center justify-center">
+                        <img src="IMG/logo-spm.png" alt="SPM Logo" class="w-8 h-8 object-cover rounded-full" />
+                    </div>
+                    <span class="text-lg font-black tracking-tight uppercase brand-gradient-text">SPM Design
+                        Agency</span>
+                </div>
+                <div class="flex gap-8 text-sm text-slate-400">
+                    <a class="hover:text-purple-400 transition-colors" href="#">Aviso Legal</a>
+                    <a class="hover:text-purple-400 transition-colors" href="#">Privacidad</a>
+                    <a class="hover:text-purple-400 transition-colors" href="#">Cookies</a>
+                </div>
+                <div class="text-sm text-slate-500">© 2025 SPM Design Agency. Marketing Digital &amp; AI Automations.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } });
+        }, { threshold: 0.12 });
+        reveals.forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>
