@@ -613,9 +613,75 @@
 
         // Legal
         const legalContent = {
-            aviso: { title: 'Aviso Legal', body: '<p><strong>Titular:</strong> SPM Design Agency</p><p>El acceso y uso de este sitio web implica la aceptación de los presentes términos. Todos los contenidos son propiedad de SPM Design Agency. Queda prohibida su reproducción sin autorización expresa.</p><p>Contacto: info@spmdesignagency.com</p>' },
-            privacidad: { title: 'Política de Privacidad', body: '<p><strong>Responsable:</strong> SPM Design Agency. Tus datos se usan para gestionar tu solicitud y enviarte información sobre nuestros servicios. No cedemos datos a terceros. Puedes ejercer tus derechos en info@spmdesignagency.com.</p>' },
-            cookies: { title: 'Política de Cookies', body: '<p>Usamos cookies técnicas, analíticas y de marketing. Al hacer clic en "Entendido" aceptas su uso. Puedes gestionarlas desde la configuración de tu navegador.</p>' }
+            aviso: {
+                title: 'Aviso Legal y Condiciones Generales de Uso',
+                body: `
+<p><strong>Sitio Web:</strong> <a href="https://SPMDesignAGENCY.short.gy/design-agency" class="text-purple-400">https://SPMDesignAGENCY.short.gy/design-agency</a></p>
+<h4 class="font-bold text-white mt-4 mb-2">I. INFORMACIÓN GENERAL</h4>
+<p>En cumplimiento con el deber de información dispuesto en la Ley 34/2002 de Servicios de la Sociedad de la Información y el Comercio Electrónico (LSSI-CE), se facilitan los siguientes datos:</p>
+<p><strong>Titular:</strong> Hristiyan Krasimirov Nikolov &nbsp;|&nbsp; <strong>NIF:</strong> X8****150A</p>
+<p><strong>Dirección:</strong> Calle Marques de Lorca, 82 &nbsp;|&nbsp; <strong>Teléfono:</strong> 642941630</p>
+<p><strong>Email:</strong> solucionesworld2016@gmail.com</p>
+<h4 class="font-bold text-white mt-4 mb-2">II. TÉRMINOS Y CONDICIONES DE USO</h4>
+<p>El acceso y uso de este sitio web implica la aceptación de los presentes Términos. SPM Design Agency se reserva el derecho a modificar en cualquier momento la presentación, configuración y contenidos del sitio, así como las presentes condiciones.</p>
+<p>El acceso al sitio tiene carácter libre y gratuito. El Usuario debe ser mayor de edad y disponer de capacidad jurídica suficiente para vincularse por estas condiciones.</p>
+<h4 class="font-bold text-white mt-4 mb-2">III. EXCLUSIÓN DE GARANTÍAS Y RESPONSABILIDAD</h4>
+<p>SPM Design Agency no garantiza la continuidad, disponibilidad ni utilidad del sitio web, ni de los Contenidos o Servicios. Hará todo lo posible por el buen funcionamiento, pero no se responsabiliza de interrupciones, errores, virus ni daños derivados del acceso o uso del sitio.</p>
+<h4 class="font-bold text-white mt-4 mb-2">IV. POLÍTICA DE ENLACES</h4>
+<p>No se permite la reproducción total o parcial de los contenidos sin autorización expresa de SPM Design Agency. El establecimiento de hipervínculos no implica relación entre SPM Design Agency y el titular del sitio web de origen.</p>
+<h4 class="font-bold text-white mt-4 mb-2">V. PROPIEDAD INTELECTUAL E INDUSTRIAL</h4>
+<p>SPM Design Agency es titular de todos los derechos de propiedad intelectual e industrial del sitio web y sus contenidos (imágenes, textos, logotipos, software, etc.). Queda prohibida su reproducción, distribución o comunicación pública sin autorización escrita.</p>
+<h4 class="font-bold text-white mt-4 mb-2">VI. LEGISLACIÓN APLICABLE Y JURISDICCIÓN</h4>
+<p>La relación entre el Usuario y SPM Design Agency se rige por la normativa española vigente. Las partes se someten a la jurisdicción de los juzgados y tribunales que correspondan conforme a derecho.</p>`
+            },
+            privacidad: {
+                title: 'Política de Privacidad',
+                body: `
+<p><strong>Sitio Web:</strong> <a href="https://SPMDesignAGENCY.short.gy/design-agency" class="text-purple-400">https://SPMDesignAGENCY.short.gy/design-agency</a></p>
+<h4 class="font-bold text-white mt-4 mb-2">I. POLÍTICA DE PRIVACIDAD Y PROTECCIÓN DE DATOS</h4>
+<p>SPM Design Agency se compromete a adoptar las medidas técnicas y organizativas necesarias según el nivel de seguridad adecuado al riesgo de los datos recogidos, cumpliendo con la normativa vigente:</p>
+<ul class="list-disc pl-5 space-y-1 mt-2">
+  <li>Reglamento (UE) 2016/679 (RGPD)</li>
+  <li>Ley Orgánica 3/2018 (LOPD-GDD)</li>
+  <li>Ley 34/2002 (LSSI-CE)</li>
+</ul>
+<h4 class="font-bold text-white mt-4 mb-2">Responsable del Tratamiento</h4>
+<p><strong>Hristiyan Krasimirov Nikolov</strong> &nbsp;|&nbsp; NIF: X****150A</p>
+<p>Calle Marques de Lorca, 82 &nbsp;|&nbsp; Tel: 642941630 &nbsp;|&nbsp; Email: solucionesworld2016@gmail.com</p>
+<h4 class="font-bold text-white mt-4 mb-2">Datos que Recopilamos</h4>
+<p>Nombre, email, teléfono y tipo de negocio recabados a través del formulario de contacto. Solo se tratan datos identificativos, nunca categorías especiales (art. 9 RGPD).</p>
+<h4 class="font-bold text-white mt-4 mb-2">Finalidad y Base Legal</h4>
+<p>Gestionar solicitudes de diagnóstico, enviar información sobre servicios y dar seguimiento comercial. Base legal: consentimiento del interesado (art. 6.1.a RGPD).</p>
+<h4 class="font-bold text-white mt-4 mb-2">Conservación</h4>
+<p>Los datos se conservarán durante 12 meses o hasta que el Usuario solicite su eliminación.</p>
+<h4 class="font-bold text-white mt-4 mb-2">Destinatarios</h4>
+<p>Los datos del Usuario no serán compartidos con terceros, salvo obligación legal.</p>
+<h4 class="font-bold text-white mt-4 mb-2">Tus Derechos (RGPD)</h4>
+<p>Puedes ejercer tus derechos de <strong>acceso, rectificación, supresión, oposición, limitación y portabilidad</strong> escribiendo a: <strong>solucionesworld2016@gmail.com</strong> con referencia “RGPD” adjuntando copia de tu DNI.</p>
+<p class="mt-2">También puedes presentar reclamación ante la <strong>Agencia Española de Protección de Datos</strong>: <a href="https://www.aepd.es" class="text-purple-400">www.aepd.es</a></p>`
+            },
+            cookies: {
+                title: 'Política de Cookies',
+                body: `
+<p>El acceso a este Sitio Web puede implicar la utilización de cookies. Las cookies son pequeñas cantidades de información almacenadas en el navegador para reconocer al Usuario y personalizar su experiencia.</p>
+<h4 class="font-bold text-white mt-4 mb-2">Tipos de Cookies que Usamos</h4>
+<ul class="list-disc pl-5 space-y-2">
+  <li><strong>Cookies propias:</strong> Enviadas y gestionadas exclusivamente por SPM Design Agency para mejorar el funcionamiento del sitio web y la experiencia del usuario.</li>
+  <li><strong>Cookies analíticas (Google Analytics):</strong> Analizan cómo interactúa el Usuario con el sitio. La información se recopila de forma anónima.</li>
+  <li><strong>Cookies de redes sociales:</strong> Incorporadas por plugins de redes sociales (Facebook, Instagram, LinkedIn, YouTube). Cada red social tiene su propia política de privacidad.</li>
+</ul>
+<h4 class="font-bold text-white mt-4 mb-2">Consentimiento</h4>
+<p>Para la utilización de cookies no estrictamente necesarias es preciso el consentimiento del Usuario, ofrecido mediante una decisión afirmativa antes del tratamiento inicial.</p>
+<h4 class="font-bold text-white mt-4 mb-2">Redes Sociales Vinculadas</h4>
+<ul class="list-disc pl-5 space-y-1 text-xs">
+  <li>Facebook: <a href="https://www.facebook.com/policies/cookies/" class="text-purple-400">facebook.com/policies/cookies</a></li>
+  <li>Instagram: <a href="https://help.instagram.com/1896641480634370" class="text-purple-400">help.instagram.com</a></li>
+  <li>LinkedIn: <a href="https://www.linkedin.com/legal/cookie-policy" class="text-purple-400">linkedin.com/legal/cookie-policy</a></li>
+  <li>YouTube/Google: <a href="https://policies.google.com/privacy" class="text-purple-400">policies.google.com/privacy</a></li>
+</ul>
+<h4 class="font-bold text-white mt-4 mb-2">Cómo Deshabilitar las Cookies</h4>
+<p>Puedes deshabilitar, rechazar o eliminar las cookies desde la configuración de tu navegador (Chrome, Firefox, Safari, Edge, etc.). Rechazar algunas cookies puede limitar ciertas funcionalidades del sitio.</p>`
+            }
         };
         function openLegal(t) {
             document.getElementById('legal-title').textContent = legalContent[t].title;
