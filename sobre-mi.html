@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Mí – Kristian | SPM Design Agency</title>
+    <meta name="description"
+        content="Conoce la historia detrás de SPM Design Agency. Kristian, fundador y especialista en automatización IA y marketing digital para negocios locales y digitales." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0a0f;
+            color: #f8fafc;
+        }
+
+        .brand-gradient {
+            background: linear-gradient(135deg, #7B3FE4 0%, #3B82F6 50%, #00B4D8 100%);
+        }
+
+        .brand-gradient-text {
+            background: linear-gradient(135deg, #7B3FE4 0%, #3B82F6 50%, #00B4D8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: none;
+        }
+
+        .timeline-line {
+            background: linear-gradient(to bottom, #7B3FE4, #00B4D8);
+        }
+
+        .stat-card {
+            border: 1px solid rgba(123, 63, 228, 0.2);
+            background: rgba(123, 63, 228, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            border-color: rgba(123, 63, 228, 0.5);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(123, 63, 228, 0.15);
+        }
+
+        @keyframes pulse-border {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(123, 63, 228, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 0 0 12px rgba(123, 63, 228, 0);
+            }
+        }
+
+        .avatar-pulse {
+            animation: pulse-border 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <!-- ========= HEADER ========= -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 rounded-full brand-gradient flex items-center justify-center font-black text-white text-lg border-2 border-white/20 shadow-lg">
+                    S</div>
+                <span class="font-black text-xl tracking-tight">SPM <span
+                        class="brand-gradient-text">Design</span></span>
+            </a>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-sm font-medium hover:text-purple-400 transition-colors" href="index.html">Inicio</a>
+                <a class="text-sm font-medium hover:text-purple-400 transition-colors" href="trabajos.html">Trabajos</a>
+                <a class="text-sm font-medium hover:text-purple-400 transition-colors" href="precios.html">Precios</a>
+                <a class="text-sm font-medium text-purple-400 border-b border-purple-400 pb-0.5"
+                    href="sobre-mi.html">Sobre Mí</a>
+                <a class="px-5 py-2 rounded-lg text-sm font-bold text-white brand-gradient hover:opacity-90 transition-opacity shadow-lg"
+                    href="index.html#diagnosis">
+                    Solicitar Diagnóstico
+                </a>
+            </nav>
+            <!-- Mobile menu -->
+            <div class="flex md:hidden">
+                <a href="index.html#diagnosis"
+                    class="px-4 py-2 rounded-lg text-sm font-bold text-white brand-gradient">Contactar</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========= HERO ========= -->
+    <section class="pt-32 pb-20 px-6 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-1/4 w-96 h-96 bg-purple-600 rounded-full filter blur-3xl opacity-30 animate-ping"
+                style="animation-duration:4s"></div>
+            <div class="absolute bottom-10 right-1/4 w-80 h-80 bg-cyan-500 rounded-full filter blur-3xl opacity-20 animate-ping"
+                style="animation-duration:6s"></div>
+        </div>
+        <div class="max-w-4xl mx-auto text-center relative">
+            <!-- Avatar -->
+            <div class="flex justify-center mb-8">
+                <div class="w-36 h-36 rounded-full brand-gradient p-1 shadow-2xl avatar-pulse">
+                    <div
+                        class="w-full h-full rounded-full bg-slate-900 flex items-center justify-center overflow-hidden">
+                        <span class="text-6xl font-black brand-gradient-text">K</span>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-purple-500/30 bg-purple-500/10 text-purple-300 text-sm font-medium mb-6">
+                <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+                Disponible para nuevos proyectos
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black leading-tight mb-6">
+                Soy <span class="brand-gradient-text">Kristian</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-300 leading-relaxed mb-8 max-w-3xl mx-auto">
+                Fundador de SPM Design Agency. Especialista en <strong class="text-white">automatización con
+                    IA</strong>,
+                marketing digital y desarrollo web para negocios que quieren escalar sin contratar más personal.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="index.html#diagnosis"
+                    class="px-8 py-4 rounded-xl font-bold text-white brand-gradient hover:opacity-90 transition-opacity shadow-2xl text-lg">
+                    Trabajemos Juntos →
+                </a>
+                <a href="https://wa.link/7k0oxm" target="_blank"
+                    class="px-8 py-4 rounded-xl font-bold text-white border border-white/20 hover:bg-white/10 transition-colors text-lg flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
+                    WhatsApp directo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========= STATS ========= -->
+    <section class="py-12 px-6 border-y border-white/5 bg-slate-950/50">
+        <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="stat-card rounded-xl p-6 text-center reveal">
+                <div class="text-4xl font-black brand-gradient-text mb-1">+327</div>
+                <div class="text-slate-400 text-sm">Clientes generados este mes</div>
+            </div>
+            <div class="stat-card rounded-xl p-6 text-center reveal">
+                <div class="text-4xl font-black brand-gradient-text mb-1">98%</div>
+                <div class="text-slate-400 text-sm">Tasa de satisfacción</div>
+            </div>
+            <div class="stat-card rounded-xl p-6 text-center reveal">
+                <div class="text-4xl font-black brand-gradient-text mb-1">+50</div>
+                <div class="text-slate-400 text-sm">Negocios transformados</div>
+            </div>
+            <div class="stat-card rounded-xl p-6 text-center reveal">
+                <div class="text-4xl font-black brand-gradient-text mb-1">&lt;2 min</div>
+                <div class="text-slate-400 text-sm">Tiempo de respuesta</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========= MI HISTORIA ========= -->
+    <section class="py-24 px-6">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <span
+                    class="inline-block px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-bold uppercase tracking-wider mb-4">Mi
+                    Historia</span>
+                <h2 class="text-4xl md:text-5xl font-black leading-tight">
+                    Del <span class="brand-gradient-text">fracaso</span> a los<br>resultados reales
+                </h2>
+            </div>
+
+            <!-- Timeline -->
+            <div class="relative">
+                <div class="absolute left-6 top-0 bottom-0 w-0.5 timeline-line hidden md:block"></div>
+
+                <!-- Bloque 1 -->
+                <div class="reveal mb-12 md:pl-16 relative">
+                    <div
+                        class="hidden md:flex absolute left-0 w-12 h-12 rounded-full brand-gradient items-center justify-center text-white font-black text-lg shadow-lg flex-shrink-0">
+                        1</div>
+                    <div class="bg-slate-900 rounded-2xl p-8 border border-slate-800">
+                        <div class="text-purple-400 text-xs font-bold uppercase tracking-widest mb-2">El comienzo</div>
+                        <h3 class="text-2xl font-black mb-4">Vi cómo los negocios perdían dinero por no usar la
+                            tecnología</h3>
+                        <p class="text-slate-400 leading-relaxed">
+                            Trabajando con diferentes negocios locales, me di cuenta de algo que me obsesionó: la
+                            mayoría tenía un producto o servicio excelente, pero ninguneaban a sus clientes potenciales
+                            por no tener la infraestructura digital correcta. Llamadas sin respuesta. Leads que se
+                            enfriaban. Horas desperdiciadas en tareas que podía automatizar cualquier máquina.
+                        </p>
+                        <p class="text-slate-400 leading-relaxed mt-3">
+                            Eso me hizo una pregunta que cambió mi carrera: <strong class="text-white">¿Y si pudiéramos
+                                darle a cada pequeña empresa el sistema de ventas de una gran corporación?</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bloque 2 -->
+                <div class="reveal mb-12 md:pl-16 relative">
+                    <div
+                        class="hidden md:flex absolute left-0 w-12 h-12 rounded-full bg-slate-800 border-2 border-cyan-500 items-center justify-center text-cyan-400 font-black text-lg shadow-lg flex-shrink-0">
+                        2</div>
+                    <div class="bg-slate-900 rounded-2xl p-8 border border-slate-800">
+                        <div class="text-cyan-400 text-xs font-bold uppercase tracking-widest mb-2">El aprendizaje</div>
+                        <h3 class="text-2xl font-black mb-4">Me formé en lo que nadie más estaba haciendo</h3>
+                        <p class="text-slate-400 leading-relaxed">
+                            Me sumergí en el mundo de la automatización, la inteligencia artificial y el marketing de
+                            conversión. No lo hice como hobbie — lo hice con la mentalidad de quien sabe que tiene que
+                            dominar algo para poder transformar vidas con ello.
+                        </p>
+                        <p class="text-slate-400 leading-relaxed mt-3">
+                            Aprendí a construir <strong class="text-white">agentes de IA</strong> que prospectan,
+                            responden, venden y administran. A crear <strong class="text-white">webs que no son solo
+                                bonitas, sino que venden</strong>. Y a montar estrategias de marketing que generan
+                            retorno real, no solo likes.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bloque 3 -->
+                <div class="reveal mb-12 md:pl-16 relative">
+                    <div
+                        class="hidden md:flex absolute left-0 w-12 h-12 rounded-full brand-gradient items-center justify-center text-white font-black text-lg shadow-lg flex-shrink-0">
+                        3</div>
+                    <div class="bg-slate-900 rounded-2xl p-8 border border-slate-800">
+                        <div class="text-purple-400 text-xs font-bold uppercase tracking-widest mb-2">La agencia</div>
+                        <h3 class="text-2xl font-black mb-4">Nació SPM Design Agency</h3>
+                        <p class="text-slate-400 leading-relaxed">
+                            SPM Design Agency no es una agencia más. Es el resultado de haber entendido que los negocios
+                            no necesitan más redes sociales bonitas — necesitan <strong class="text-white">sistemas que
+                                funcionen 24/7 sin descanso</strong>.
+                        </p>
+                        <p class="text-slate-400 leading-relaxed mt-3">
+                            Cada cliente que trabaja con nosotros no solo recibe un servicio: recibe un equipo de
+                            agentes digitales que trabajan mientras ellos duermen, cierran ventas mientras atienden su
+                            negocio, y generan datos mientras toman café.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bloque 4 -->
+                <div class="reveal md:pl-16 relative">
+                    <div
+                        class="hidden md:flex absolute left-0 w-12 h-12 rounded-full bg-slate-800 border-2 border-cyan-500 items-center justify-center text-cyan-400 font-black text-lg shadow-lg flex-shrink-0">
+                        4</div>
+                    <div class="bg-slate-900 rounded-2xl p-8 border border-slate-800 relative overflow-hidden">
+                        <div class="absolute inset-0 opacity-5 brand-gradient"></div>
+                        <div class="text-cyan-400 text-xs font-bold uppercase tracking-widest mb-2">Hoy</div>
+                        <h3 class="text-2xl font-black mb-4">Resultados que hablan por sí solos</h3>
+                        <p class="text-slate-400 leading-relaxed">
+                            Clínicas que triplicaron sus citas. Inmobiliarias que cerraron contratos mientras dormían.
+                            Ecommerce con ventas que se multiplicaron. Academias que llenaron sus grupos sin llamar a
+                            nadie.
+                        </p>
+                        <p class="text-slate-400 leading-relaxed mt-3">
+                            Cada uno de esos resultados tiene nombre y apellidos. Y cada uno me recuerda por qué hago
+                            esto. <strong class="text-white">No por los sistemas, sino por el impacto real que generan
+                                en las personas detrás de cada negocio.</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========= LO QUE ME DIFERENCIA ========= -->
+    <section class="py-24 px-6 bg-slate-950/60">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-black mb-4">¿Por qué trabajar <span class="brand-gradient-text">conmigo</span>?
+                </h2>
+                <p class="text-slate-400 text-lg max-w-2xl mx-auto">No todos los estrategas digitales son iguales. Aquí
+                    van las diferencias que más valoran mis clientes.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div
+                    class="bg-slate-900 rounded-2xl p-8 border border-slate-800 hover:border-purple-500/50 transition-all reveal group">
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h3 class="text-xl font-black mb-3 group-hover:text-purple-400 transition-colors">Obsesión por los
+                        resultados</h3>
+                    <p class="text-slate-400">No mido el éxito en horas trabajadas ni en entregables bonitos. Lo mido en
+                        leads generados, citas agendadas y ventas cerradas.</p>
+                </div>
+                <div
+                    class="bg-slate-900 rounded-2xl p-8 border border-slate-800 hover:border-cyan-500/50 transition-all reveal group">
+                    <div class="text-4xl mb-4">⚡</div>
+                    <h3 class="text-xl font-black mb-3 group-hover:text-cyan-400 transition-colors">Velocidad de
+                        ejecución</h3>
+                    <p class="text-slate-400">Mientras otras agencias tardan meses en entregar, nosotros implementamos
+                        en semanas. Cada día sin sistema es un día perdiendo dinero.</p>
+                </div>
+                <div
+                    class="bg-slate-900 rounded-2xl p-8 border border-slate-800 hover:border-purple-500/50 transition-all reveal group">
+                    <div class="text-4xl mb-4">🤝</div>
+                    <h3 class="text-xl font-black mb-3 group-hover:text-purple-400 transition-colors">Trato directo y
+                        transparente</h3>
+                    <p class="text-slate-400">Sin intermediarios. Hablas directamente conmigo en todo el proceso. Sabes
+                        exactamente qué se está haciendo y por qué.</p>
+                </div>
+                <div
+                    class="bg-slate-900 rounded-2xl p-8 border border-slate-800 hover:border-cyan-500/50 transition-all reveal group">
+                    <div class="text-4xl mb-4">🧠</div>
+                    <h3 class="text-xl font-black mb-3 group-hover:text-cyan-400 transition-colors">IA de verdad, no de
+                        marketing</h3>
+                    <p class="text-slate-400">Cuando digo "automatización con IA" no me refiero a chatbots de FAQs. Me
+                        refiero a agentes que prospectan, cierran y administran.</p>
+                </div>
+                <div
+                    class="bg-slate-900 rounded-2xl p-8 border border-slate-800 hover:border-purple-500/50 transition-all reveal group">
+                    <div class="text-4xl mb-4">📈</div>
+                    <h3 class="text-xl font-black mb-3 group-hover:text-purple-400 transition-colors">Visión a largo
+                        plazo</h3>
+                    <p class="text-slate-400">No construyo sistemas para este mes. Construyo infraestructura que escala
+                        contigo durante años sin que tengas que rehacerlo todo.</p>
+                </div>
+                <div
+                    class="bg-slate-900 rounded-2xl p-8 border border-slate-800 hover:border-cyan-500/50 transition-all reveal group">
+                    <div class="text-4xl mb-4">🔒</div>
+                    <h3 class="text-xl font-black mb-3 group-hover:text-cyan-400 transition-colors">Garantía real de
+                        compromiso</h3>
+                    <p class="text-slate-400">Si en el primer mes no ves resultados tangibles, hablamos. No desaparezco
+                        después de entregar. Estoy aquí para que funcione de verdad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========= VALORES PERSONALES ========= -->
+    <section class="py-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div
+                class="bg-gradient-to-br from-purple-900/20 to-cyan-900/10 rounded-3xl border border-purple-500/20 p-10 md:p-16 text-center reveal relative overflow-hidden">
+                <div class="absolute -top-20 -left-20 w-64 h-64 bg-purple-600 rounded-full filter blur-3xl opacity-10">
+                </div>
+                <div
+                    class="absolute -bottom-20 -right-20 w-64 h-64 bg-cyan-500 rounded-full filter blur-3xl opacity-10">
+                </div>
+                <span class="text-5xl mb-6 block">💬</span>
+                <blockquote class="text-2xl md:text-3xl font-black leading-relaxed text-white mb-6 relative">
+                    "No trabajo para tener más clientes. Trabajo para que <span class="brand-gradient-text">mis clientes
+                        tengan más clientes</span>."
+                </blockquote>
+                <cite class="text-slate-400 text-lg">— Kristian, Fundador de SPM Design Agency</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========= CTA FINAL ========= -->
+    <section class="py-24 px-6 bg-slate-950/60">
+        <div class="max-w-3xl mx-auto text-center reveal">
+            <h2 class="text-4xl md:text-5xl font-black mb-6">
+                ¿Listo para dar el<br><span class="brand-gradient-text">siguiente paso</span>?
+            </h2>
+            <p class="text-slate-400 text-xl mb-10 max-w-2xl mx-auto">
+                Si has llegado hasta aquí, es porque algo en lo que hago resuena contigo. Demos el primer paso juntos —
+                sin compromiso, sin presión.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="index.html#diagnosis"
+                    class="px-10 py-5 rounded-xl font-bold text-white brand-gradient hover:opacity-90 transition-opacity shadow-2xl text-xl">
+                    Solicitar Diagnóstico Gratuito 🚀
+                </a>
+                <a href="https://wa.link/7k0oxm" target="_blank"
+                    class="px-10 py-5 rounded-xl font-bold text-white border border-white/20 hover:bg-white/10 transition-colors text-xl flex items-center gap-3">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
+                    Hablar por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========= FOOTER ========= -->
+    <footer class="border-t border-white/5 py-10 px-6">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-8 h-8 rounded-full brand-gradient flex items-center justify-center text-white font-black text-sm">
+                    S</div>
+                <span class="font-bold">SPM Design Agency</span>
+            </div>
+            <p class="text-slate-500 text-sm text-center">© 2026 SPM Design Agency. Todos los derechos reservados.</p>
+            <div class="flex gap-6 text-slate-500 text-sm">
+                <a href="index.html" class="hover:text-purple-400 transition-colors">Inicio</a>
+                <a href="trabajos.html" class="hover:text-purple-400 transition-colors">Trabajos</a>
+                <a href="precios.html" class="hover:text-purple-400 transition-colors">Precios</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll reveal
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        reveals.forEach(el => observer.observe(el));
+
+        // Scroll-to-top
+        window.addEventListener('scroll', () => {
+            const btn = document.getElementById('scroll-top');
+            if (btn) {
+                btn.style.opacity = window.scrollY > 400 ? '1' : '0';
+                btn.style.pointerEvents = window.scrollY > 400 ? 'auto' : 'none';
+            }
+        });
+    </script>
+
+</body>
+
+</html>
