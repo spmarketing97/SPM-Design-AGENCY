@@ -317,7 +317,8 @@
                     <span class="w-3 h-3 rounded-full bg-yellow-500 inline-block"></span>
                     <span class="w-3 h-3 rounded-full bg-green-500 inline-block"></span>
                     <span class="ml-4 text-xs text-slate-500 font-mono">📊 Panel de Resultados — <span
-                            class="text-green-400 font-bold">+327 nuevos clientes generados este mes</span> · 98%
+                            class="text-green-400 font-bold"><span class="counter" data-target="327">0</span> nuevos
+                            clientes generados este mes</span> · 98%
                         satisfacción · Tiempo de respuesta: &lt;2 min</span>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
@@ -336,7 +337,8 @@
                     </div>
                     <div
                         class="bg-gradient-to-br from-purple-900/40 to-slate-800 rounded-xl p-5 border border-purple-500/20 text-center">
-                        <div class="text-4xl font-black brand-gradient-text mb-1">-62%</div>
+                        <div class="text-4xl font-black brand-gradient-text mb-1 counter" data-target="62"
+                            data-suffix="%">-0%</div>
                         <div class="text-xs text-slate-400 font-bold uppercase tracking-widest">Costos operativos</div>
                         <div class="mt-2 text-xs text-green-400 font-bold">↓ Ahorro real garantizado</div>
                     </div>
@@ -381,22 +383,26 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
                 <div>
-                    <div class="text-3xl font-black brand-gradient-text">+150</div>
+                    <div class="text-3xl font-black brand-gradient-text counter" data-target="150" data-prefix="+">+0
+                    </div>
                     <div class="text-xs text-slate-400 font-bold uppercase tracking-widest mt-1">Negocios Transformados
                     </div>
                 </div>
                 <div>
-                    <div class="text-3xl font-black brand-gradient-text">98%</div>
+                    <div class="text-3xl font-black brand-gradient-text counter" data-target="98" data-suffix="%">0%
+                    </div>
                     <div class="text-xs text-slate-400 font-bold uppercase tracking-widest mt-1">Clientes Satisfechos
                     </div>
                 </div>
                 <div>
-                    <div class="text-3xl font-black brand-gradient-text">€2M+</div>
+                    <div class="text-3xl font-black brand-gradient-text counter" data-target="2" data-prefix="€"
+                        data-suffix="M+">€0M+</div>
                     <div class="text-xs text-slate-400 font-bold uppercase tracking-widest mt-1">Generados para Clientes
                     </div>
                 </div>
                 <div>
-                    <div class="text-3xl font-black brand-gradient-text">72h</div>
+                    <div class="text-3xl font-black brand-gradient-text counter" data-target="72" data-suffix="h">0h
+                    </div>
                     <div class="text-xs text-slate-400 font-bold uppercase tracking-widest mt-1">Implementación Inicial
                     </div>
                 </div>
@@ -535,8 +541,8 @@
                     <h4 class="text-2xl font-bold mb-3">Agente Prospector</h4>
                     <p class="text-slate-400 mb-6">Encuentra, califica y contacta clientes potenciales en LinkedIn,
                         Email y Web de forma automática — dia y noche, sin descanso.</p>
-                    <div class="text-sm font-bold brand-gradient-text flex items-center gap-2">
-                        Impacto: Pipeline lleno 24/7 <span class="material-symbols-outlined text-sm">trending_up</span>
+                    <div class="text-sm font-bold brand-gradient-text">
+                        Impacto: Pipeline lleno 24/7
                     </div>
                 </div>
                 <!-- Cierre -->
@@ -552,8 +558,8 @@
                     <h4 class="text-2xl font-bold mb-3">Closer Omnicanal</h4>
                     <p class="text-slate-400 mb-6">Responde dudas, maneja objeciones y agenda citas en WhatsApp,
                         Instagram y Messenger en segundos, sin importar el sector.</p>
-                    <div class="text-sm font-bold brand-gradient-text flex items-center gap-2">
-                        Impacto: +300% Tasa Conversión <span class="material-symbols-outlined text-sm">bolt</span>
+                    <div class="text-sm font-bold brand-gradient-text">
+                        Impacto: +300% Tasa Conversión
                     </div>
                 </div>
                 <!-- Teleoperador -->
@@ -575,9 +581,8 @@
                     <h4 class="text-2xl font-bold mb-3">Teleoperador IA</h4>
                     <p class="text-slate-400 mb-6">Voz humana para llamadas de confirmación o atención al
                         cliente — cero esperas, disponible 24/7 sin coste de personal.</p>
-                    <div class="text-sm font-bold brand-gradient-text flex items-center gap-2">
-                        Impacto: Zero Esperas Telefónicas <span
-                            class="material-symbols-outlined text-sm">phone_in_talk</span>
+                    <div class="text-sm font-bold brand-gradient-text">
+                        Impacto: Zero Esperas Telefónicas
                     </div>
                 </div>
                 <!-- Facturación -->
@@ -593,8 +598,8 @@
                     <h4 class="text-2xl font-bold mb-3">Gestor Administrativo</h4>
                     <p class="text-slate-400 mb-6">Automatiza facturas, cobros, conciliaciones bancarias y reportes
                         sin un solo clic manual. Tu contabilidad en piloto automático.</p>
-                    <div class="text-sm font-bold brand-gradient-text flex items-center gap-2">
-                        Impacto: Error Humano 0% <span class="material-symbols-outlined text-sm">check_circle</span>
+                    <div class="text-sm font-bold brand-gradient-text">
+                        Impacto: Error Humano 0%
                     </div>
                 </div>
                 <!-- Marketing Digital -->
@@ -616,8 +621,8 @@
                     <h4 class="text-2xl font-bold mb-3">Impulso Digital</h4>
                     <p class="text-slate-400 mb-6">Estrategia de contenido, SEO, Ads y redes sociales para posicionar tu
                         empresa online y atraer clientes de todo el mundo.</p>
-                    <div class="text-sm font-bold brand-gradient-text flex items-center gap-2">
-                        Impacto: Visibilidad Global <span class="material-symbols-outlined text-sm">public</span>
+                    <div class="text-sm font-bold brand-gradient-text">
+                        Impacto: Visibilidad Global
                     </div>
                 </div>
                 <!-- Web & Landing Pages -->
@@ -633,7 +638,7 @@
                     <h4 class="text-2xl font-bold mb-3">Desarrollo Web & Landing Pages</h4>
                     <p class="text-slate-400 mb-6">Diseñamos páginas de alta conversión que capturan leads y venden
                         solas. Veloces, modernas y optimizadas para Google.</p>
-                    <div class="text-sm font-bold brand-gradient-text flex items-center gap-2">
+                    <div class="text-sm font-bold brand-gradient-text">
                         Impacto: +200% Contactos desde Web
                     </div>
                 </div>
@@ -656,9 +661,8 @@
                     <h4 class="text-2xl font-bold mb-3">Analista Estratégico</h4>
                     <p class="text-slate-400 mb-6">Analiza miles de datos en tiempo real para predecir tendencias y
                         optimizar rentabilidad en cualquier modelo de negocio.</p>
-                    <div class="text-sm font-bold brand-gradient-text flex items-center gap-2">
-                        Impacto: Decisiones Basadas en Datos <span
-                            class="material-symbols-outlined text-sm">query_stats</span>
+                    <div class="text-sm font-bold brand-gradient-text">
+                        Impacto: Decisiones Basadas en Datos
                     </div>
                 </div>
             </div>
@@ -670,15 +674,17 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
                 <div class="reveal animate-count">
-                    <div class="text-6xl font-black mb-2">+3X</div>
+                    <div class="text-6xl font-black mb-2 counter" data-target="3" data-prefix="+" data-suffix="X">+0X
+                    </div>
                     <p class="font-bold uppercase tracking-widest text-sm opacity-80">Conversión de Ventas</p>
                 </div>
                 <div class="reveal animate-count delay-200">
-                    <div class="text-6xl font-black mb-2">-60%</div>
+                    <div class="text-6xl font-black mb-2 counter" data-target="60" data-prefix="-" data-suffix="%">-0%
+                    </div>
                     <p class="font-bold uppercase tracking-widest text-sm opacity-80">Costos Operativos</p>
                 </div>
                 <div class="reveal animate-count delay-400">
-                    <div class="text-6xl font-black mb-2">24/7</div>
+                    <div class="text-6xl font-black mb-2 counter" data-target="24" data-suffix="/7">0/7</div>
                     <p class="font-bold uppercase tracking-widest text-sm opacity-80">Disponibilidad Total</p>
                 </div>
             </div>
@@ -1249,6 +1255,54 @@
                 scrollBtn.style.pointerEvents = 'none';
             }
         });
+
+        // ---- Counters animation logic ----
+        const animateCounters = () => {
+            const counters = document.querySelectorAll('.counter');
+            const speed = 200;
+
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const prefix = counter.getAttribute('data-prefix') || '';
+                const suffix = counter.getAttribute('data-suffix') || '';
+
+                // Initialize text if it hasn't been started
+                if (counter.innerText === '0' || counter.innerText === prefix + '0' + suffix) {
+                    const updateCount = () => {
+                        const currentText = counter.innerText.replace(prefix, '').replace(suffix, '');
+                        const current = parseFloat(currentText) || 0;
+                        const inc = target / speed;
+
+                        if (current < target) {
+                            const next = Math.min(target, current + inc);
+                            counter.innerText = prefix + Math.ceil(next) + suffix;
+                            setTimeout(updateCount, 1);
+                        } else {
+                            counter.innerText = prefix + target + suffix;
+                        }
+                    };
+                    updateCount();
+                }
+            });
+        };
+
+        // ---- Scroll reveal & Counters Observer ----
+        const observerOptions = { threshold: 0.15 };
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    // If the entry contains counters or is a counter container, trigger animation
+                    if (entry.target.classList.contains('animate-count') || entry.target.contains(document.querySelector('.counter'))) {
+                        animateCounters();
+                    }
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        reveals.forEach(el => revealObserver.observe(el));
 
         // ---- FAQ accordion ----
         function toggleFaq(btn) {
