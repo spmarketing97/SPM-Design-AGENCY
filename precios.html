@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Precios | SPM Design Agency — Marketing Digital & AI Automation</title>
+    <meta name="description"
+        content="Planes de automatización con IA y marketing digital para negocios de cualquier tamaño. Starter desde 497€/mes. Sin permanencia, con garantía." />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7B3FE4",
+                        "primary-end": "#00B4D8",
+                        "background-dark": "#0d0d1a",
+                    },
+                    fontFamily: { "display": ["Inter"] }
+                },
+            },
+        }
+    </script>
+    <style>
+        .brand-gradient {
+            background: linear-gradient(135deg, #7B3FE4, #00B4D8);
+        }
+
+        .brand-gradient-text {
+            background: linear-gradient(135deg, #7B3FE4, #00B4D8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .logo-circle {
+            border: 3px solid transparent;
+            background: linear-gradient(#0d0d1a, #0d0d1a) padding-box, linear-gradient(135deg, #7B3FE4, #00B4D8) border-box;
+            border-radius: 9999px;
+        }
+
+        .plan-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .plan-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(123, 63, 228, 0.25);
+        }
+
+        .popular-ring {
+            box-shadow: 0 0 0 2px #7B3FE4, 0 20px 60px rgba(123, 63, 228, 0.3);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .delay-1 {
+            animation-delay: 0.1s;
+            opacity: 0;
+        }
+
+        .delay-2 {
+            animation-delay: 0.25s;
+            opacity: 0;
+        }
+
+        .delay-3 {
+            animation-delay: 0.4s;
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body class="bg-background-dark font-display text-slate-100 scroll-smooth">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 w-full border-b border-slate-800 bg-background-dark/90 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="logo-circle w-10 h-10 overflow-hidden flex items-center justify-center flex-shrink-0">
+                        <img src="IMG/logo-spm.png" alt="SPM Logo" class="w-9 h-9 object-cover rounded-full" />
+                    </div>
+                    <span class="text-lg font-black tracking-tight uppercase brand-gradient-text">SPM Design
+                        Agency</span>
+                </a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a class="text-sm font-medium hover:text-purple-400 transition-colors"
+                        href="index.html#problem">Problema</a>
+                    <a class="text-sm font-medium hover:text-purple-400 transition-colors"
+                        href="index.html#solution">Agentes</a>
+                    <a class="text-sm font-medium hover:text-purple-400 transition-colors"
+                        href="trabajos.html">Trabajos</a>
+                    <a class="text-sm font-medium text-purple-400 border-b border-purple-400"
+                        href="precios.html">Precios</a>
+                    <a class="text-sm font-medium hover:text-purple-400 transition-colors"
+                        href="index.html#sobre-mi">Sobre Mí</a>
+                    <a class="px-5 py-2 rounded-lg text-sm font-bold text-white brand-gradient hover:opacity-90 transition-opacity shadow-lg"
+                        href="index.html#diagnosis">Solicitar Diagnóstico</a>
+                </div>
+                <button class="md:hidden p-2 rounded-lg text-slate-400 hover:text-white"
+                    onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col gap-3">
+                    <a class="text-sm font-medium hover:text-purple-400 py-2" href="index.html#problem">Problema</a>
+                    <a class="text-sm font-medium hover:text-purple-400 py-2" href="index.html#solution">Agentes</a>
+                    <a class="text-sm font-medium hover:text-purple-400 py-2" href="trabajos.html">Trabajos</a>
+                    <a class="text-sm font-medium text-purple-400 py-2" href="precios.html">Precios</a>
+                    <a class="text-sm font-medium hover:text-purple-400 py-2" href="index.html#sobre-mi">Sobre Mí</a>
+                    <a class="px-5 py-2 rounded-lg text-sm font-bold text-white brand-gradient text-center"
+                        href="index.html#diagnosis">Solicitar Diagnóstico</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-24 pb-16 relative overflow-hidden">
+        <div
+            class="absolute top-[-5%] left-[-5%] w-[50%] h-[50%] bg-purple-600/20 blur-[140px] rounded-full pointer-events-none">
+        </div>
+        <div
+            class="absolute bottom-0 right-[-5%] w-[35%] h-[40%] bg-cyan-400/10 blur-[120px] rounded-full pointer-events-none">
+        </div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-bold uppercase tracking-widest mb-6">
+                <span class="w-2 h-2 rounded-full bg-purple-400 animate-ping inline-block"></span>
+                Sin permanencia · Garantía 30 días
+            </div>
+            <h1 class="text-4xl md:text-6xl font-black leading-tight mb-6">
+                Inversión que <span class="brand-gradient-text">Genera Retorno</span><br />desde el Primer Mes
+            </h1>
+            <p class="text-lg text-slate-400 max-w-2xl mx-auto">
+                Elige el plan que se adapta a tu negocio. Todos incluyen implementación, soporte y acceso a nuestra
+                metodología de crecimiento con IA.
+            </p>
+            <!-- Billing toggle -->
+            <div class="flex items-center justify-center gap-4 mt-8">
+                <span class="text-sm font-bold text-white">Mensual</span>
+                <button id="billing-toggle" onclick="toggleBilling()"
+                    class="relative w-14 h-7 bg-slate-700 rounded-full transition-colors">
+                    <span id="toggle-dot"
+                        class="absolute left-1 top-1 w-5 h-5 bg-white rounded-full transition-all"></span>
+                </button>
+                <span class="text-sm font-bold text-slate-400">Anual <span
+                        class="text-green-400 font-black">(–20%)</span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Cards -->
+    <section class="pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+
+                <!-- STARTER -->
+                <div
+                    class="plan-card fade-in delay-1 bg-slate-900 rounded-2xl border border-slate-700 p-8 flex flex-col">
+                    <div class="mb-6">
+                        <div
+                            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-slate-400 text-xs font-bold uppercase tracking-widest mb-4">
+                            <span class="material-symbols-outlined text-sm text-slate-400">store</span> Starter
+                        </div>
+                        <p class="text-slate-400 text-sm mb-6">Ideal para negocios pequeños y autónomos que quieren
+                            empezar a automatizar y ganar visibilidad online.</p>
+                        <div class="flex items-end gap-1 mb-1">
+                            <span class="text-5xl font-black text-white" id="starter-price">497€</span>
+                            <span class="text-slate-400 text-sm mb-2">/mes</span>
+                        </div>
+                        <p class="text-xs text-slate-500">o <span id="starter-annual">4.770€/año</span> (-20%)</p>
+                    </div>
+                    <hr class="border-slate-700 mb-6" />
+                    <ul class="space-y-3 text-sm flex-grow mb-8">
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-green-400 text-base mt-0.5">check_circle</span><span>Chatbot
+                                IA para WhatsApp o Web (respuesta 24/7)</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-green-400 text-base mt-0.5">check_circle</span><span>Landing
+                                Page de alta conversión (diseño + configuración)</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-green-400 text-base mt-0.5">check_circle</span><span>Gestión
+                                de redes sociales (3 posts/semana)</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-green-400 text-base mt-0.5">check_circle</span><span>Posicionamiento
+                                SEO básico local</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-green-400 text-base mt-0.5">check_circle</span><span>Automatización
+                                de respuestas y seguimiento de leads</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-green-400 text-base mt-0.5">check_circle</span><span>Informe
+                                mensual de resultados</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-green-400 text-base mt-0.5">check_circle</span><span>Soporte
+                                por email (respuesta en 48h)</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-slate-600 text-base mt-0.5">remove_circle</span><span
+                                class="text-slate-500">Campañas de Ads (requiere plan Avanzado)</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-slate-600 text-base mt-0.5">remove_circle</span><span
+                                class="text-slate-500">Agente prospector IA (requiere plan Avanzado)</span></li>
+                    </ul>
+                    <a href="index.html#diagnosis"
+                        class="w-full text-center px-6 py-4 rounded-xl font-bold text-white border-2 border-purple-500 hover:brand-gradient hover:border-transparent hover:bg-purple-600 transition-all">
+                        Empezar con Starter
+                    </a>
+                    <p class="text-xs text-slate-500 text-center mt-3">Sin permanencia · Cancela cuando quieras</p>
+                </div>
+
+                <!-- AVANZADO (POPULAR) -->
+                <div class="plan-card fade-in delay-2 relative bg-slate-900 rounded-2xl p-8 flex flex-col popular-ring"
+                    style="border:2px solid #7B3FE4;">
+                    <!-- Popular badge -->
+                    <div
+                        class="absolute -top-4 left-1/2 -translate-x-1/2 brand-gradient text-white text-xs font-black uppercase tracking-widest px-5 py-1.5 rounded-full shadow-lg whitespace-nowrap">
+                        🔥 Más Popular
+                    </div>
+                    <div class="mb-6 mt-4">
+                        <div
+                            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-bold uppercase tracking-widest mb-4">
+                            <span class="material-symbols-outlined text-sm">rocket_launch</span> Avanzado
+                        </div>
+                        <p class="text-slate-400 text-sm mb-6">Para PYMES y negocios en crecimiento que necesitan un
+                            sistema completo de captación y automatización.</p>
+                        <div class="flex items-end gap-1 mb-1">
+                            <span class="text-5xl font-black brand-gradient-text" id="avanzado-price">997€</span>
+                            <span class="text-slate-400 text-sm mb-2">/mes</span>
+                        </div>
+                        <p class="text-xs text-slate-500">o <span id="avanzado-annual">9.571€/año</span> (-20%)</p>
+                    </div>
+                    <hr class="border-purple-500/30 mb-6" />
+                    <ul class="space-y-3 text-sm flex-grow mb-8">
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-green-400 text-base mt-0.5">check_circle</span><span><strong
+                                    class="text-white">Todo lo del plan Starter</strong></span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-green-400 text-base mt-0.5">check_circle</span><span>Agente
+                                IA de prospección automática (LinkedIn + Email)</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-green-400 text-base mt-0.5">check_circle</span><span>Campañas
+                                de Google Ads o Meta Ads gestionadas</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-green-400 text-base mt-0.5">check_circle</span><span>Embudo
+                                de ventas completo (captación → cierre)</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-green-400 text-base mt-0.5">check_circle</span><span>Email
+                                marketing automatizado (secuencias + newsletters)</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-green-400 text-base mt-0.5">check_circle</span><span>CRM
+                                con IA para seguimiento de leads</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-green-400 text-base mt-0.5">check_circle</span><span>Gestor
+                                administrativo IA (facturas, cobros, recordatorios)</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-green-400 text-base mt-0.5">check_circle</span><span>Dashboard
+                                de analítica en tiempo real</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-green-400 text-base mt-0.5">check_circle</span><span>Soporte
+                                prioritario por WhatsApp (respuesta en 24h)</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-green-400 text-base mt-0.5">check_circle</span><span>Reunión
+                                estratégica mensual 1:1 (60 min)</span></li>
+                    </ul>
+                    <a href="index.html#diagnosis"
+                        class="w-full text-center px-6 py-4 rounded-xl font-bold text-white brand-gradient hover:opacity-90 transition-opacity shadow-xl">
+                        Empezar con Avanzado
+                    </a>
+                    <p class="text-xs text-slate-500 text-center mt-3">Sin permanencia · Garantía de resultados 30 días
+                    </p>
+                </div>
+
+                <!-- PREMIUM -->
+                <div
+                    class="plan-card fade-in delay-3 bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl border border-slate-700 p-8 flex flex-col">
+                    <div class="mb-6">
+                        <div
+                            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold uppercase tracking-widest mb-4">
+                            <span class="material-symbols-outlined text-sm">diamond</span> Premium
+                        </div>
+                        <p class="text-slate-400 text-sm mb-6">Para empresas medianas y grandes que buscan una solución
+                            enterprise completa con automatización total y soporte dedicado.</p>
+                        <div class="flex items-end gap-1 mb-1">
+                            <span class="text-5xl font-black text-cyan-400" id="premium-price">1.997€</span>
+                            <span class="text-slate-400 text-sm mb-2">/mes</span>
+                        </div>
+                        <p class="text-xs text-slate-500">o <span id="premium-annual">19.171€/año</span> (-20%)</p>
+                    </div>
+                    <hr class="border-slate-700 mb-6" />
+                    <ul class="space-y-3 text-sm flex-grow mb-8">
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-green-400 text-base mt-0.5">check_circle</span><span><strong
+                                    class="text-white">Todo lo del plan Avanzado</strong></span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-cyan-400 text-base mt-0.5">check_circle</span><span>Ecosistema
+                                completo de Agentes IA a medida</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-cyan-400 text-base mt-0.5">check_circle</span><span>Teleoperador
+                                IA con voz humana (llamadas 24/7)</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-cyan-400 text-base mt-0.5">check_circle</span><span>Auditoría
+                                y automatización de todos los procesos internos</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-cyan-400 text-base mt-0.5">check_circle</span><span>Integraciones
+                                con ERP, CRM propio, o sistemas de terceros</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-cyan-400 text-base mt-0.5">check_circle</span><span>Analista
+                                estratégico IA (predicción de tendencias y KPIs)</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-cyan-400 text-base mt-0.5">check_circle</span><span>Multi-idioma
+                                y expansión internacional</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-cyan-400 text-base mt-0.5">check_circle</span><span>Account
+                                Manager dedicado (respuesta en 4h)</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-cyan-400 text-base mt-0.5">check_circle</span><span>Reuniones
+                                estratégicas quincenales (90 min)</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-cyan-400 text-base mt-0.5">check_circle</span><span>Formación
+                                interna al equipo (2 sesiones/mes)</span></li>
+                        <li class="flex items-start gap-3"><span
+                                class="material-symbols-outlined text-cyan-400 text-base mt-0.5">check_circle</span><span>SLA
+                                garantizado + informes ejecutivos semanales</span></li>
+                    </ul>
+                    <a href="index.html#diagnosis"
+                        class="w-full text-center px-6 py-4 rounded-xl font-bold text-white border-2 border-cyan-400 hover:bg-cyan-400/10 transition-all">
+                        Hablar con un Experto
+                    </a>
+                    <p class="text-xs text-slate-500 text-center mt-3">Personalizable · Incluye auditoría inicial</p>
+                </div>
+
+            </div>
+
+            <!-- Comparison note -->
+            <div class="mt-16 text-center">
+                <p class="text-slate-400 text-sm max-w-2xl mx-auto">¿No sabes qué plan necesitas? <a
+                        href="index.html#diagnosis" class="text-purple-400 hover:underline font-bold">Solicita tu
+                        diagnóstico gratuito</a> y te ayudamos a elegir la solución perfecta para tu negocio. Sin
+                    compromiso.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value comparison table -->
+    <section class="py-16 bg-slate-900/50 border-y border-slate-800">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-3xl font-black text-center mb-12">Comparativa de <span
+                    class="brand-gradient-text">Planes</span></h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm">
+                    <thead>
+                        <tr class="border-b border-slate-700">
+                            <th class="text-left py-4 px-4 text-slate-400 font-bold">Característica</th>
+                            <th class="text-center py-4 px-4 font-bold">Starter</th>
+                            <th class="text-center py-4 px-4 font-bold text-purple-400">Avanzado ⭐</th>
+                            <th class="text-center py-4 px-4 font-bold text-cyan-400">Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-800">
+                        <tr>
+                            <td class="py-3 px-4 text-slate-300">Chatbot IA 24/7</td>
+                            <td class="text-center py-3 px-4 text-green-400">✓</td>
+                            <td class="text-center py-3 px-4 text-green-400">✓</td>
+                            <td class="text-center py-3 px-4 text-green-400">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-slate-300">Landing Page</td>
+                            <td class="text-center py-3 px-4 text-green-400">✓</td>
+                            <td class="text-center py-3 px-4 text-green-400">✓</td>
+                            <td class="text-center py-3 px-4 text-green-400">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-slate-300">Redes Sociales</td>
+                            <td class="text-center py-3 px-4 text-slate-400">3 posts/sem</td>
+                            <td class="text-center py-3 px-4 text-slate-400">5 posts/sem</td>
+                            <td class="text-center py-3 px-4 text-slate-400">Ilimitado</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-slate-300">Campañas Ads</td>
+                            <td class="text-center py-3 px-4 text-slate-600">—</td>
+                            <td class="text-center py-3 px-4 text-green-400">✓</td>
+                            <td class="text-center py-3 px-4 text-green-400">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-slate-300">Agente Prospector IA</td>
+                            <td class="text-center py-3 px-4 text-slate-600">—</td>
+                            <td class="text-center py-3 px-4 text-green-400">✓</td>
+                            <td class="text-center py-3 px-4 text-green-400">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-slate-300">CRM con IA</td>
+                            <td class="text-center py-3 px-4 text-slate-600">—</td>
+                            <td class="text-center py-3 px-4 text-green-400">✓</td>
+                            <td class="text-center py-3 px-4 text-green-400">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-slate-300">Teleoperador IA (voz)</td>
+                            <td class="text-center py-3 px-4 text-slate-600">—</td>
+                            <td class="text-center py-3 px-4 text-slate-600">—</td>
+                            <td class="text-center py-3 px-4 text-green-400">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-slate-300">Integraciones ERP/CRM</td>
+                            <td class="text-center py-3 px-4 text-slate-600">—</td>
+                            <td class="text-center py-3 px-4 text-slate-600">—</td>
+                            <td class="text-center py-3 px-4 text-green-400">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-slate-300">Account Manager</td>
+                            <td class="text-center py-3 px-4 text-slate-600">—</td>
+                            <td class="text-center py-3 px-4 text-slate-600">—</td>
+                            <td class="text-center py-3 px-4 text-green-400">Dedicado</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-slate-300">Soporte</td>
+                            <td class="text-center py-3 px-4 text-slate-400">Email 48h</td>
+                            <td class="text-center py-3 px-4 text-slate-400">WhatsApp 24h</td>
+                            <td class="text-center py-3 px-4 text-slate-400">WhatsApp 4h</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-slate-300">Reuniones estratégicas</td>
+                            <td class="text-center py-3 px-4 text-slate-600">—</td>
+                            <td class="text-center py-3 px-4 text-slate-400">1/mes</td>
+                            <td class="text-center py-3 px-4 text-slate-400">2/mes</td>
+                        </tr>
+                        <tr class="border-t-2 border-purple-500/20">
+                            <td class="py-4 px-4 font-black text-white">Precio</td>
+                            <td class="text-center py-4 px-4 font-black text-white">497€/mes</td>
+                            <td class="text-center py-4 px-4 font-black text-purple-400">997€/mes</td>
+                            <td class="text-center py-4 px-4 font-black text-cyan-400">1.997€/mes</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Precios -->
+    <section class="py-20">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl font-black text-center mb-10">Preguntas sobre <span
+                    class="brand-gradient-text">precios</span></h2>
+            <div class="space-y-3">
+                <div class="bg-slate-800/60 rounded-xl border border-slate-700 overflow-hidden">
+                    <button onclick="toggleF(this)"
+                        class="w-full flex justify-between items-center p-5 text-left font-bold hover:text-purple-400 transition-colors">
+                        <span>¿Hay contrato de permanencia?</span>
+                        <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                    </button>
+                    <div class="hidden px-5 pb-5 text-slate-400">No. Todos nuestros planes son mensuales y puedes
+                        cancelar cuando quieras, sin penalizaciones.</div>
+                </div>
+                <div class="bg-slate-800/60 rounded-xl border border-slate-700 overflow-hidden">
+                    <button onclick="toggleF(this)"
+                        class="w-full flex justify-between items-center p-5 text-left font-bold hover:text-purple-400 transition-colors">
+                        <span>¿Puedo cambiar de plan en cualquier momento?</span>
+                        <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                    </button>
+                    <div class="hidden px-5 pb-5 text-slate-400">Sí. Puedes subir o bajar de plan en cualquier momento.
+                        El ajuste se aplica en el siguiente ciclo de facturación.</div>
+                </div>
+                <div class="bg-slate-800/60 rounded-xl border border-slate-700 overflow-hidden">
+                    <button onclick="toggleF(this)"
+                        class="w-full flex justify-between items-center p-5 text-left font-bold hover:text-purple-400 transition-colors">
+                        <span>¿Los precios incluyen el presupuesto de publicidad?</span>
+                        <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                    </button>
+                    <div class="hidden px-5 pb-5 text-slate-400">No. La gestión de campañas está incluida, pero el
+                        presupuesto publicitario (inversión en Google Ads, Meta Ads, etc.) es adicional y lo defines tú.
+                        Recomendamos un mínimo de 300€/mes para empezar.</div>
+                </div>
+                <div class="bg-slate-800/60 rounded-xl border border-slate-700 overflow-hidden">
+                    <button onclick="toggleF(this)"
+                        class="w-full flex justify-between items-center p-5 text-left font-bold hover:text-purple-400 transition-colors">
+                        <span>¿Qué incluye exactamente la garantía de 30 días?</span>
+                        <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+                    </button>
+                    <div class="hidden px-5 pb-5 text-slate-400">Si en los primeros 30 días no ves una mejora tangible y
+                        medible en tus métricas (leads, conversiones o automatización activa), revisamos toda la
+                        estrategia sin coste adicional hasta que funcione.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-cyan-900/10 pointer-events-none"></div>
+        <div class="max-w-3xl mx-auto px-4 text-center relative z-10">
+            <h2 class="text-4xl font-black mb-4">¿Listo para <span class="brand-gradient-text">automatizar tu
+                    crecimiento</span>?</h2>
+            <p class="text-slate-400 mb-8">Solicita tu diagnóstico gratuito. Analizamos tu negocio y te decimos
+                exactamente qué plan necesitas y qué ROI puedes esperar.</p>
+            <a href="index.html#diagnosis"
+                class="inline-block px-10 py-5 brand-gradient text-white font-black text-lg rounded-xl hover:opacity-90 transition-opacity shadow-2xl">
+                Solicitar Diagnóstico Gratuito 🚀
+            </a>
+            <p class="text-slate-500 text-sm mt-4">Sin compromiso · Respuesta en menos de 24h</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-slate-800">
+        <div
+            class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-slate-500">
+            <span class="font-black brand-gradient-text uppercase tracking-tight">SPM Design Agency</span>
+            <div class="flex gap-6">
+                <button onclick="openLegal('aviso')" class="hover:text-purple-400 transition-colors">Aviso
+                    Legal</button>
+                <button onclick="openLegal('privacidad')"
+                    class="hover:text-purple-400 transition-colors">Privacidad</button>
+                <button onclick="openLegal('cookies')" class="hover:text-purple-400 transition-colors">Cookies</button>
+            </div>
+            <span>&copy; 2026 SPM Design Agency. Marketing Digital &amp; AI Automations.</span>
+        </div>
+    </footer>
+
+    <!-- Scroll-to-top -->
+    <button id="scroll-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver arriba"
+        class="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full brand-gradient text-white shadow-2xl flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:scale-110">
+        <span class="material-symbols-outlined">keyboard_arrow_up</span>
+    </button>
+
+    <!-- Legal Popups -->
+    <div id="legal-overlay" onclick="closeLegal()"
+        class="fixed inset-0 z-[200] bg-black/70 backdrop-blur-sm hidden items-center justify-center"
+        style="display:none">
+        <div onclick="event.stopPropagation()"
+            class="relative w-full max-w-2xl mx-4 bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl flex flex-col"
+            style="max-height:80vh">
+            <div class="flex justify-between items-center p-6 border-b border-slate-700">
+                <h3 id="legal-title" class="text-xl font-black brand-gradient-text"></h3>
+                <button onclick="closeLegal()" class="text-slate-400 hover:text-white"><span
+                        class="material-symbols-outlined">close</span></button>
+            </div>
+            <div id="legal-body" class="overflow-y-auto p-6 text-slate-300 leading-relaxed text-sm space-y-4"></div>
+            <div class="p-6 border-t border-slate-700">
+                <button onclick="closeLegal()"
+                    class="w-full brand-gradient text-white font-bold py-3 rounded-xl hover:opacity-90">Entendido</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner"
+        class="fixed bottom-0 left-0 right-0 z-[300] bg-slate-900 border-t border-slate-700 px-4 py-4 hidden">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-4 justify-between">
+            <p class="text-sm text-slate-300">Usamos cookies para mejorar tu experiencia. <button
+                    onclick="openLegal('cookies')" class="text-purple-400 hover:underline">Más info</button></p>
+            <div class="flex gap-3 flex-shrink-0">
+                <button onclick="rejectCookies()"
+                    class="px-5 py-2 text-sm border border-slate-600 text-slate-300 rounded-lg hover:bg-slate-800 transition">Rechazar</button>
+                <button onclick="acceptCookies()"
+                    class="px-6 py-2 text-sm brand-gradient text-white font-bold rounded-lg hover:opacity-90 transition">Entendido</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Scroll-to-top
+        const scrollBtn = document.getElementById('scroll-top-btn');
+        window.addEventListener('scroll', () => {
+            scrollBtn.style.opacity = window.scrollY > 400 ? '1' : '0';
+            scrollBtn.style.pointerEvents = window.scrollY > 400 ? 'auto' : 'none';
+        });
+
+        // FAQ
+        function toggleF(btn) {
+            const c = btn.nextElementSibling;
+            const i = btn.querySelector('.material-symbols-outlined');
+            const open = !c.classList.contains('hidden');
+            document.querySelectorAll('#faq-list .hidden, section .hidden').forEach(x => { });
+            c.classList.toggle('hidden');
+            i.style.transform = open ? '' : 'rotate(180deg)';
+        }
+
+        // Billing toggle
+        let isAnnual = false;
+        const prices = { starter: [497, 398], avanzado: [997, 798], premium: [1997, 1598] };
+        function toggleBilling() {
+            isAnnual = !isAnnual;
+            const dot = document.getElementById('toggle-dot');
+            dot.style.left = isAnnual ? 'calc(100% - 24px)' : '4px';
+            document.getElementById('billing-toggle').style.backgroundColor = isAnnual ? '#7B3FE4' : '';
+            document.getElementById('starter-price').textContent = (isAnnual ? prices.starter[1] : prices.starter[0]) + '€';
+            document.getElementById('avanzado-price').textContent = (isAnnual ? prices.avanzado[1] : prices.avanzado[0]) + '€';
+            document.getElementById('premium-price').textContent = isAnnual ? '1.598€' : '1.997€';
+            document.getElementById('starter-annual').textContent = isAnnual ? 'Facturado anualmente' : '4.770€/año (-20%)';
+            document.getElementById('avanzado-annual').textContent = isAnnual ? 'Facturado anualmente' : '9.571€/año (-20%)';
+            document.getElementById('premium-annual').textContent = isAnnual ? 'Facturado anualmente' : '19.171€/año (-20%)';
+        }
+
+        // Legal
+        const legalContent = {
+            aviso: { title: 'Aviso Legal', body: '<p><strong>Titular:</strong> SPM Design Agency</p><p>El acceso y uso de este sitio web implica la aceptación de los presentes términos. Todos los contenidos son propiedad de SPM Design Agency. Queda prohibida su reproducción sin autorización expresa.</p><p>Contacto: info@spmdesignagency.com</p>' },
+            privacidad: { title: 'Política de Privacidad', body: '<p><strong>Responsable:</strong> SPM Design Agency. Tus datos se usan para gestionar tu solicitud y enviarte información sobre nuestros servicios. No cedemos datos a terceros. Puedes ejercer tus derechos en info@spmdesignagency.com.</p>' },
+            cookies: { title: 'Política de Cookies', body: '<p>Usamos cookies técnicas, analíticas y de marketing. Al hacer clic en "Entendido" aceptas su uso. Puedes gestionarlas desde la configuración de tu navegador.</p>' }
+        };
+        function openLegal(t) {
+            document.getElementById('legal-title').textContent = legalContent[t].title;
+            document.getElementById('legal-body').innerHTML = legalContent[t].body;
+            document.getElementById('legal-overlay').style.display = 'flex';
+        }
+        function closeLegal() { document.getElementById('legal-overlay').style.display = 'none'; }
+        if (!localStorage.getItem('spm-cookies-accepted')) document.getElementById('cookie-banner').classList.remove('hidden');
+        function acceptCookies() { localStorage.setItem('spm-cookies-accepted', '1'); document.getElementById('cookie-banner').classList.add('hidden'); }
+        function rejectCookies() { localStorage.setItem('spm-cookies-accepted', '0'); document.getElementById('cookie-banner').classList.add('hidden'); }
+    </script>
+</body>
+
+</html>
