@@ -1,4 +1,3 @@
-º
 <!DOCTYPE html>
 <html class="dark" lang="es">
 
@@ -6,6 +5,12 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>KrisKNDesign Agency | Marketing Digital & AI Automation</title>
+
+    <!-- Performance Optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="IMG/LOGO.png" as="image">
+
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&display=swap"
@@ -1121,7 +1126,8 @@
                 <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;"
                     class="flex items-center gap-3 group transition-transform hover:scale-105">
                     <div class="logo-circle w-9 h-9 overflow-hidden flex items-center justify-center">
-                        <img src="IMG/LOGO.png" alt="KrisKNDesign Logo" class="w-8 h-8 object-cover rounded-full" />
+                        <img src="IMG/LOGO.png" alt="KrisKNDesign Logo" class="w-8 h-8 object-cover rounded-full"
+                            loading="lazy" />
                     </div>
                     <span class="text-lg font-black tracking-tight uppercase brand-gradient-text">KrisKNDesign
                         Agency</span>
@@ -1301,29 +1307,30 @@
         // ---- Counters animation logic ----
         const animateCounters = () => {
             const counters = document.querySelectorAll('.counter');
-            const speed = 200;
 
             counters.forEach(counter => {
                 const target = +counter.getAttribute('data-target');
                 const prefix = counter.getAttribute('data-prefix') || '';
                 const suffix = counter.getAttribute('data-suffix') || '';
 
-                // Initialize text if it hasn't been started
                 if (counter.innerText === '0' || counter.innerText === prefix + '0' + suffix) {
-                    const updateCount = () => {
-                        const currentText = counter.innerText.replace(prefix, '').replace(suffix, '');
-                        const current = parseFloat(currentText) || 0;
-                        const inc = target / 400; // Slower speed (was target / 200)
+                    let start = null;
+                    const duration = 2000; // 2 seconds animation
 
-                        if (current < target) {
-                            const next = Math.min(target, current + inc);
-                            counter.innerText = prefix + Math.ceil(next) + suffix;
-                            setTimeout(updateCount, 10); // Slower interval (was 1)
+                    const step = (timestamp) => {
+                        if (!start) start = timestamp;
+                        const progress = Math.min((timestamp - start) / duration, 1);
+                        const current = Math.floor(progress * target);
+
+                        counter.innerText = prefix + current + suffix;
+
+                        if (progress < 1) {
+                            window.requestAnimationFrame(step);
                         } else {
                             counter.innerText = prefix + target + suffix;
                         }
                     };
-                    updateCount();
+                    window.requestAnimationFrame(step);
                 }
             });
         };

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Grooming Lounge | Premium Barber &amp; Luxury Grooming</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#eead2b",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221c10",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>body {
+    font-family: "Inter", sans-serif
+    }
+.bg-hero-pattern {
+    background-image: linear-gradient(rgba(34, 28, 16, 0.7), rgba(34, 28, 16, 0.9)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuB_AnWteLWs9z8CaTOqLK9humaYqC4Peg46XUzK0Eq2uC1b6v_b41Loh-SEFplZAE2YfKsbRGDAyovnUAzFHQg2N5-kp0ZPtJcMZ8hjACWLndO7JCOw7tCi6rWeuRzriByUQ_e2MNxqoi7y95TOcQFFIf-cv13z3QS9mobhDTGWq-pMaqJVRuKDrCUZooMGsOWMAVLhYzy3Z04PaQmaWA93dd8iio1PjYJcOeYn9Gkl3B9oHrJJ73urUk52_nJx0aPKaAIhpQhB7YyY)
+    }</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display transition-colors duration-300">
+<!-- Header / Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined text-3xl">content_cut</span>
+<h1 class="text-xl font-bold tracking-tight text-slate-100 uppercase">The Grooming Lounge</h1>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#services">Services</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#lookbook">Lookbook</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#about">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#booking">Booking</a>
+</nav>
+<div class="flex items-center gap-4">
+<a class="hidden sm:flex items-center justify-center rounded-lg bg-primary px-6 py-2.5 text-sm font-bold text-background-dark hover:brightness-110 transition-all" href="#booking">
+                    Book Now
+                </a>
+<button class="md:hidden text-slate-100">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[85vh] flex items-center justify-center bg-hero-pattern bg-cover bg-center px-6" data-alt="Modern luxury barber shop interior with vintage chairs">
+<div class="max-w-4xl text-center space-y-8">
+<h2 class="text-primary text-sm font-bold uppercase tracking-[0.3em]">Established 2018</h2>
+<h1 class="text-5xl md:text-7xl font-black text-white leading-tight tracking-tight">
+                    Redefine Your Style, <br/>
+<span class="text-primary">Boost Your Confidence</span>
+</h1>
+<p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
+                    Experience the gold standard of modern barbering and luxury grooming. Our master stylists blend classic techniques with contemporary aesthetics.
+                </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+<a class="w-full sm:w-auto flex items-center justify-center rounded-lg bg-primary px-8 py-4 text-base font-bold text-background-dark hover:scale-105 transition-transform" href="#booking">
+                        Book Your Appointment Now
+                    </a>
+<a class="w-full sm:w-auto flex items-center justify-center rounded-lg border border-slate-500 px-8 py-4 text-base font-bold text-white hover:bg-white/10 transition-colors" href="#services">
+                        View Menu
+                    </a>
+</div>
+</div>
+</section>
+<!-- Differentiators -->
+<section class="py-20 bg-background-light dark:bg-background-dark/50 px-6">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="flex flex-col items-center text-center space-y-4 p-8 rounded-xl bg-background-dark border border-primary/5">
+<div class="size-16 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-4xl">workspace_premium</span>
+</div>
+<h3 class="text-xl font-bold">Expert Professionals</h3>
+<p class="text-slate-400 text-sm leading-relaxed">Skilled stylists with years of experience in precision cutting and modern styling trends.</p>
+</div>
+<div class="flex flex-col items-center text-center space-y-4 p-8 rounded-xl bg-background-dark border border-primary/5">
+<div class="size-16 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-4xl">sanitizer</span>
+</div>
+<h3 class="text-xl font-bold">Impeccable Hygiene</h3>
+<p class="text-slate-400 text-sm leading-relaxed">Medical-grade sanitization for all tools. Your health and safety are our top priorities.</p>
+</div>
+<div class="flex flex-col items-center text-center space-y-4 p-8 rounded-xl bg-background-dark border border-primary/5">
+<div class="size-16 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-4xl">shopping_bag</span>
+</div>
+<h3 class="text-xl font-bold">Premium Products</h3>
+<p class="text-slate-400 text-sm leading-relaxed">We only use top-tier brands for your hair and skin, ensuring a lasting and healthy finish.</p>
+</div>
+</div>
+</section>
+<!-- About Us Section -->
+<section class="py-24 px-6 overflow-hidden" id="about">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+<div class="lg:w-1/2 relative">
+<div class="absolute -top-4 -left-4 size-40 bg-primary/20 rounded-full blur-3xl"></div>
+<img alt="Barber working on client" class="rounded-xl object-cover w-full h-[500px] shadow-2xl relative z-10" data-alt="Barber meticulously trimming a client's beard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2Izm0CHoJpgZ3ssv5qOFpDuA0CMhrrCCQ2ssKyQhbzsuWTT_K-TKmbjvTn1pbjJRTzJt4WI9uEliro8OQ-8V3bSSdG5yO4od7vEO7kfaSCuM-JBtfY1KnJBFqOX55ldo2c_YgffU4Sb4qEx7k9klN8v4MGuzhCObWbQyqIUJ73b-g-F4qFhOluhXq-bt8QJJ4ECur1s1hse2ua51eMeWkrBDUUDcFZskk1lK9btwICdM9cKqEO2fhfM0b-YdyspPW1GlpLOKJ9ytI"/>
+</div>
+<div class="lg:w-1/2 space-y-6">
+<span class="text-primary font-bold tracking-widest uppercase text-xs">Our Story</span>
+<h2 class="text-4xl font-black">Craftsmanship Meets Luxury</h2>
+<p class="text-lg text-slate-400 leading-relaxed italic">
+                        "More than a haircut—it’s a transformation. Founded on the principles of classic barbering and modern artistry, The Grooming Lounge is where craftsmanship meets luxury."
+                    </p>
+<p class="text-slate-300 leading-relaxed">
+                        Every man deserves a sanctuary where he can sharpen his look and clear his mind. Since our doors opened, we have dedicated ourselves to the art of grooming. From the hot towel treatment to the final splash of artisanal cologne, we ensure you leave as the best version of yourself.
+                    </p>
+<div class="pt-4 flex items-center gap-6">
+<div>
+<p class="text-2xl font-bold text-primary">15k+</p>
+<p class="text-xs uppercase tracking-tighter text-slate-500">Happy Clients</p>
+</div>
+<div class="h-10 w-px bg-slate-800"></div>
+<div>
+<p class="text-2xl font-bold text-primary">12</p>
+<p class="text-xs uppercase tracking-tighter text-slate-500">Master Barbers</p>
+</div>
+<div class="h-10 w-px bg-slate-800"></div>
+<div>
+<p class="text-2xl font-bold text-primary">4.9</p>
+<p class="text-xs uppercase tracking-tighter text-slate-500">Star Review</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-24 bg-background-dark px-6" id="services">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-black mb-4">Our Services</h2>
+<div class="w-20 h-1 bg-primary mx-auto"></div>
+</div>
+<div class="space-y-4">
+<div class="group flex items-center justify-between p-6 rounded-xl bg-background-dark/50 hover:bg-primary/5 border border-primary/10 transition-all cursor-pointer">
+<div class="flex-1">
+<h4 class="text-xl font-bold text-slate-100 group-hover:text-primary transition-colors">Signature Haircut</h4>
+<p class="text-slate-400 text-sm mt-1">A tailored cut including consultation, wash, and style.</p>
+</div>
+<div class="text-right ml-6">
+<p class="text-xl font-bold text-primary">$35</p>
+<p class="text-slate-500 text-xs uppercase tracking-widest">45 min</p>
+</div>
+</div>
+<div class="group flex items-center justify-between p-6 rounded-xl bg-background-dark/50 hover:bg-primary/5 border border-primary/10 transition-all cursor-pointer">
+<div class="flex-1">
+<h4 class="text-xl font-bold text-slate-100 group-hover:text-primary transition-colors">Beard Sculpting</h4>
+<p class="text-slate-400 text-sm mt-1">Precision beard shaping and hot towel finish.</p>
+</div>
+<div class="text-right ml-6">
+<p class="text-xl font-bold text-primary">$25</p>
+<p class="text-slate-500 text-xs uppercase tracking-widest">30 min</p>
+</div>
+</div>
+<div class="group flex items-center justify-between p-6 rounded-xl bg-background-dark/50 hover:bg-primary/5 border border-primary/10 transition-all cursor-pointer">
+<div class="flex-1">
+<h4 class="text-xl font-bold text-slate-100 group-hover:text-primary transition-colors">Premium Color</h4>
+<p class="text-slate-400 text-sm mt-1">Grey blending or full color change for a bold look.</p>
+</div>
+<div class="text-right ml-6">
+<p class="text-xl font-bold text-primary">$60+</p>
+<p class="text-slate-500 text-xs uppercase tracking-widest">60 min</p>
+</div>
+</div>
+<div class="group flex items-center justify-between p-6 rounded-xl bg-background-dark/50 hover:bg-primary/5 border border-primary/10 transition-all cursor-pointer">
+<div class="flex-1">
+<h4 class="text-xl font-bold text-slate-100 group-hover:text-primary transition-colors">Scalp Treatment</h4>
+<p class="text-slate-400 text-sm mt-1">Invigorating treatment to promote hair health and relaxation.</p>
+</div>
+<div class="text-right ml-6">
+<p class="text-xl font-bold text-primary">$40</p>
+<p class="text-slate-500 text-xs uppercase tracking-widest">40 min</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Lookbook Gallery -->
+<section class="py-24 px-6" id="lookbook">
+<div class="max-w-7xl mx-auto">
+<div class="flex items-end justify-between mb-12">
+<div>
+<span class="text-primary font-bold uppercase tracking-widest text-xs">Gallery</span>
+<h2 class="text-4xl font-black mt-2">The Lookbook</h2>
+</div>
+<a class="text-primary font-bold flex items-center gap-2 hover:underline" href="#">
+                        View All Trends <span class="material-symbols-outlined">trending_flat</span>
+</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="relative group overflow-hidden rounded-xl h-[400px]">
+<img alt="Sharp skin fade" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Sharp high skin fade with beard grooming" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSEut_-s3YN3RLY2wae5L33jtJuqoK-zUy0yEKovEAXDKLeh2XckJxXtGgM2bzNdPmf4Es4K-1G0Zs82jzS0OSIlFGA4wfE7Uk0BCV_aGyRid__0MyRSbGK4j8UrL8JNSHWR_yjbINGaHUSIM7KVP79bATQTx_Y9cHyplgDwjxUIPgaSNK0TirFL5Ybm_2yo3qQW3WjPA52AF5Xw0IGLkeCk2B3MiaNl4MeGjQdbo-F3J3b6sW6oTv6kYlQF3cKgRZJZGUs-l7Huph"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+<p class="text-white font-bold">Classic Fade</p>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-xl h-[400px]">
+<img alt="Beard sculpting" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Close up of perfectly sculpted beard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9QKMA2UtZYTyoXj64mP7o8YMeEANq4SYhHMqow9Heg2ZTBNLq_H8vkk-0Cx4qi79Xs8HJLrKYMllLIP_z-5MmcXf_Ci4Rbv_N42jzaIYt8u1RfcWkeiEqdYQgkGaBrkZSdee0IS20LlUEy9ZdR9Wa9cimSSCT96ECFX9MVJfam2cW-4bvwLm6DYhouEH7kFCoihH-60U2fJGIIFrzdt0tKffKn-cWkCPWyDx36E4Kk7SFfRlFqpOwCE8zZu4Kd0XCStfOmObsBNXO"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+<p class="text-white font-bold">The Sculpted King</p>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-xl h-[400px] md:translate-y-8">
+<img alt="Modern quiff" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Young man with a modern pompadour hairstyle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCISP-VpD18equm7hAy8KNwMrMghC-VeRNQbqCSGFgvmm3xhEeujUDEzaWSwpmTW88e2QV6vRWZZUVZQUeEwCuae-dZ7joKcDg3saP7h4qU8Krww2nqhai2w29efY_FHr6dmoDDeBrQbkGwctLpYs8RVn9BJhDiUalNvYjuWzalXvQr3mwtVBhJVBXhn99rxwrYKMZRq7bmeJRcZI_TDQeyaV5-r3CcRFAqid2hPMGkUvWNZOoF2f_29wagNpIVGiZYWNv2aJWI3UWT"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+<p class="text-white font-bold">Modern Quiff</p>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-xl h-[400px] md:translate-y-8">
+<img alt="Shave detail" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Traditional straight razor shave with hot towel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLAvffgZk4_cDKBJ_AvyYC6lKnbz7kF3fS5bFxlJp73CMHf7HAzdBCHyBGhRVw6wWXHNMzIQcg44wNvTkZ999JAIsY5lWFgxcJPxtnpoDBK_jQRfu4yfRd3KBYtEMAyDguHChXEd3YUAtpTB3R5OPKn7g0m1q8dDqZNxEBIv7yaSHzjZ8HTDI9onS0uD7WAOKOX3NVaoPxEp7w4Ytk641Q7veNaT1AfPQFc8hJprqZUGYdi4kIpC71Fu7OUDDX9-CGomfaQIm81EiA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+<p class="text-white font-bold">Traditional Razor</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Appointment System -->
+<section class="py-24 bg-background-dark/30 px-6" id="booking">
+<div class="max-w-5xl mx-auto rounded-2xl bg-background-dark border border-primary/20 overflow-hidden shadow-2xl">
+<div class="grid grid-cols-1 md:grid-cols-5">
+<div class="md:col-span-2 bg-primary p-10 text-background-dark flex flex-col justify-between">
+<div>
+<h3 class="text-3xl font-black mb-4">Book Your Session</h3>
+<p class="font-medium text-background-dark/80">Select your preferred service and barber. We'll handle the rest.</p>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined">verified</span>
+<span class="text-sm font-bold">Instant Confirmation</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined">schedule</span>
+<span class="text-sm font-bold">Flexible Rescheduling</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-3 p-10 space-y-6">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-slate-500">Service</label>
+<select class="w-full bg-background-dark border-slate-800 rounded-lg text-slate-300 focus:ring-primary focus:border-primary">
+<option>Signature Haircut</option>
+<option>Beard Sculpting</option>
+<option>Premium Color</option>
+<option>Scalp Treatment</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-slate-500">Barber</label>
+<select class="w-full bg-background-dark border-slate-800 rounded-lg text-slate-300 focus:ring-primary focus:border-primary">
+<option>Marcus - Senior Stylist</option>
+<option>Julian - Master Barber</option>
+<option>Elena - Color Specialist</option>
+<option>No Preference</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-slate-500">Date</label>
+<input class="w-full bg-background-dark border-slate-800 rounded-lg text-slate-300 focus:ring-primary focus:border-primary" type="date"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-slate-500">Time</label>
+<select class="w-full bg-background-dark border-slate-800 rounded-lg text-slate-300 focus:ring-primary focus:border-primary">
+<option>10:00 AM</option>
+<option>11:30 AM</option>
+<option>01:00 PM</option>
+<option>02:30 PM</option>
+<option>04:00 PM</option>
+</select>
+</div>
+</div>
+<button class="w-full py-4 bg-primary text-background-dark font-black rounded-lg hover:brightness-110 transition-all uppercase tracking-widest text-sm">
+                            Confirm Appointment
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Map & Hours -->
+<section class="py-24 px-6 border-t border-primary/5">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12">
+<div class="lg:w-2/3 rounded-2xl overflow-hidden grayscale contrast-125 brightness-75 border border-slate-800 h-[400px] relative">
+<div class="absolute inset-0 flex items-center justify-center bg-background-dark/50">
+<div class="text-center p-8 bg-background-dark border border-primary/20 rounded-xl">
+<span class="material-symbols-outlined text-primary text-5xl mb-4">location_on</span>
+<h4 class="text-xl font-bold">Find Us In Manhattan</h4>
+<p class="text-slate-400 mt-2">123 Luxury Ave, Suite 400<br/>New York, NY 10001</p>
+</div>
+</div>
+<!-- Placeholder for Map -->
+<div class="w-full h-full bg-slate-900" data-location="New York City" style=""></div>
+</div>
+<div class="lg:w-1/3 space-y-8">
+<h3 class="text-3xl font-black">Opening Hours</h3>
+<table class="w-full text-left">
+<tbody class="divide-y divide-primary/5">
+<tr>
+<td class="py-3 text-slate-400 font-medium">Monday - Friday</td>
+<td class="py-3 text-right font-bold text-slate-100">09:00 AM - 08:00 PM</td>
+</tr>
+<tr>
+<td class="py-3 text-slate-400 font-medium">Saturday</td>
+<td class="py-3 text-right font-bold text-slate-100">10:00 AM - 06:00 PM</td>
+</tr>
+<tr>
+<td class="py-3 text-slate-400 font-medium">Sunday</td>
+<td class="py-3 text-right font-bold text-primary italic">By Appointment Only</td>
+</tr>
+</tbody>
+</table>
+<div class="p-6 rounded-xl bg-primary/5 border border-primary/10">
+<p class="text-sm text-slate-300">
+<strong>Note:</strong> We recommend booking at least 48 hours in advance for weekend slots.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-dark border-t border-primary/10 py-16 px-6">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="space-y-6">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-3xl">content_cut</span>
+<h2 class="text-lg font-black uppercase tracking-tight text-slate-100">The Grooming Lounge</h2>
+</div>
+<p class="text-sm text-slate-500 leading-relaxed">
+                    Premium grooming for the modern gentleman. We focus on detail, style, and a world-class experience.
+                </p>
+<div class="flex gap-4">
+<a class="size-10 rounded-full border border-slate-800 flex items-center justify-center text-slate-500 hover:text-primary hover:border-primary transition-all" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="size-10 rounded-full border border-slate-800 flex items-center justify-center text-slate-500 hover:text-primary hover:border-primary transition-all" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+<a class="size-10 rounded-full border border-slate-800 flex items-center justify-center text-slate-500 hover:text-primary hover:border-primary transition-all" href="#">
+<span class="material-symbols-outlined text-sm">mail</span>
+</a>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="text-slate-100 font-bold uppercase tracking-widest text-xs">Quick Links</h4>
+<nav class="flex flex-col gap-3">
+<a class="text-sm text-slate-500 hover:text-primary" href="#services">Services Menu</a>
+<a class="text-sm text-slate-500 hover:text-primary" href="#lookbook">Style Lookbook</a>
+<a class="text-sm text-slate-500 hover:text-primary" href="#about">Our Philosophy</a>
+<a class="text-sm text-slate-500 hover:text-primary" href="#booking">Book Appointment</a>
+</nav>
+</div>
+<div class="space-y-6">
+<h4 class="text-slate-100 font-bold uppercase tracking-widest text-xs">Contact Us</h4>
+<div class="space-y-3 text-sm text-slate-500">
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">call</span> +1 (555) 012-3456</p>
+<p class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">mail</span> hello@groominglounge.com</p>
+<p class="flex items-center gap-2 leading-relaxed"><span class="material-symbols-outlined text-primary text-base">location_on</span> 123 Luxury Ave, Suite 400<br/>New York, NY 10001</p>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="text-slate-100 font-bold uppercase tracking-widest text-xs">Newsletter</h4>
+<p class="text-sm text-slate-500">Get grooming tips and exclusive offers.</p>
+<div class="flex">
+<input class="w-full bg-slate-900 border-slate-800 rounded-l-lg text-sm text-slate-300 focus:ring-primary" placeholder="Email address" type="email"/>
+<button class="bg-primary text-background-dark px-4 rounded-r-lg font-bold">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-primary/5 text-center text-xs text-slate-600">
+            © 2024 The Grooming Lounge. All rights reserved. Designed for Excellence.
+        </div>
+</footer>
+</body></html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sales Closer Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1a2b3d",
+                        "success-emerald": "#10b981",
+                        "background-light": "#f6f7f7",
+                        "background-dark": "#15191d",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #e2e8f0; border-radius: 10px; }
+        .custom-scrollbar:hover::-webkit-scrollbar-thumb { background: #cbd5e1; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<div class="flex h-screen overflow-hidden">
+<!-- Sidebar Navigation -->
+<aside class="w-64 bg-primary text-white flex flex-col shrink-0">
+<div class="p-6 flex items-center gap-3">
+<div class="size-8 bg-success-emerald rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-white">bolt</span>
+</div>
+<div>
+<h1 class="text-base font-bold leading-tight">Sales Closer</h1>
+<p class="text-xs text-slate-400">Omnichannel Hub</p>
+</div>
+</div>
+<nav class="flex-1 px-4 space-y-1">
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-white/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">group</span>
+<span class="text-sm font-medium">Leads</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-white/10 text-white" href="#">
+<span class="material-symbols-outlined text-[20px]">chat_bubble</span>
+<span class="text-sm font-medium">Conversations</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-white/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">bar_chart</span>
+<span class="text-sm font-medium">Analytics</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-white/10 transition-colors" href="#">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+<span class="text-sm font-medium">Settings</span>
+</a>
+</nav>
+<div class="p-4 mt-auto border-t border-white/10">
+<button class="w-full bg-success-emerald hover:bg-success-emerald/90 text-white py-2 rounded-lg font-bold text-sm flex items-center justify-center gap-2 transition-all">
+<span class="material-symbols-outlined text-[18px]">add</span>
+                    New Lead
+                </button>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 flex flex-col min-w-0 bg-white dark:bg-slate-900">
+<!-- Top Utility Bar -->
+<header class="h-16 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between px-6 shrink-0">
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-success-emerald opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-success-emerald"></span>
+</span>
+<span class="text-sm font-semibold">Online Agent</span>
+</div>
+<div class="h-4 w-[1px] bg-slate-200"></div>
+<div class="flex items-center gap-6 text-sm">
+<span class="flex items-center gap-1.5"><span class="text-lg">📅</span> Citas Agendadas: <b class="text-primary">12</b></span>
+<span class="flex items-center gap-1.5"><span class="text-lg">💰</span> Ventas: <b class="text-success-emerald">5</b></span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative">
+<span class="material-symbols-outlined p-2 text-slate-500 hover:bg-slate-100 rounded-full cursor-pointer">notifications</span>
+<span class="absolute top-2 right-2 size-2 bg-red-500 rounded-full border-2 border-white"></span>
+</div>
+<div class="flex items-center gap-3 pl-4 border-l border-slate-200">
+<div class="text-right">
+<p class="text-xs font-bold">Alex Rivera</p>
+<p class="text-[10px] text-slate-500">Senior Closer</p>
+</div>
+<img class="size-9 rounded-full bg-slate-200 object-cover border border-slate-100" data-alt="Profile picture of a professional sales agent" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCecaR_zM10RkMzLKKnr50lXZeAKgZpuNQDPo-Cc-j4Z7uLrP0ZfvOyNHSkal4dPs8S7QrW8l1PvaSqr1mj0Svog3AG773hF0WEERozRQVwGN7dsimE1V6qY05OJzLP0RjenwH2nxSgd0gVzulYRSmjghvjDJXHOjIrszDIUh7ESJvm-wHDt-r_C6Uqhhq-U4zd9dcwk3dGuobisIMKgs7OOJDzLGRVPTGU3H65VlGklaKuVfgQ1QAH0ZOCMRIhPxNCAKAQI1LXL-vA"/>
+</div>
+</div>
+</header>
+<!-- Chat Interface -->
+<div class="flex-1 flex min-h-0">
+<!-- Conversation Thread -->
+<div class="flex-1 flex flex-col min-w-0">
+<div class="p-4 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between bg-slate-50/50">
+<div class="flex items-center gap-3">
+<img class="size-10 rounded-full object-cover" data-alt="Portrait of lead Roberto Carlos" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLFFeYDtHJYmfnFfBTmbNCOpeeLwlRR4GboeZBTO0lLhhdPOeHYo3jgY8tEKwsqn5X2BCwJKyekf8dWv_oIZxv_mYsqXSk7nD0_aTcJwJavjRdt_dojSipV8XALrWnZMxVsfB9fEDJX3FrlJDJYT3bvp2ndw45UktmStd3oujgAIQ8ftAGLPE03EpNV5B88i-ocNNA_Yy_s80xRmEFQllTVh_6nqyNnEQoKAl-UWFNxWjBZTv4tGKHofTkJ9l8TXn-O3ncptmeDrIK"/>
+<div>
+<h2 class="text-sm font-bold flex items-center gap-2">Roberto Carlos 🟢</h2>
+<p class="text-[11px] text-slate-500">WhatsApp • Active 2m ago</p>
+</div>
+</div>
+<div class="flex gap-2">
+<button class="px-3 py-1.5 text-xs font-semibold rounded-lg border border-slate-200 hover:bg-white transition-colors">View Profile</button>
+<button class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-primary text-white hover:opacity-90 transition-opacity">Schedule Call</button>
+</div>
+</div>
+<div class="flex-1 overflow-y-auto p-6 space-y-6 custom-scrollbar">
+<!-- Date Separator -->
+<div class="flex justify-center">
+<span class="text-[10px] uppercase tracking-wider text-slate-400 font-bold bg-slate-100 px-2 py-1 rounded">Today</span>
+</div>
+<!-- Lead Message -->
+<div class="flex items-start gap-3 max-w-[80%]">
+<img class="size-8 rounded-full shrink-0" data-alt="Portrait of lead Roberto Carlos" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClCwg0ceX4Au7zT5aHxDhG7JpmIX5gdvljIBQPhPkrscf290zMBweCL3tPsCb5N2VfAVD2BV4Ci8hGmmuzsFL0o7pEOjNDCXM_9zpuhmtXJvLUdVplI3Ms0bKnVaab01iFb03-qRFn0RRjIkioa-N81fTbi6QaUVfuigQEK06OJUZlYl7mYmr8dyJnyxRchEQwhkwjcjoJIZpRuxYKvJXnUiloiWOq2fiUTUkVR8CE6XHoXbe8rHZH10vzE77f-QsC2dZJuyrE0K6m"/>
+<div class="space-y-1">
+<div class="bg-slate-100 dark:bg-slate-800 p-4 rounded-2xl rounded-tl-none text-sm leading-relaxed">
+                                    Me gusta la propuesta, pero el presupuesto se me sale un poco de lo planeado ahora mismo. ¿Tienen algún plan de financiamiento o descuento por pago único?
+                                </div>
+<p class="text-[10px] text-slate-400 px-1">10:42 AM • Delivered</p>
+</div>
+</div>
+<!-- Agent Message -->
+<div class="flex items-start gap-3 justify-end ml-auto max-w-[80%]">
+<div class="space-y-1 text-right">
+<div class="bg-primary text-white p-4 rounded-2xl rounded-tr-none text-sm leading-relaxed">
+                                    Entiendo perfectamente, Roberto. Muchos de nuestros clientes sintieron lo mismo al inicio, pero descubrieron que la inversión se recupera en los primeros 3 meses.
+                                </div>
+<p class="text-[10px] text-slate-400 px-1">10:45 AM • Seen</p>
+</div>
+<img class="size-8 rounded-full shrink-0" data-alt="Profile picture of agent Alex Rivera" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKJWYNToCnA8FfYj9ncuvvpqFdWYhfuyWkfgTOQfOLMbyP48d0kGTou8-Ea_8Omjue4yRutcjQUYsvIhw6hI6jhbZqyySVvZJmI9-z5Sb0N86dyhV9jYCeNrkQ68z44W2RawXTmM-JIMVX4cVSA9nUxqBdNKNG4KHHG7nO3wsSSZjryzKkoLGpNcnqIfL9xMT9PEbe6hakGQ-TJImY_aqgCsIUIc8RLLf9LkYd0AgWXI9po2UZMQq9A8BQY3Onv1yef8ghE-tCKR8y"/>
+</div>
+<!-- Lead Message -->
+<div class="flex items-start gap-3 max-w-[80%]">
+<img class="size-8 rounded-full shrink-0" data-alt="Portrait of lead Roberto Carlos" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3D5s3dniWwFZN9wzhO7CFG5tzNsABJ-yj2Qf1RymcBR3ivXjD6Z2K-w2ZLFUgHxYtoyGfhWBB6JZH7oBnGwVrgfWKSJ0IEwFoMYllcLYDdYWuyJZBfqlXgcHLceNHkbKYor83hAqQtIuKvIT4f_Gp_11QpgJnVuz1qbOFfIroFV2MoPeOc6Mizn1jPVJbeYWmbF1gkjkby1WpvL3sT0Yt6XFyBJJLGXh39fPN5zQsHV-kGTSJhj2LlXg-zeDLRBqbjVkw_G9zS7_0"/>
+<div class="space-y-1">
+<div class="bg-slate-100 dark:bg-slate-800 p-4 rounded-2xl rounded-tl-none text-sm leading-relaxed">
+                                    Eso suena interesante. ¿Podrías detallar más sobre ese ROI? Me preocupa soltar el capital sin garantías.
+                                </div>
+<p class="text-[10px] text-slate-400 px-1">10:48 AM</p>
+</div>
+</div>
+</div>
+<!-- Chat Input -->
+<div class="p-4 border-t border-slate-100 dark:border-slate-800">
+<div class="bg-slate-50 dark:bg-slate-800/50 rounded-xl p-2 border border-slate-200 dark:border-slate-700">
+<textarea class="w-full bg-transparent border-none focus:ring-0 text-sm resize-none custom-scrollbar" placeholder="Type a message to Roberto..." rows="3"></textarea>
+<div class="flex items-center justify-between mt-2 pt-2 border-t border-slate-200 dark:border-slate-700 px-2">
+<div class="flex items-center gap-1">
+<button class="material-symbols-outlined text-slate-400 hover:text-primary p-1">mood</button>
+<button class="material-symbols-outlined text-slate-400 hover:text-primary p-1">attach_file</button>
+<button class="material-symbols-outlined text-slate-400 hover:text-primary p-1">image</button>
+</div>
+<button class="bg-primary text-white px-4 py-1.5 rounded-lg text-sm font-bold flex items-center gap-2">
+                                    Send Message
+                                    <span class="material-symbols-outlined text-sm">send</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Closer Intelligence Panel -->
+<aside class="w-80 border-l border-slate-200 dark:border-slate-800 bg-slate-50/30 overflow-y-auto custom-scrollbar">
+<div class="p-5 space-y-6">
+<div class="flex items-center gap-2 text-primary font-bold text-sm mb-4">
+<span class="material-symbols-outlined text-success-emerald">auto_awesome</span>
+                            Closer Intelligence
+                        </div>
+<!-- Intent Analysis -->
+<div class="bg-white dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
+<h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Lead Intent Analysis</h3>
+<div class="flex items-start gap-3">
+<span class="text-2xl">🎯</span>
+<div>
+<p class="text-sm font-semibold text-slate-800 dark:text-slate-100">Price Sensitive / High Interest</p>
+<p class="text-xs text-slate-500 mt-1 leading-relaxed">Ready to buy but seeking risk mitigation. Focus on ROI and success stories.</p>
+</div>
+</div>
+</div>
+<!-- Suggested Response -->
+<div class="bg-white dark:bg-slate-800 p-4 rounded-xl border-l-4 border-l-success-emerald shadow-sm">
+<h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3 flex items-center justify-between">
+                                AI Suggested Reply
+                                <span class="bg-success-emerald/10 text-success-emerald px-2 py-0.5 rounded text-[10px]">98% Match</span>
+</h3>
+<div class="bg-slate-50 dark:bg-slate-900/50 p-3 rounded-lg text-xs text-slate-700 dark:text-slate-300 italic mb-4 leading-relaxed">
+                                "Entiendo perfectamente el riesgo, Roberto. Por eso mismo incluimos una garantía de satisfacción total. De hecho, el cliente promedio ve una mejora del 40% en su primer mes. ¿Te parece si te comparto el caso de éxito de una empresa del mismo sector?"
+                            </div>
+<button class="w-full bg-success-emerald hover:bg-success-emerald/90 text-white py-2.5 rounded-lg font-bold text-xs flex items-center justify-center gap-2 transition-all shadow-lg shadow-success-emerald/20">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+                                Copy &amp; Send to WhatsApp
+                            </button>
+</div>
+<!-- Strategic Reasoning -->
+<div class="bg-primary/5 dark:bg-primary/20 p-4 rounded-xl border border-primary/10">
+<h3 class="text-xs font-bold text-primary dark:text-slate-300 uppercase tracking-widest mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">psychology</span>
+                                Strategic Reasoning
+                            </h3>
+<div class="space-y-3">
+<div class="flex items-start gap-2">
+<span class="text-sm">💡</span>
+<p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                                        Using <b>Feel/Felt/Found</b> technique to validate the lead's concern while shifting focus to quantifiable value.
+                                    </p>
+</div>
+<div class="flex items-start gap-2 border-t border-primary/10 pt-3">
+<span class="text-sm">🛡️</span>
+<p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+<b>Risk Reversal:</b> Mentioning the satisfaction guarantee early to dismantle the price objection.
+                                    </p>
+</div>
+</div>
+</div>
+<!-- Sales Framework Tags -->
+<div class="pt-4">
+<h3 class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-3">Active Frameworks</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 bg-blue-100 text-blue-700 text-[10px] font-bold rounded">SPIN Selling</span>
+<span class="px-2 py-1 bg-purple-100 text-purple-700 text-[10px] font-bold rounded">Mirroring</span>
+<span class="px-2 py-1 bg-orange-100 text-orange-700 text-[10px] font-bold rounded">Consultative</span>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</main>
+</div>
+</body></html>
